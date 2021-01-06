@@ -1,0 +1,1302 @@
+/*----------------------------------------------------------------------------
+ *  model.dat -- スプライトサンプル１ モデル定義
+ *  Copyright(c) 1994 SEGA
+ *  Written by H.E on 1994-02-15 Ver.0.80
+ *  Updated by H.E on 1994-02-15 Ver.0.80
+ *
+ *  スプライト３Ｄテスト表示用データ。
+ *
+ *----------------------------------------------------------------------------
+ */
+
+#define DRAW16	MATE_AUTO_SHADING | COLOR_0 | ECDSPD_DISABLE | COMPO_REP
+#define COLOR16 RGB16_COLOR(15,15,15)
+#define DRAWTX	MATE_TEXTURE | COLOR_0 | ECDSPD_DISABLE | COMPO_REP
+#define COLORTX 0
+#define DRAW8	MATE_SHADING_TBL | COLOR_4 | ECDSPD_DISABLE | COMPO_REP
+#define COLOR8  0
+
+#define SHADING_KIND  GOURAUD_SHADING
+/* #define SHADING_KIND  FLAT_SHADING */
+
+#define  WIDTH  0.1
+#define  HEIGHT 0.6
+#define  HEIGHT_MIN 0.5
+#define  HEIGHT_MAX 0.9
+#define  Y0     0.0
+#define  X0     WIDTH
+#define  Y1     0.0
+#define  X1     WIDTH*(4.0/5.0)
+#define  Y2     0.0
+#define  X2     WIDTH*(3.0/5.0)
+#define  Y3     0.0
+#define  X3     WIDTH*(2.0/5.0)
+#define  Y4     0.0
+#define  X4     WIDTH*(1.0/5.0)
+#define  Y5     0.0
+#define  X5     0.0
+
+typedef	struct ClustData   ClustData;
+struct ClustData {
+    MthXyz   rot;
+    Fixed32  posY;
+    Fixed32  movY;
+};
+#define   POS_Y_0  (HEIGHT_MIN+0.0)/5.0
+#define   MOV_Y_0  0.0005
+#define   POS_Y_1  (HEIGHT_MIN+0.1)/5.0
+#define   MOV_Y_1  0.001
+#define   POS_Y_2  (HEIGHT_MIN+0.2)/5.0
+#define   MOV_Y_2  -0.0005
+#define   POS_Y_3  (HEIGHT_MIN+0.3)/5.0
+#define   MOV_Y_3  -0.001
+#define   POS_Y_4  (HEIGHT_MIN+0.4)/5.0
+#define   MOV_Y_4  -0.0015
+#define   POS_Y_5  (HEIGHT_MIN+0.2)/5.0
+#define   MOV_Y_5  0.0015
+
+static ClustData clustData20 = {
+       { MTH_FIXED( 120), MTH_FIXED(0), MTH_FIXED(-180)},
+         MTH_FIXED(POS_Y_0), MTH_FIXED(MOV_Y_0),
+};
+static ClustData clustData30 = {
+       { MTH_FIXED( 135), MTH_FIXED(0), MTH_FIXED(-165)},
+         MTH_FIXED(POS_Y_0), MTH_FIXED(MOV_Y_0),
+};
+static ClustData clustData40 = {
+       { MTH_FIXED( 150), MTH_FIXED(0), MTH_FIXED(-150)},
+         MTH_FIXED(POS_Y_0), MTH_FIXED(MOV_Y_0),
+};
+static ClustData clustData50 = {
+       { MTH_FIXED( 165), MTH_FIXED(0), MTH_FIXED(-135)},
+         MTH_FIXED(POS_Y_0), MTH_FIXED(MOV_Y_0),
+};
+static ClustData clustData60 = {
+       { MTH_FIXED(0), MTH_FIXED(0), MTH_FIXED(0)},
+         MTH_FIXED(POS_Y_0), MTH_FIXED(MOV_Y_0),
+};
+static ClustData clustData21 = {
+       { MTH_FIXED(  60), MTH_FIXED(0), MTH_FIXED(-120)},
+         MTH_FIXED(POS_Y_1), MTH_FIXED(MOV_Y_1),
+};
+static ClustData clustData31 = {
+       { MTH_FIXED(  75), MTH_FIXED(0), MTH_FIXED(-105)},
+         MTH_FIXED(POS_Y_1), MTH_FIXED(MOV_Y_1),
+};
+static ClustData clustData41 = {
+       { MTH_FIXED(  90), MTH_FIXED(0), MTH_FIXED( -90)},
+         MTH_FIXED(POS_Y_1), MTH_FIXED(MOV_Y_1),
+};
+static ClustData clustData51 = {
+       { MTH_FIXED( 105), MTH_FIXED(0), MTH_FIXED( -75)},
+         MTH_FIXED(POS_Y_1), MTH_FIXED(MOV_Y_1),
+};
+static ClustData clustData61 = {
+       { MTH_FIXED(0), MTH_FIXED(0), MTH_FIXED(0)},
+         MTH_FIXED(POS_Y_1), MTH_FIXED(MOV_Y_1),
+};
+static ClustData clustData22 = {
+       { MTH_FIXED(   0), MTH_FIXED(0), MTH_FIXED( -60)},
+         MTH_FIXED(POS_Y_2), MTH_FIXED(MOV_Y_2),
+};
+static ClustData clustData32 = {
+       { MTH_FIXED(  15), MTH_FIXED(0), MTH_FIXED( -45)},
+         MTH_FIXED(POS_Y_2), MTH_FIXED(MOV_Y_2),
+};
+static ClustData clustData42 = {
+       { MTH_FIXED(  30), MTH_FIXED(0), MTH_FIXED( -30)},
+         MTH_FIXED(POS_Y_2), MTH_FIXED(MOV_Y_2),
+};
+static ClustData clustData52 = {
+       { MTH_FIXED(  45), MTH_FIXED(0), MTH_FIXED( -15)},
+         MTH_FIXED(POS_Y_2), MTH_FIXED(MOV_Y_2),
+};
+static ClustData clustData62 = {
+       { MTH_FIXED(0), MTH_FIXED(0), MTH_FIXED(0)},
+         MTH_FIXED(POS_Y_2), MTH_FIXED(MOV_Y_2),
+};
+static ClustData clustData23 = {
+       { MTH_FIXED( -60), MTH_FIXED(0), MTH_FIXED(   0)},
+         MTH_FIXED(POS_Y_3), MTH_FIXED(MOV_Y_3),
+};
+static ClustData clustData33 = {
+       { MTH_FIXED( -45), MTH_FIXED(0), MTH_FIXED(  15)},
+         MTH_FIXED(POS_Y_3), MTH_FIXED(MOV_Y_3),
+};
+static ClustData clustData43 = {
+       { MTH_FIXED( -30), MTH_FIXED(0), MTH_FIXED(  30)},
+         MTH_FIXED(POS_Y_3), MTH_FIXED(MOV_Y_3),
+};
+static ClustData clustData53 = {
+       { MTH_FIXED( -15), MTH_FIXED(0), MTH_FIXED(  45)},
+         MTH_FIXED(POS_Y_3), MTH_FIXED(MOV_Y_3),
+};
+static ClustData clustData63 = {
+       { MTH_FIXED(0), MTH_FIXED(0), MTH_FIXED(0)},
+         MTH_FIXED(POS_Y_3), MTH_FIXED(MOV_Y_3),
+};
+static ClustData clustData24 = {
+       { MTH_FIXED(-120), MTH_FIXED(0), MTH_FIXED(  60)},
+         MTH_FIXED(POS_Y_4), MTH_FIXED(MOV_Y_4),
+};
+static ClustData clustData34 = {
+       { MTH_FIXED(-105), MTH_FIXED(0), MTH_FIXED(  75)},
+         MTH_FIXED(POS_Y_4), MTH_FIXED(MOV_Y_4),
+};
+static ClustData clustData44 = {
+       { MTH_FIXED( -90), MTH_FIXED(0), MTH_FIXED(  90)},
+         MTH_FIXED(POS_Y_4), MTH_FIXED(MOV_Y_4),
+};
+static ClustData clustData54 = {
+       { MTH_FIXED( -75), MTH_FIXED(0), MTH_FIXED( 105)},
+         MTH_FIXED(POS_Y_4), MTH_FIXED(MOV_Y_4),
+};
+static ClustData clustData64 = {
+       { MTH_FIXED(0), MTH_FIXED(0), MTH_FIXED(0)},
+         MTH_FIXED(POS_Y_4), MTH_FIXED(MOV_Y_4),
+};
+static ClustData clustData25 = {
+       { MTH_FIXED(-180), MTH_FIXED(0), MTH_FIXED( 120)},
+         MTH_FIXED(POS_Y_5), MTH_FIXED(MOV_Y_5),
+};
+static ClustData clustData35 = {
+       { MTH_FIXED(-165), MTH_FIXED(0), MTH_FIXED( 135)},
+         MTH_FIXED(POS_Y_5), MTH_FIXED(MOV_Y_5),
+};
+static ClustData clustData45 = {
+       { MTH_FIXED(-150), MTH_FIXED(0), MTH_FIXED( 150)},
+         MTH_FIXED(POS_Y_5), MTH_FIXED(MOV_Y_5),
+};
+static ClustData clustData55 = {
+       { MTH_FIXED(-135), MTH_FIXED(0), MTH_FIXED( 165)},
+         MTH_FIXED(POS_Y_5), MTH_FIXED(MOV_Y_5),
+};
+static ClustData clustData65 = {
+       { MTH_FIXED(0), MTH_FIXED(0), MTH_FIXED(0)},
+         MTH_FIXED(POS_Y_5), MTH_FIXED(MOV_Y_5),
+};
+
+static Uint16  colorData[] = {
+/* 0x00 */  0x0000,
+/* 0x01 */  RGB16_COLOR( 1, 1, 1),
+/* 0x02 */  RGB16_COLOR( 1, 1, 1),
+/* 0x03 */  RGB16_COLOR( 2, 2, 2),
+/* 0x04 */  RGB16_COLOR( 3, 3, 3),
+/* 0x05 */  RGB16_COLOR( 4, 4, 4),
+/* 0x06 */  RGB16_COLOR( 5, 5, 5),
+/* 0x07 */  RGB16_COLOR( 6, 6, 6),
+/* 0x08 */  RGB16_COLOR( 7, 7, 7),
+/* 0x09 */  RGB16_COLOR( 8, 8, 8),
+/* 0x0a */  RGB16_COLOR( 9, 9, 9),
+/* 0x0b */  RGB16_COLOR(10,10,10),
+/* 0x0c */  RGB16_COLOR(11,11,11),
+/* 0x0d */  RGB16_COLOR(12,12,12),
+/* 0x0e */  RGB16_COLOR(13,13,13),
+/* 0x0f */  RGB16_COLOR(14,14,14),
+/* 0x10 */  RGB16_COLOR(15,15,15),
+/* 0x11 */  RGB16_COLOR(16,16,16),
+/* 0x12 */  RGB16_COLOR(17,17,17),
+/* 0x13 */  RGB16_COLOR(18,18,18),
+/* 0x14 */  RGB16_COLOR(19,19,19),
+/* 0x15 */  RGB16_COLOR(20,20,20),
+/* 0x16 */  RGB16_COLOR(21,21,21),
+/* 0x17 */  RGB16_COLOR(22,22,22),
+/* 0x18 */  RGB16_COLOR(23,23,23),
+/* 0x19 */  RGB16_COLOR(24,24,24),
+/* 0x1a */  RGB16_COLOR(25,25,25),
+/* 0x1b */  RGB16_COLOR(26,26,26),
+/* 0x1c */  RGB16_COLOR(27,27,27),
+/* 0x1d */  RGB16_COLOR(28,28,28),
+/* 0x1e */  RGB16_COLOR(29,29,29),
+/* 0x1f */  RGB16_COLOR(30,30,30),
+/* 0x20 */  RGB16_COLOR(31,31,31),
+/* 0x21 */  RGB16_COLOR(31, 0, 0),
+/* 0x22 */  RGB16_COLOR( 0, 0, 0),
+/* 0x23 */  RGB16_COLOR( 0, 0, 0),
+/* 0x24 */  RGB16_COLOR( 0, 0, 0),
+/* 0x25 */  RGB16_COLOR( 0, 0, 0),
+/* 0x26 */  RGB16_COLOR( 0, 0, 0),
+/* 0x27 */  RGB16_COLOR( 0, 0, 0),
+/* 0x28 */  RGB16_COLOR( 0, 0, 0),
+/* 0x29 */  RGB16_COLOR( 0, 0, 0),
+/* 0x2a */  RGB16_COLOR( 0, 0, 0),
+/* 0x2b */  RGB16_COLOR( 0, 0, 0),
+/* 0x2c */  RGB16_COLOR( 0, 0, 0),
+/* 0x2d */  RGB16_COLOR( 0, 0, 0),
+/* 0x2e */  RGB16_COLOR( 0, 0, 0),
+/* 0x2f */  RGB16_COLOR(31, 0, 0),
+};
+
+static Uint16 shdIdxTbl8White[] = {
+  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16,
+ 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32
+};
+
+static Uint16 *shdIdxTbl8[] = {
+    /* 0 */  shdIdxTbl8White
+};
+
+/* オブジェクト6  頂点座標テーブル */
+static MthXyz Obj6VertPoint[21];
+static MthXyz Obj6VertNormal[21];
+
+/* オブジェクト6  面の法線ベクトルテーブル */
+static MthXyz Obj6SurfaceNormal[20];
+
+/* オブジェクト6  面定義テーブル */
+static SprSurface Obj6Surface[] = {
+	{	0,4,5,1,	/* 面を構成する頂点番号  0 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	1,5,6,2,	/* 面を構成する頂点番号  1 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	2,6,7,3,	/* 面を構成する頂点番号  2 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	3,7,4,0,	/* 面を構成する頂点番号  3 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	4,8,9,5,	/* 面を構成する頂点番号  4 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	5,9,10,6,       /* 面を構成する頂点番号  5 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	6,10,11,7,      /* 面を構成する頂点番号  6 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	7,11,8,4,       /* 面を構成する頂点番号  7 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	8,12,13,9,	/* 面を構成する頂点番号  8 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	9,13,14,10,     /* 面を構成する頂点番号  9 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	10,14,15,11,    /* 面を構成する頂点番号 10 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	11,15,12,8,     /* 面を構成する頂点番号 11 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	12,16,17,13,    /* 面を構成する頂点番号 12 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	13,17,18,14,    /* 面を構成する頂点番号 13 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	14,18,19,15,    /* 面を構成する頂点番号 14 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	15,19,16,12,    /* 面を構成する頂点番号 15 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	16,20,17,16,    /* 面を構成する頂点番号 16 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	17,20,18,17,    /* 面を構成する頂点番号 17 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	18,20,19,18,    /* 面を構成する頂点番号 18 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+	{	19,20,16,19,    /* 面を構成する頂点番号 19 */
+		DRAW16 | ZSORT_MIN,
+		COLOR16
+	},
+};
+/* オブジェクト6  */
+static SprObject3D Object6 = {
+	6,                              /* オブジェクト番号  */
+	INBETWEEN_OBJECT |
+	DISP_POLYGON |                  /* 表示フラグ */
+	SHADING_KIND,
+	21,				/* 頂点数 */
+	20,				/* 面数 */
+	(MthXyz *)&Obj6VertPoint,	/* 頂点座標テーブル */
+	(MthXyz *)&Obj6VertNormal,	/* 頂点の法線ベクトルテーブル */
+	(SprSurface *)&Obj6Surface,	/* 面定義テーブル*/
+	(MthXyz *)&Obj6SurfaceNormal,	/* 面の法線ベクトルテーブル */
+        NULL,                           /* 面の代表頂点座標テーブル  */
+	NULL,                           /* シェーディングインデックステーブル*/
+        MTH_FIXED(-4.0),                /* 面法線ベクトルの計算補正値      */
+	NULL				/* 次オブジェクト */
+};
+
+
+static MthXyz ObjVertNormal[] = {
+	{MTH_FIXED(-0.7071),MTH_FIXED( 0.0),MTH_FIXED( 0.7071)},
+	{MTH_FIXED( 0.7071),MTH_FIXED( 0.0),MTH_FIXED( 0.7071)},
+	{MTH_FIXED( 0.7071),MTH_FIXED( 0.0),MTH_FIXED(-0.7071)},
+	{MTH_FIXED(-0.7071),MTH_FIXED( 0.0),MTH_FIXED(-0.7071)},
+};
+
+/* オブジェクト０ 頂点座標テーブル */
+static MthXyz Obj0VertPoint[] = {
+	{MTH_FIXED(-X0),MTH_FIXED( Y0),MTH_FIXED( X0)},
+	{MTH_FIXED( X0),MTH_FIXED( Y0),MTH_FIXED( X0)},
+	{MTH_FIXED( X0),MTH_FIXED( Y0),MTH_FIXED(-X0)},
+	{MTH_FIXED(-X0),MTH_FIXED( Y0),MTH_FIXED(-X0)},
+};
+/* オブジェクト０ */
+static SprObject3D Object0 = {
+	0,                              /* オブジェクト番号  */
+	DISP_POLYGON |                  /* 表示フラグ */
+	SHADING_KIND,
+	4,				/* 頂点数 */
+	0,				/* 面数 */
+	(MthXyz *)&Obj0VertPoint,	/* 頂点座標テーブル */
+	(MthXyz *)&ObjVertNormal,       /* 頂点の法線ベクトルテーブル */
+	NULL,				/* 面定義テーブル*/
+	NULL,				/* 面の法線ベクトルテーブル */
+	NULL,                           /* 面の代表頂点座標テーブル  */
+	NULL,                           /* シェーディングインデックステーブル*/
+        MTH_FIXED(1.0),                 /* 面法線ベクトルの計算補正値      */
+	NULL, 				/* 次オブジェクト */
+};
+
+/* オブジェクト１ 頂点座標テーブル */
+static MthXyz Obj1VertPoint[] = {
+	{MTH_FIXED(-X1),MTH_FIXED( Y1),MTH_FIXED( X1)},
+	{MTH_FIXED( X1),MTH_FIXED( Y1),MTH_FIXED( X1)},
+	{MTH_FIXED( X1),MTH_FIXED( Y1),MTH_FIXED(-X1)},
+	{MTH_FIXED(-X1),MTH_FIXED( Y1),MTH_FIXED(-X1)},
+};
+/* オブジェクト１ */
+static SprObject3D Object1 = {
+	1,                              /* オブジェクト番号  */
+	DISP_POLYGON |                  /* 表示フラグ */
+	GOURAUD_SHADING,
+	4,				/* 頂点数 */
+	0,				/* 面数 */
+	(MthXyz *)&Obj1VertPoint,	/* 頂点座標テーブル */
+	(MthXyz *)&ObjVertNormal,	/* 頂点の法線ベクトルテーブル */
+	NULL,				/* 面定義テーブル*/
+	NULL,				/* 面の法線ベクトルテーブル */
+	NULL,                           /* 面の代表頂点座標テーブル  */
+	NULL,                           /* シェーディングインデックステーブル*/
+        MTH_FIXED(1.0),                 /* 面法線ベクトルの計算補正値      */
+	NULL				/* 次オブジェクト */
+};
+
+/* オブジェクト２ 頂点座標テーブル */
+static MthXyz Obj2VertPoint[] = {
+	{MTH_FIXED(-X2),MTH_FIXED( Y2),MTH_FIXED( X2)},
+	{MTH_FIXED( X2),MTH_FIXED( Y2),MTH_FIXED( X2)},
+	{MTH_FIXED( X2),MTH_FIXED( Y2),MTH_FIXED(-X2)},
+	{MTH_FIXED(-X2),MTH_FIXED( Y2),MTH_FIXED(-X2)},
+};
+/* オブジェクト２ */
+static SprObject3D Object2 = {
+	2,                              /* オブジェクト番号  */
+	DISP_POLYGON |                  /* 表示フラグ */
+	SHADING_KIND,
+	4,				/* 頂点数 */
+	0,				/* 面数 */
+	(MthXyz *)&Obj2VertPoint,	/* 頂点座標テーブル */
+	(MthXyz *)&ObjVertNormal,	/* 頂点の法線ベクトルテーブル */
+	NULL,				/* 面定義テーブル*/
+	NULL,				/* 面の法線ベクトルテーブル */
+	NULL,                           /* 面の代表頂点座標テーブル  */
+	NULL,                           /* シェーディングインデックステーブル*/
+        MTH_FIXED(1.0),                 /* 面法線ベクトルの計算補正値      */
+	NULL				/* 次オブジェクト */
+};
+
+/* オブジェクト3  頂点座標テーブル */
+static MthXyz Obj3VertPoint[] = {
+	{MTH_FIXED(-X3),MTH_FIXED( Y3),MTH_FIXED( X3)},
+	{MTH_FIXED( X3),MTH_FIXED( Y3),MTH_FIXED( X3)},
+	{MTH_FIXED( X3),MTH_FIXED( Y3),MTH_FIXED(-X3)},
+	{MTH_FIXED(-X3),MTH_FIXED( Y3),MTH_FIXED(-X3)},
+};
+/* オブジェクト3  */
+static SprObject3D Object3 = {
+	3,                              /* オブジェクト番号  */
+	DISP_POLYGON |                  /* 表示フラグ */
+	SHADING_KIND,
+	4,				/* 頂点数 */
+	0,				/* 面数 */
+	(MthXyz *)&Obj3VertPoint,	/* 頂点座標テーブル */
+	(MthXyz *)&ObjVertNormal,	/* 頂点の法線ベクトルテーブル */
+	NULL,				/* 面定義テーブル*/
+	NULL,				/* 面の法線ベクトルテーブル */
+	NULL,                           /* 面の代表頂点座標テーブル  */
+	NULL,                           /* シェーディングインデックステーブル*/
+        MTH_FIXED(1.0),                 /* 面法線ベクトルの計算補正値      */
+	NULL				/* 次オブジェクト */
+};
+
+/* オブジェクト4 頂点座標テーブル */
+static MthXyz Obj4VertPoint[] = {
+	{MTH_FIXED(-X4),MTH_FIXED( Y4),MTH_FIXED( X4)},
+	{MTH_FIXED( X4),MTH_FIXED( Y4),MTH_FIXED( X4)},
+	{MTH_FIXED( X4),MTH_FIXED( Y4),MTH_FIXED(-X4)},
+	{MTH_FIXED(-X4),MTH_FIXED( Y4),MTH_FIXED(-X4)},
+};
+/* オブジェクト4  */
+static SprObject3D Object4 = {
+	4,                              /* オブジェクト番号  */
+	DISP_POLYGON |                  /* 表示フラグ */
+	SHADING_KIND,
+	4,				/* 頂点数 */
+	0,				/* 面数 */
+	(MthXyz *)&Obj4VertPoint,	/* 頂点座標テーブル */
+	(MthXyz *)&ObjVertNormal,	/* 頂点の法線ベクトルテーブル */
+	NULL,				/* 面定義テーブル*/
+	NULL,				/* 面の法線ベクトルテーブル */
+	NULL,                           /* 面の代表頂点座標テーブル  */
+	NULL,                           /* シェーディングインデックステーブル*/
+        MTH_FIXED(10.0),                /* 面法線ベクトルの計算補正値      */
+	NULL				/* 次オブジェクト */
+};
+
+/* オブジェクト5 頂点座標テーブル */
+static MthXyz Obj5VertPoint[] = {
+	{MTH_FIXED(X5),MTH_FIXED( Y5),MTH_FIXED(X5)},
+};
+static MthXyz Obj5VertNormal[] = {
+	{MTH_FIXED( 0.0),   MTH_FIXED( 1.0),MTH_FIXED( 0.0)},
+};
+
+/* オブジェクト5  */
+static SprObject3D Object5 = {
+	5,                              /* オブジェクト番号  */
+	DISP_POLYGON |                  /* 表示フラグ */
+	SHADING_KIND,
+	1,				/* 頂点数 */
+	0,				/* 面数 */
+	(MthXyz *)&Obj5VertPoint,	/* 頂点座標テーブル */
+	(MthXyz *)&Obj5VertNormal,	/* 頂点の法線ベクトルテーブル */
+	NULL,				/* 面定義テーブル*/
+	NULL,				/* 面の法線ベクトルテーブル */
+	NULL,                           /* 面の代表頂点座標テーブル  */
+	NULL,                           /* シェーディングインデックステーブル*/
+        MTH_FIXED(10.0),                /* 面法線ベクトルの計算補正値      */
+	&Object6			/* 次オブジェクト */
+};
+
+
+/* ３Ｄオブジェクト間接続ポリゴン情報 0 */
+Uint16 fromVertNo0[] = { 0, 1, 2, 3};
+Uint16 toVertNo0[]   = { 0, 1, 2, 3};
+struct SprInbetInf InbetInf0 = {
+    4,				/* 取り出し頂点数                            */
+    &Object0,			/* 接続頂点データ取り出しオブジェクト        */
+    fromVertNo0,		/* 取り出し頂点番号配列                      */
+    &Object6,			/* 接続頂点データ設定オブジェクト            */
+    toVertNo0,			/* 設定頂点番号配列                          */
+    NULL,			/* 次３Ｄオブジェクト間接続ポリゴン情報      */
+};
+
+/* ３Ｄオブジェクト間接続ポリゴン情報 1 */
+Uint16 fromVertNo1[] = { 0, 1, 2, 3};
+Uint16 toVertNo1[]   = { 4, 5, 6, 7};
+struct SprInbetInf InbetInf1 = {
+    4,				/* 取り出し頂点数                            */
+    &Object1,			/* 接続頂点データ取り出しオブジェクト        */
+    fromVertNo1,		/* 取り出し頂点番号配列                      */
+    &Object6,			/* 接続頂点データ設定オブジェクト            */
+    toVertNo1,			/* 設定頂点番号配列                          */
+    NULL,			/* 次３Ｄオブジェクト間接続ポリゴン情報      */
+};
+
+/* ３Ｄオブジェクト間接続ポリゴン情報 2 */
+Uint16 fromVertNo2[] = { 0, 1, 2, 3};
+Uint16 toVertNo2[]   = { 8, 9,10,11};
+struct SprInbetInf InbetInf2 = {
+    4,				/* 取り出し頂点数                            */
+    &Object2,			/* 接続頂点データ取り出しオブジェクト        */
+    fromVertNo2,		/* 取り出し頂点番号配列                      */
+    &Object6,			/* 接続頂点データ設定オブジェクト            */
+    toVertNo2,			/* 設定頂点番号配列                          */
+    NULL,			/* 次３Ｄオブジェクト間接続ポリゴン情報      */
+};
+
+/* ３Ｄオブジェクト間接続ポリゴン情報 3 */
+Uint16 fromVertNo3[] = { 0, 1, 2, 3};
+Uint16 toVertNo3[]   = {12,13,14,15};
+struct SprInbetInf InbetInf3 = {
+    4,				/* 取り出し頂点数                            */
+    &Object3,			/* 接続頂点データ取り出しオブジェクト        */
+    fromVertNo3,		/* 取り出し頂点番号配列                      */
+    &Object6,			/* 接続頂点データ設定オブジェクト            */
+    toVertNo3,			/* 設定頂点番号配列                          */
+    NULL,			/* 次３Ｄオブジェクト間接続ポリゴン情報      */
+};
+
+/* ３Ｄオブジェクト間接続ポリゴン情報 4 */
+Uint16 fromVertNo4[] = { 0, 1, 2, 3};
+Uint16 toVertNo4[]   = {16,17,18,19};
+struct SprInbetInf InbetInf4 = {
+    4,				/* 取り出し頂点数                            */
+    &Object4,			/* 接続頂点データ取り出しオブジェクト        */
+    fromVertNo4,		/* 取り出し頂点番号配列                      */
+    &Object6,			/* 接続頂点データ設定オブジェクト            */
+    toVertNo4,			/* 設定頂点番号配列                          */
+    NULL,			/* 次３Ｄオブジェクト間接続ポリゴン情報      */
+};
+
+/* ３Ｄオブジェクト間接続ポリゴン情報 5 */
+Uint16 fromVertNo5[] = { 0};
+Uint16 toVertNo5[]   = {20};
+struct SprInbetInf InbetInf5 = {
+    1,				/* 取り出し頂点数                            */
+    &Object5,			/* 接続頂点データ取り出しオブジェクト        */
+    fromVertNo5,		/* 取り出し頂点番号配列                      */
+    &Object6,			/* 接続頂点データ設定オブジェクト            */
+    toVertNo5,			/* 設定頂点番号配列                          */
+    NULL,			/* 次３Ｄオブジェクト間接続ポリゴン情報      */
+};
+
+
+/* クラスタ 65 */
+SprCluster Cluster65 = {
+	65,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object5,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	NULL,  		   	    /* 子クラスタ */
+        &InbetInf5,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData65,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 55 */
+SprCluster Cluster55 = {
+	55,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object4,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster65,	   	    /* 子クラスタ */
+        &InbetInf4,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData55,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 45 */
+SprCluster Cluster45 = {
+	45,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object3,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster55,  	   	    /* 子クラスタ */
+        &InbetInf3,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData45,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 35 */
+SprCluster Cluster35 = {
+        35,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object2,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster45,  		    /* 子クラスタ */
+        &InbetInf2,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData35,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 25 */
+SprCluster Cluster25 = {
+        25,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object1,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster35,  		    /* 子クラスタ */
+        &InbetInf1,	 	    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData25,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 15 */
+SprCluster Cluster15 = {
+        15,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(90.0),            /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(-WIDTH),          /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object0,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster25,  		    /* 子クラスタ */
+	&InbetInf0,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        NULL,                       /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 64 */
+SprCluster Cluster64 = {
+	64,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object5,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	NULL,  		   	    /* 子クラスタ */
+        &InbetInf5,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData64,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 54 */
+SprCluster Cluster54 = {
+	54,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object4,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster64,	   	    /* 子クラスタ */
+        &InbetInf4,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData54,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 44 */
+SprCluster Cluster44 = {
+	44,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object3,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster54,  	   	    /* 子クラスタ */
+        &InbetInf3,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData44,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 34 */
+SprCluster Cluster34 = {
+        34,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object2,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster44,  		    /* 子クラスタ */
+        &InbetInf2,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData34,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 24 */
+SprCluster Cluster24 = {
+        24,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object1,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster34,  		    /* 子クラスタ */
+        &InbetInf1,	 	    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData24,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 14 */
+SprCluster Cluster14 = {
+	14,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(-90.0),           /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(WIDTH),           /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object0,		    /* ３Ｄオブジェクト */
+	&Cluster15,		    /* 次クラスタ */
+	&Cluster24,  		    /* 子クラスタ */
+	&InbetInf0,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        NULL,                       /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 63 */
+SprCluster Cluster63 = {
+	63,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object5,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	NULL,  		   	    /* 子クラスタ */
+        &InbetInf5,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData63,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 53 */
+SprCluster Cluster53 = {
+	53,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object4,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster63, 	   	    /* 子クラスタ */
+        &InbetInf4,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData53,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 43 */
+SprCluster Cluster43 = {
+	43,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object3,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster53,  	   	    /* 子クラスタ */
+        &InbetInf3,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData43,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 33 */
+SprCluster Cluster33 = {
+        33,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object2,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster43,  		    /* 子クラスタ */
+        &InbetInf2,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData33,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 23 */
+SprCluster Cluster23 = {
+        23,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object1,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster33,  		    /* 子クラスタ */
+        &InbetInf1,	 	    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData23,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 13 */
+SprCluster Cluster13 = {
+	13,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(-90.0),           /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(90.0),            /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(-WIDTH),          /* ワールド座標系における原点のＺ座標 */
+	&Object0,		    /* ３Ｄオブジェクト */
+	&Cluster14,		    /* 次クラスタ */
+	&Cluster23,  		    /* 子クラスタ */
+	&InbetInf0,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        NULL,                       /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 62 */
+SprCluster Cluster62 = {
+	62,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object5,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	NULL,  		   	    /* 子クラスタ */
+        &InbetInf5,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData62,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 52 */
+SprCluster Cluster52 = {
+	52,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object4,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster62,	   	    /* 子クラスタ */
+        &InbetInf4,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData52,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 42 */
+SprCluster Cluster42 = {
+	42,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object3,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster52,  	   	    /* 子クラスタ */
+        &InbetInf3,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData42,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 32 */
+SprCluster Cluster32 = {
+        32,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object2,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster42,  		    /* 子クラスタ */
+        &InbetInf2,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData32,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 22 */
+SprCluster Cluster22 = {
+        22,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object1,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster32,  		    /* 子クラスタ */
+        &InbetInf1,	 	    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData22,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 12 */
+SprCluster Cluster12 = {
+	12,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(-180.0),          /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(-WIDTH),          /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object0,		    /* ３Ｄオブジェクト */
+	&Cluster13,		    /* 次クラスタ */
+	&Cluster22,  		    /* 子クラスタ */
+	&InbetInf0,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        NULL,                       /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 61 */
+SprCluster Cluster61 = {
+	61,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object5,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	NULL,  		   	    /* 子クラスタ */
+        &InbetInf5,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData61,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 51 */
+SprCluster Cluster51 = {
+	51,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object4,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster61,	   	    /* 子クラスタ */
+        &InbetInf4,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData51,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 41 */
+SprCluster Cluster41 = {
+	41,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object3,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster51,  	   	    /* 子クラスタ */
+        &InbetInf3,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData41,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 31 */
+SprCluster Cluster31 = {
+        31,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object2,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster41,  		    /* 子クラスタ */
+        &InbetInf2,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData31,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 21 */
+SprCluster Cluster21 = {
+        21,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object1,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster31,  		    /* 子クラスタ */
+        &InbetInf1,	 	    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData21,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 11 */
+SprCluster Cluster11 = {
+	11,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(90.0),            /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(90.0),            /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(WIDTH),           /* ワールド座標系における原点のＺ座標 */
+	&Object0,		    /* ３Ｄオブジェクト */
+	&Cluster12,		    /* 次クラスタ */
+	&Cluster21,  		    /* 子クラスタ */
+	&InbetInf0,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        NULL,                       /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 60 */
+SprCluster Cluster60 = {
+	60,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object5,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	NULL,  		   	    /* 子クラスタ */
+        &InbetInf5,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData60,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 50 */
+SprCluster Cluster50 = {
+	50,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object4,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster60,	   	    /* 子クラスタ */
+        &InbetInf4,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData50,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 40 */
+SprCluster Cluster40 = {
+	40,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object3,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster50,  	   	    /* 子クラスタ */
+        &InbetInf3,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData40,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 30 */
+SprCluster Cluster30 = {
+        30,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object2,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster40,  		    /* 子クラスタ */
+        &InbetInf2,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData30,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 20 */
+SprCluster Cluster20 = {
+        20,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(HEIGHT/5.0),      /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object1,		    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster30,  		    /* 子クラスタ */
+        &InbetInf1,	 	    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        &clustData20,               /* ユーザコンテキストエリア            */
+};
+
+/* クラスタ 10 */
+SprCluster Cluster10 = {
+	10,                         /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(WIDTH),           /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	&Object0,		    /* ３Ｄオブジェクト */
+	&Cluster11,		    /* 次クラスタ */
+	&Cluster20,  		    /* 子クラスタ */
+	&InbetInf0,		    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        NULL,                       /* ユーザコンテキストエリア            */
+};
+
+/* ルートクラスタ */
+SprCluster RootCluster = {
+	0,                          /* クラスタ番号  */
+	ROT_SEQ_ZYX,		    /* 回転順序 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＸ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＹ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系におけるＺ回転 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＸ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＹ座標 */
+	MTH_FIXED(0.0),             /* ワールド座標系における原点のＺ座標 */
+	NULL,			    /* ３Ｄオブジェクト */
+	NULL,			    /* 次クラスタ */
+	&Cluster10,  		    /* 子クラスタ */
+        NULL, 			    /* ３Ｄオブジェクト間接続ポリゴン情報  */
+        NULL,                       /* 座標変換開始前コールバックルーチン  */
+        NULL,                       /* 座標変換終了後コールバックルーチン  */
+        NULL,                       /* ユーザコンテキストエリア            */
+};
+
+#include "trape1.txc"
+
+static SprTexture Texture[] = {
+    {
+/* character no.        */ 0,
+/* color mode           */ COLOR_5,
+/* color data           */ 0,
+/* character width      */ 64,
+/* character height     */ 32,
+/* character pointer    */ (Uint8 *)trape1tex,
+/* lookup table pointer */ NULL
+    },
+{
+/*                      */ 0xffff,
+/* stop data            */ COLOR_5,
+/* color data           */ 0,
+/*                      */ 0,
+/*                      */ 0,
+/*                      */ NULL,
+/*                      */ NULL
+    }
+};
+
+
+/*  end of file */
+

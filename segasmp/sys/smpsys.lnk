@@ -1,0 +1,23 @@
+;=======================================================================
+;	smpsys.sub -- Subcommand File for SH Linkage Editor
+;	Copyright(c) 1994 SEGA
+;	Written by M.K on 1994-11-11(Ver.1.10)
+;=======================================================================
+Input	sys_id.obj
+Input	..\..\segalib\lib\sys_sec.obj
+Input	..\..\segalib\lib\sys_arej.obj
+Input	..\..\segalib\lib\sys_aret.obj
+Input	..\..\segalib\lib\sys_areu.obj
+Input	..\..\segalib\lib\sys_areb.obj
+Input	..\..\segalib\lib\sys_arek.obj
+Input	..\..\segalib\lib\sys_area.obj
+Input	..\..\segalib\lib\sys_aree.obj
+Input	..\..\segalib\lib\sys_arel.obj
+Input   ..\..\segalib\lib\sys_init.obj
+Input   smpsys.obj
+STart   SYSID(06002000)
+Output  ip.abs
+Print	ip.map
+EXIt
+;====== End of file ====================================================
+

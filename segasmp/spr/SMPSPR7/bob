@@ -1,0 +1,4 @@
+gcc -m2 -D_SH -DMODEL_S -I../../../segalib/include -c -o smpspr70.o smpspr70.c
+ld -o smpspr7.sre -T lnk_sre.x ../../entry/entry.o ../../entry/stack.o smpspr70.o ../../v_blank/v_blank.o ../../v_blank/set_vb.o -L../../../segalib/lib -Le:/saturn/gnu/segalib/lib -lsat -lper -lcdc -lsat -Lc:/gnu/lib -lgcc -lc -lm
+sretobin smpspr7.sre smpspr7.bin
+address span <6010000,601EA58>

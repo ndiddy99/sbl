@@ -1,0 +1,7 @@
+/OP=1
+/CP=7600
+/P=0
+/ST=c
+/se=p=SEGA_P,c=SEGA_C,d=SEGA_D,b=SEGA_B
+-I=..\include
+

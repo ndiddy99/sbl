@@ -1,0 +1,664 @@
+Archive member included to satisfy reference by file (symbol)
+
+../../../segalib/lib/libsat.a(per_prt.o)
+                              ../../v_blank/set_vb.o (PER_Init)
+../../../segalib/lib/libsat.a(scl_func.o)
+                              smpscl1.o (SCL_Vdp2Init)
+../../../segalib/lib/libsat.a(scl_fu03.o)
+                              smpscl1.o (SCL_InitConfigTb)
+../../../segalib/lib/libsat.a(scl_fu04.o)
+                              smpscl1.o (SCL_SetCycleTable)
+../../../segalib/lib/libsat.a(scl_pri.o)
+                              ../../../segalib/lib/libsat.a(scl_func.o) (SCL_PriorityInit)
+../../../segalib/lib/libsat.a(scl_ro00.o)
+                              ../../../segalib/lib/libsat.a(scl_func.o) (SCL_Rotate)
+../../../segalib/lib/libsat.a(scl_mosa.o)
+                              smpscl1.o (SCL_SetMosaic)
+../../../segalib/lib/libsat.a(scl_back.o)
+                              smpscl1.o (SCL_SetBack)
+../../../segalib/lib/libsat.a(scl_vblv.o)
+                              smpscl1.o (SCL_SetFrameInterval)
+../../../segalib/lib/libsat.a(scl_pr02.o)
+                              smpscl1.o (SCL_SetColRam)
+../../../segalib/lib/libsat.a(scl_pr03.o)
+                              smpscl1.o (SCL_AllocColRam)
+../../../segalib/lib/libsat.a(scl_pr05.o)
+                              ../../../segalib/lib/libsat.a(scl_pr02.o) (SCL_GetColRamOffset)
+../../../segalib/lib/libsat.a(scl_pr06.o)
+                              ../../../segalib/lib/libsat.a(scl_pr03.o) (SCL_SetColRamOffset)
+../../../segalib/lib/libsat.a(scl_pr07.o)
+                              smpscl1.o (SCL_SetPriority)
+../../../segalib/lib/libsat.a(scl_pr11.o)
+                              smpscl1.o (SCL_SetAutoColOffset)
+../../../segalib/lib/libsat.a(scl_pr12.o)
+                              smpscl1.o (SCL_SetColOffset)
+../../../segalib/lib/libsat.a(mth_fixd.o)
+                              ../../../segalib/lib/libsat.a(scl_ro00.o) (MTH_Mul)
+../../../segalib/lib/libsat.a(mth_tri.o)
+                              ../../../segalib/lib/libsat.a(scl_ro00.o) (fsin)
+../../../segalib/lib/libsat.a(spr_1c.o)
+                              ../../../segalib/lib/libsat.a(scl_vblv.o) (SpTvMode)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_ashiftrt.o)
+                              ../../../segalib/lib/libsat.a(scl_ro00.o) (__ashiftrt_r4_24)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_ashiftlt.o)
+                              ../../../segalib/lib/libsat.a(scl_fu03.o) (__ashlsi3_r0)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_sdivsi3.o)
+                              ../../../segalib/lib/libsat.a(scl_pr11.o) (__sdivsi3)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_udivsi3.o)
+                              ../../../segalib/lib/libsat.a(scl_fu03.o) (__udivsi3)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o)
+                              ../../../segalib/lib/libsat.a(scl_ro00.o) (__muldf3)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o)
+                              ../../../segalib/lib/libsat.a(scl_ro00.o) (__floatsidf)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_df_to_si.o)
+                              ../../../segalib/lib/libsat.a(scl_ro00.o) (__fixdfsi)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_thenan_df.o)
+                              c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o) (__thenan_df)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_lshiftrt.o)
+                              c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o) (__lshrsi3_r0)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o)
+                              c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o) (__clzsi2)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_pack_df.o)
+                              c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o) (__pack_d)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_unpack_df.o)
+                              c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o) (__unpack_d)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clz.o)
+                              c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o) (__clz_tab)
+c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0/../../../../sh-elf/lib\libc.a(lib_a-memcpy.o)
+                              smpscl1.o (memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+SclRbgKtbAddr       0x8               ../../../segalib/lib/libsat.a(scl_func.o)
+SclRb               0x1               ../../../segalib/lib/libsat.a(scl_func.o)
+SpScreenY           0x4               ../../../segalib/lib/libsat.a(spr_1c.o)
+SclK_TableBuff      0xcd0             ../../../segalib/lib/libsat.a(scl_func.o)
+SpFbcrMode          0x2               ../../../segalib/lib/libsat.a(spr_1c.o)
+SclAutoEndBlue2     0x2               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclRotregBuff       0x100             ../../../segalib/lib/libsat.a(scl_func.o)
+SclColOffset        0x10              ../../../segalib/lib/libsat.a(scl_pri.o)
+SclAddrCsTbl        0x8               ../../../segalib/lib/libsat.a(scl_func.o)
+SclPriBuffDirty     0x4               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclAutoEndRed       0x2               ../../../segalib/lib/libsat.a(scl_pri.o)
+PadWorkArea         0x1c              ../../v_blank/v_blank.o
+SclAutoSurface      0x4               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclCsx              0x8               ../../../segalib/lib/libsat.a(scl_ro00.o)
+Scl_s_reg           0x28              ../../../segalib/lib/libsat.a(scl_func.o)
+SclAutoGreen        0x2               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclAutoEndGreen     0x2               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclAutoCount        0x4               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclColRamAlloc256   0x20              ../../../segalib/lib/libsat.a(scl_pri.o)
+SclRotateXy         0x8               ../../../segalib/lib/libsat.a(scl_func.o)
+SclAutoCurRate      0x1               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclAutoPlusFlag     0x1               ../../../segalib/lib/libsat.a(scl_pri.o)
+per_set_sys_flg     0x1               ../../../segalib/lib/libsat.a(per_prt.o)
+Scl_d_reg           0x48              ../../../segalib/lib/libsat.a(scl_func.o)
+SclRotateDisp       0x8               ../../../segalib/lib/libsat.a(scl_func.o)
+SclSpColMix         0x8               ../../../segalib/lib/libsat.a(scl_pri.o)
+SpDil               0x2               ../../../segalib/lib/libsat.a(spr_1c.o)
+SclAutoMax          0x4               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclRotateMoveZ      0x8               ../../../segalib/lib/libsat.a(scl_func.o)
+SclLineColRamOffset
+                    0x4               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclRotXySw          0x4               ../../../segalib/lib/libsat.a(scl_func.o)
+per_get_time_adr    0x4               ../../../segalib/lib/libsat.a(per_prt.o)
+SclColRamAlloc2048  0x4               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclBgPriNum         0x6               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclAutoEndBlue      0x2               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclAutoEndGreen2    0x2               ../../../segalib/lib/libsat.a(scl_pri.o)
+frameChgFlag        0x4               ../../../segalib/lib/libsat.a(scl_vblv.o)
+Scl_r_reg           0x10              ../../../segalib/lib/libsat.a(scl_func.o)
+SclRPMD             0x2               ../../../segalib/lib/libsat.a(scl_func.o)
+SpDie               0x2               ../../../segalib/lib/libsat.a(spr_1c.o)
+SclAutoVeFlag       0x1               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclBgColMix         0x8               ../../../segalib/lib/libsat.a(scl_pri.o)
+per_get_sys_data    0xc               ../../../segalib/lib/libsat.a(per_prt.o)
+SclRbgKtbOffset     0x8               ../../../segalib/lib/libsat.a(scl_func.o)
+SclAutoIndex        0x4               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclAutoEndRate      0x1               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclAutoBlue         0x2               ../../../segalib/lib/libsat.a(scl_pri.o)
+SpTvMode            0x2               ../../../segalib/lib/libsat.a(spr_1c.o)
+SpScreenX           0x4               ../../../segalib/lib/libsat.a(spr_1c.o)
+SclRa               0x1               ../../../segalib/lib/libsat.a(scl_func.o)
+SclRotateZ          0x8               ../../../segalib/lib/libsat.a(scl_func.o)
+SclAddrLsTbl        0x8               ../../../segalib/lib/libsat.a(scl_func.o)
+SclK_TableNum       0x8               ../../../segalib/lib/libsat.a(scl_func.o)
+SclAutoRed          0x2               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclAutoInterval     0x4               ../../../segalib/lib/libsat.a(scl_pri.o)
+perFlag             0x4               ../../v_blank/set_vb.o
+SclOtherPri         0x10              ../../../segalib/lib/libsat.a(scl_pri.o)
+SclRotateTableAddress
+                    0x4               ../../../segalib/lib/libsat.a(scl_func.o)
+SclAutoRGB          0x600             ../../../segalib/lib/libsat.a(scl_pri.o)
+SclK_TableFlag      0x4               ../../../segalib/lib/libsat.a(scl_func.o)
+SclAutoEndRed2      0x2               ../../../segalib/lib/libsat.a(scl_pri.o)
+SclCsy              0x8               ../../../segalib/lib/libsat.a(scl_ro00.o)
+SclSpPriNum         0x8               ../../../segalib/lib/libsat.a(scl_pri.o)
+Scl_w_reg           0x20              ../../../segalib/lib/libsat.a(scl_func.o)
+Scl_n_reg           0x40              ../../../segalib/lib/libsat.a(scl_func.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ../../entry/entry.o
+LOAD ../../entry/stack.o
+LOAD ../../v_blank/v_blank.o
+LOAD ../../v_blank/set_vb.o
+LOAD smpscl1.o
+LOAD ../../../segalib/lib/libsat.a
+LOAD c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a
+LOAD c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc-Os-4-200.a
+LOAD c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0/../../../../sh-elf/lib\libc.a
+LOAD c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a
+LOAD c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc-Os-4-200.a
+
+.entry          0x06010000       0x60
+ *(.entry)
+ .entry         0x06010000       0x50 ../../entry/entry.o
+                0x06010000                entry
+                0x06010060                . = ALIGN (0x20)
+ *fill*         0x06010050       0x10 
+                0x06010060                _eentry = ABSOLUTE (.)
+
+.comment        0x00000000       0x11
+ .comment       0x00000000       0x11 ../../v_blank/v_blank.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000011       0x12 ../../v_blank/set_vb.o
+ .comment       0x00000011       0x12 smpscl1.o
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(per_prt.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_func.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_fu03.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_fu04.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_pri.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_ro00.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_mosa.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_back.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_vblv.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_pr02.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_pr03.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_pr05.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_pr06.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_pr07.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_pr11.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(scl_pr12.o)
+ .comment       0x00000011       0x12 ../../../segalib/lib/libsat.a(spr_1c.o)
+ .comment       0x00000011       0x12 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o)
+ .comment       0x00000011       0x12 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o)
+ .comment       0x00000011       0x12 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_df_to_si.o)
+ .comment       0x00000011       0x12 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_thenan_df.o)
+ .comment       0x00000011       0x12 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o)
+ .comment       0x00000011       0x12 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_pack_df.o)
+ .comment       0x00000011       0x12 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_unpack_df.o)
+ .comment       0x00000011       0x12 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clz.o)
+
+.text           0x06010060    0x192c0
+ *(.text)
+ .text          0x06010060        0x0 ../../entry/entry.o
+ .text          0x06010060        0x0 ../../entry/stack.o
+ .text          0x06010060       0x78 ../../v_blank/v_blank.o
+                0x06010060                UsrVblankStart
+                0x06010074                UsrVblankEnd
+ .text          0x060100d8       0xa4 ../../v_blank/set_vb.o
+                0x060100d8                CheckVblankEnd
+                0x060100e8                SetVblank
+ .text          0x0601017c      0x4d8 smpscl1.o
+                0x0601017c                main
+ .text          0x06010654     0x1220 ../../../segalib/lib/libsat.a(per_prt.o)
+                0x06010b2c                PER_IntFunc
+                0x06011540                PER_Init
+                0x06011768                PER_GetPer
+ .text          0x06011874      0x858 ../../../segalib/lib/libsat.a(scl_func.o)
+                0x06011874                SCL_ParametersInit
+                0x06011984                SCL_Vdp2Init
+                0x060119f4                SCL_Open
+                0x06011a10                SCL_Close
+                0x06011a28                SCL_MoveTo
+                0x06011b38                SCL_Move
+                0x06011c90                SCL_Scale
+                0x06011dac                SCL_Memcpyw
+                0x06011dd2                SCL_CopyReg
+                0x06011ed0                SCL_SetColRamMode
+                0x06011f28                SCL_PriIntProc
+                0x06012050                SCL_ScrollShow
+ .text          0x060120cc      0x728 ../../../segalib/lib/libsat.a(scl_fu03.o)
+                0x060120cc                SCL_InitConfigTb
+                0x060120f6                SCL_SetConfig
+ .text          0x060127f4       0x18 ../../../segalib/lib/libsat.a(scl_fu04.o)
+                0x060127f4                SCL_SetCycleTable
+ .text          0x0601280c     0x13f0 ../../../segalib/lib/libsat.a(scl_pri.o)
+                0x0601280c                SCL_PriorityInit
+                0x06012df4                SCL_GetColRamMode
+                0x06012e10                SCL_AbortAutoVe
+                0x06012e1c                SCL_SetColMixRate
+                0x06013478                SCL_IncColOffset
+                0x060134f8                SCL_AutoExec
+                0x06013a74                SCL_SetShadowBit
+ .text          0x06013bfc     0x101c ../../../segalib/lib/libsat.a(scl_ro00.o)
+                0x06013d64                SCL_InitRotateTable
+                0x06013ff4                SCL_RotateZD
+                0x0601414c                SCL_Rotate
+ .text          0x06014c18       0x9c ../../../segalib/lib/libsat.a(scl_mosa.o)
+                0x06014c18                SCL_SetMosaic
+ .text          0x06014cb4       0x80 ../../../segalib/lib/libsat.a(scl_back.o)
+                0x06014cb4                SCL_SetBack
+ .text          0x06014d34      0x2cc ../../../segalib/lib/libsat.a(scl_vblv.o)
+                0x06014d34                SCL_SetFrameInterval
+                0x06014dec                SCL_DisplayFrame
+                0x06014e1c                SCL_VblInit
+                0x06014e64                SCL_VblankStart
+                0x06014f4c                SCL_VblankEnd
+ .text          0x06015000       0x90 ../../../segalib/lib/libsat.a(scl_pr02.o)
+                0x06015000                SCL_SetColRam
+ .text          0x06015090      0x144 ../../../segalib/lib/libsat.a(scl_pr03.o)
+                0x06015090                SCL_FreeColRam
+                0x060150b8                SCL_AllocColRam
+ .text          0x060151d4       0xa4 ../../../segalib/lib/libsat.a(scl_pr05.o)
+                0x060151d4                SCL_GetColRamOffset
+ .text          0x06015278      0x360 ../../../segalib/lib/libsat.a(scl_pr06.o)
+                0x06015278                SCL_SetColRamOffset
+ .text          0x060155d8      0x214 ../../../segalib/lib/libsat.a(scl_pr07.o)
+                0x060155d8                SCL_SetPriority
+ .text          0x060157ec      0x158 ../../../segalib/lib/libsat.a(scl_pr11.o)
+                0x060157ec                SCL_SetAutoColOffset
+ .text          0x06015944      0x190 ../../../segalib/lib/libsat.a(scl_pr12.o)
+                0x06015944                SCL_SetColOffset
+ .text          0x06015ad4       0x78 ../../../segalib/lib/libsat.a(mth_fixd.o)
+                0x06015ad4                MTH_Mul
+                0x06015ae8                MTH_Div
+                0x06015afc                MTH_IntToFixed
+                0x06015b04                MTH_FixedToInt
+                0x06015b0c                MTH_Product
+ .text          0x06015b4c      0x5d4 ../../../segalib/lib/libsat.a(mth_tri.o)
+                0x06015b4c                MTH_Sin
+                0x06015b8c                MTH_Cos
+                0x06015bd0                fcos
+                0x06015bd6                fsin
+                0x06015d68                MTH_Atan
+ .text          0x06016120      0x25c ../../../segalib/lib/libsat.a(spr_1c.o)
+                0x06016120                SPR_SetTvMode
+                0x060161ac                SPR_GetStatus
+                0x06016200                SPR_SetEraseData
+                0x060162a0                SPR_Initial
+                0x06016358                SPR_WaitDrawEnd
+                0x06016368                SPR_SetEosMode
+ .text          0x0601637c       0x52 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_ashiftrt.o)
+                0x0601637c                __ashiftrt_r4_31
+                0x0601637c                __ashiftrt_r4_32
+                0x06016382                __ashiftrt_r4_30
+                0x06016384                __ashiftrt_r4_29
+                0x06016386                __ashiftrt_r4_28
+                0x06016388                __ashiftrt_r4_27
+                0x0601638a                __ashiftrt_r4_26
+                0x0601638c                __ashiftrt_r4_25
+                0x0601638e                __ashiftrt_r4_24
+                0x06016396                __ashiftrt_r4_23
+                0x06016398                __ashiftrt_r4_22
+                0x0601639a                __ashiftrt_r4_21
+                0x0601639c                __ashiftrt_r4_20
+                0x0601639e                __ashiftrt_r4_19
+                0x060163a0                __ashiftrt_r4_18
+                0x060163a2                __ashiftrt_r4_17
+                0x060163a4                __ashiftrt_r4_16
+                0x060163aa                __ashiftrt_r4_15
+                0x060163ac                __ashiftrt_r4_14
+                0x060163ae                __ashiftrt_r4_13
+                0x060163b0                __ashiftrt_r4_12
+                0x060163b2                __ashiftrt_r4_11
+                0x060163b4                __ashiftrt_r4_10
+                0x060163b6                __ashiftrt_r4_9
+                0x060163b8                __ashiftrt_r4_8
+                0x060163ba                __ashiftrt_r4_7
+                0x060163bc                __ashiftrt_r4_6
+                0x060163be                __ashiftrt_r4_5
+                0x060163c0                __ashiftrt_r4_4
+                0x060163c2                __ashiftrt_r4_3
+                0x060163c4                __ashiftrt_r4_2
+                0x060163c6                __ashiftrt_r4_1
+                0x060163ca                __ashiftrt_r4_0
+ *fill*         0x060163ce        0x2 
+ .text          0x060163d0       0xbc c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_ashiftlt.o)
+                0x060163d0                __ashlsi3
+                0x060163d4                __ashlsi3_r0
+ .text          0x0601648c       0xa0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_sdivsi3.o)
+                0x0601648c                __sdivsi3
+ .text          0x0601652c       0x6c c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_udivsi3.o)
+                0x0601654e                __udivsi3
+ .text          0x06016598      0x208 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o)
+                0x06016598                __muldf3
+ .text          0x060167a0       0xa8 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o)
+                0x060167a0                __floatsidf
+ .text          0x06016848       0xa4 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_df_to_si.o)
+                0x06016848                __fixdfsi
+ .text          0x060168ec        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_thenan_df.o)
+ .text          0x060168ec       0xbc c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_lshiftrt.o)
+                0x060168ec                __lshrsi3
+                0x060168f0                __lshrsi3_r0
+ .text          0x060169a8       0x58 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o)
+                0x060169a8                __clzsi2
+ .text          0x06016a00      0x25c c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_pack_df.o)
+                0x06016a00                __pack_d
+ .text          0x06016c5c       0xcc c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_unpack_df.o)
+                0x06016c5c                __unpack_d
+ .text          0x06016d28        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clz.o)
+ .text          0x06016d28       0x94 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0/../../../../sh-elf/lib\libc.a(lib_a-memcpy.o)
+                0x06016d28                memcpy
+ *(.rodata)
+ .rodata        0x06016dbc    0x12430 smpscl1.o
+                0x06016dbc                cosmo2u_char
+                0x0602857c                cosmo2u_col
+                0x0602892c                cosmo2u_map
+ .rodata        0x060291ec       0x20 ../../../segalib/lib/libsat.a(spr_1c.o)
+ .rodata        0x0602920c       0x14 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_thenan_df.o)
+                0x0602920c                __thenan_df
+ .rodata        0x06029220      0x100 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clz.o)
+                0x06029220                __clz_tab
+ *(.strings)
+                0x06029320                . = ALIGN (0x10)
+                0x06029320                _etext = ABSOLUTE (.)
+
+.rela.dyn       0x06029320        0x0
+ .rela.text     0x06029320        0x0 ../../v_blank/set_vb.o
+
+.tors           0x06029320        0x0
+                0x06029320                ___ctors = .
+ *(.ctors)
+                0x06029320                ___ctors_end = .
+                0x06029320                ___dtors = .
+ *(.dtors)
+                0x06029320                ___dtors_end = .
+                0x06029320                . = ALIGN (0x10)
+                0x06029320                _etors = ABSOLUTE (.)
+
+.data           0x06029320       0x40
+ *(.data)
+ .data          0x06029320        0x0 ../../entry/entry.o
+ .data          0x06029320        0x0 ../../entry/stack.o
+ .data          0x06029320        0x0 ../../v_blank/v_blank.o
+ .data          0x06029320        0x0 ../../v_blank/set_vb.o
+ .data          0x06029320       0x10 smpscl1.o
+                0x06029320                CycleTb
+ .data          0x06029330        0x3 ../../../segalib/lib/libsat.a(per_prt.o)
+ *fill*         0x06029333        0x1 
+ .data          0x06029334        0x6 ../../../segalib/lib/libsat.a(scl_func.o)
+                0x06029334                SclRotateTableMode
+                0x06029336                SclDisplayY
+                0x06029338                SclDisplayX
+ .data          0x0602933a        0x0 ../../../segalib/lib/libsat.a(scl_fu03.o)
+ .data          0x0602933a        0x0 ../../../segalib/lib/libsat.a(scl_fu04.o)
+ *fill*         0x0602933a        0x2 
+ .data          0x0602933c       0x18 ../../../segalib/lib/libsat.a(scl_pri.o)
+                0x0602933c                SclRealColOffset
+                0x06029340                SclRealBgColMix
+                0x06029344                SclRealSpColMix
+                0x06029348                SclRealBgPriNum
+                0x0602934c                SclRealSpPriNum
+                0x06029350                SclRealOtherPri
+ .data          0x06029354        0x0 ../../../segalib/lib/libsat.a(scl_ro00.o)
+ .data          0x06029354        0x0 ../../../segalib/lib/libsat.a(scl_mosa.o)
+ .data          0x06029354        0x0 ../../../segalib/lib/libsat.a(scl_back.o)
+ .data          0x06029354        0x8 ../../../segalib/lib/libsat.a(scl_vblv.o)
+                0x06029354                VBInterval
+                0x06029358                SpFrameEraseMode
+ .data          0x0602935c        0x0 ../../../segalib/lib/libsat.a(scl_pr02.o)
+ .data          0x0602935c        0x0 ../../../segalib/lib/libsat.a(scl_pr03.o)
+ .data          0x0602935c        0x0 ../../../segalib/lib/libsat.a(scl_pr05.o)
+ .data          0x0602935c        0x0 ../../../segalib/lib/libsat.a(scl_pr06.o)
+ .data          0x0602935c        0x0 ../../../segalib/lib/libsat.a(scl_pr07.o)
+ .data          0x0602935c        0x0 ../../../segalib/lib/libsat.a(scl_pr11.o)
+ .data          0x0602935c        0x0 ../../../segalib/lib/libsat.a(scl_pr12.o)
+ .data          0x0602935c        0x0 ../../../segalib/lib/libsat.a(mth_fixd.o)
+ .data          0x0602935c        0x0 ../../../segalib/lib/libsat.a(mth_tri.o)
+ .data          0x0602935c        0x0 ../../../segalib/lib/libsat.a(spr_1c.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_ashiftrt.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_ashiftlt.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_sdivsi3.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_udivsi3.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_df_to_si.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_thenan_df.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_lshiftrt.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_pack_df.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_unpack_df.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clz.o)
+ .data          0x0602935c        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0/../../../../sh-elf/lib\libc.a(lib_a-memcpy.o)
+                0x06029360                . = ALIGN (0x10)
+ *fill*         0x0602935c        0x4 
+                0x06029360                _edata = ABSOLUTE (.)
+
+.bss            0x06029360     0x1700
+                0x06029360                _bss_start = .
+ *(.bss)
+ .bss           0x06029360        0x0 ../../entry/entry.o
+ .bss           0x06029360        0x0 ../../entry/stack.o
+ .bss           0x06029360        0x8 ../../v_blank/v_blank.o
+                0x06029360                PadData2E
+                0x06029362                PadData2
+                0x06029364                PadData1E
+                0x06029366                PadData1
+ .bss           0x06029368        0x0 ../../v_blank/set_vb.o
+ .bss           0x06029368        0x0 smpscl1.o
+ .bss           0x06029368       0x6b ../../../segalib/lib/libsat.a(per_prt.o)
+                0x06029368                per_hot_res
+                0x06029369                per_time_out_flg
+ *fill*         0x060293d3        0x1 
+ .bss           0x060293d4       0x10 ../../../segalib/lib/libsat.a(scl_func.o)
+                0x060293d4                SclProcess
+                0x060293d8                SclCurSclNum
+                0x060293dc                SclLengthCsTbl
+                0x060293de                SclLengthLsTbl
+ .bss           0x060293e4        0x0 ../../../segalib/lib/libsat.a(scl_fu03.o)
+ .bss           0x060293e4        0x0 ../../../segalib/lib/libsat.a(scl_fu04.o)
+ .bss           0x060293e4        0x0 ../../../segalib/lib/libsat.a(scl_pri.o)
+ .bss           0x060293e4       0x48 ../../../segalib/lib/libsat.a(scl_ro00.o)
+ .bss           0x0602942c        0x0 ../../../segalib/lib/libsat.a(scl_mosa.o)
+ .bss           0x0602942c        0x0 ../../../segalib/lib/libsat.a(scl_back.o)
+ .bss           0x0602942c       0x12 ../../../segalib/lib/libsat.a(scl_vblv.o)
+                0x0602942c                VBIntrDisableDepth
+                0x06029430                ReqDisplayFlag2
+                0x06029434                ReqDisplayFlag1
+                0x06029438                VBIntervalCounter
+                0x0602943c                SpFrameChgMode
+ .bss           0x0602943e        0x0 ../../../segalib/lib/libsat.a(scl_pr02.o)
+ .bss           0x0602943e        0x0 ../../../segalib/lib/libsat.a(scl_pr03.o)
+ .bss           0x0602943e        0x0 ../../../segalib/lib/libsat.a(scl_pr05.o)
+ .bss           0x0602943e        0x0 ../../../segalib/lib/libsat.a(scl_pr06.o)
+ .bss           0x0602943e        0x0 ../../../segalib/lib/libsat.a(scl_pr07.o)
+ .bss           0x0602943e        0x0 ../../../segalib/lib/libsat.a(scl_pr11.o)
+ .bss           0x0602943e        0x0 ../../../segalib/lib/libsat.a(scl_pr12.o)
+ .bss           0x0602943e        0x0 ../../../segalib/lib/libsat.a(mth_fixd.o)
+ .bss           0x0602943e        0x0 ../../../segalib/lib/libsat.a(mth_tri.o)
+ *fill*         0x0602943e        0x2 
+ .bss           0x06029440       0x10 ../../../segalib/lib/libsat.a(spr_1c.o)
+                0x06029440                SpInitialFlag
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_ashiftrt.o)
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_ashiftlt.o)
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_sdivsi3.o)
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_udivsi3.o)
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o)
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o)
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_df_to_si.o)
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_thenan_df.o)
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_lshiftrt.o)
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o)
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_pack_df.o)
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_unpack_df.o)
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clz.o)
+ .bss           0x06029450        0x0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0/../../../../sh-elf/lib\libc.a(lib_a-memcpy.o)
+ *(COMMON)
+ COMMON         0x06029450       0x1c ../../v_blank/v_blank.o
+                0x06029450                PadWorkArea
+ COMMON         0x0602946c        0x4 ../../v_blank/set_vb.o
+                0x0602946c                perFlag
+ COMMON         0x06029470       0x14 ../../../segalib/lib/libsat.a(per_prt.o)
+                0x06029470                per_set_sys_flg
+                0x06029474                per_get_time_adr
+                0x06029478                per_get_sys_data
+ COMMON         0x06029484      0xf10 ../../../segalib/lib/libsat.a(scl_func.o)
+                0x06029484                SclRbgKtbAddr
+                0x0602948c                SclRb
+                0x0602948e                SclK_TableBuff
+                0x0602a160                SclRotregBuff
+                0x0602a260                SclAddrCsTbl
+                0x0602a268                Scl_s_reg
+                0x0602a290                SclRotateXy
+                0x0602a298                Scl_d_reg
+                0x0602a2e0                SclRotateDisp
+                0x0602a2e8                SclRotateMoveZ
+                0x0602a2f0                SclRotXySw
+                0x0602a2f4                Scl_r_reg
+                0x0602a304                SclRPMD
+                0x0602a308                SclRbgKtbOffset
+                0x0602a310                SclRa
+                0x0602a314                SclRotateZ
+                0x0602a31c                SclAddrLsTbl
+                0x0602a324                SclK_TableNum
+                0x0602a32c                SclRotateTableAddress
+                0x0602a330                SclK_TableFlag
+                0x0602a334                Scl_w_reg
+                0x0602a354                Scl_n_reg
+ COMMON         0x0602a394      0x69e ../../../segalib/lib/libsat.a(scl_pri.o)
+                0x0602a394                SclAutoEndBlue2
+                0x0602a396                SclColOffset
+                0x0602a3a8                SclPriBuffDirty
+                0x0602a3ac                SclAutoEndRed
+                0x0602a3b0                SclAutoSurface
+                0x0602a3b4                SclAutoGreen
+                0x0602a3b6                SclAutoEndGreen
+                0x0602a3b8                SclAutoCount
+                0x0602a3bc                SclColRamAlloc256
+                0x0602a3dc                SclAutoCurRate
+                0x0602a3dd                SclAutoPlusFlag
+                0x0602a3de                SclSpColMix
+                0x0602a3e8                SclAutoMax
+                0x0602a3ec                SclLineColRamOffset
+                0x0602a3f0                SclColRamAlloc2048
+                0x0602a3f4                SclBgPriNum
+                0x0602a3fa                SclAutoEndBlue
+                0x0602a3fc                SclAutoEndGreen2
+                0x0602a3fe                SclAutoVeFlag
+                0x0602a400                SclBgColMix
+                0x0602a408                SclAutoIndex
+                0x0602a40c                SclAutoEndRate
+                0x0602a40e                SclAutoBlue
+                0x0602a410                SclAutoRed
+                0x0602a414                SclAutoInterval
+                0x0602a418                SclOtherPri
+                0x0602a428                SclAutoRGB
+                0x0602aa28                SclAutoEndRed2
+                0x0602aa2a                SclSpPriNum
+ *fill*         0x0602aa32        0x2 
+ COMMON         0x0602aa34       0x10 ../../../segalib/lib/libsat.a(scl_ro00.o)
+                0x0602aa34                SclCsx
+                0x0602aa3c                SclCsy
+ COMMON         0x0602aa44        0x4 ../../../segalib/lib/libsat.a(scl_vblv.o)
+                0x0602aa44                frameChgFlag
+ COMMON         0x0602aa48       0x10 ../../../segalib/lib/libsat.a(spr_1c.o)
+                0x0602aa48                SpScreenY
+                0x0602aa4c                SpFbcrMode
+                0x0602aa4e                SpDil
+                0x0602aa50                SpDie
+                0x0602aa52                SpTvMode
+                0x0602aa54                SpScreenX
+                0x0602aa58                _bss_end = .
+                0x0602aa60                . = ALIGN (0x10)
+ *fill*         0x0602aa58        0x8 
+                0x0602aa60                _end = ABSOLUTE (.)
+
+.stack          0x0602aa60     0x2000
+ *(.stack)
+ .stack         0x0602aa60     0x2000 ../../entry/stack.o
+                0x0602aa60                PROG_STK
+                0x0602ca60                _stack = .
+OUTPUT(smpscl1.elf elf32-sh)
+
+.debug_info     0x00000000     0x2458
+ .debug_info    0x00000000      0x6e9 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o)
+ .debug_info    0x000006e9      0x494 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o)
+ .debug_info    0x00000b7d      0x4ce c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_df_to_si.o)
+ .debug_info    0x0000104b      0x391 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_thenan_df.o)
+ .debug_info    0x000013dc      0x3da c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o)
+ .debug_info    0x000017b6      0x4d4 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_pack_df.o)
+ .debug_info    0x00001c8a      0x45d c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_unpack_df.o)
+ .debug_info    0x000020e7      0x371 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clz.o)
+
+.debug_abbrev   0x00000000      0xc8b
+ .debug_abbrev  0x00000000      0x27c c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o)
+ .debug_abbrev  0x0000027c      0x1fb c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o)
+ .debug_abbrev  0x00000477      0x1bb c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_df_to_si.o)
+ .debug_abbrev  0x00000632      0x11c c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_thenan_df.o)
+ .debug_abbrev  0x0000074e      0x118 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o)
+ .debug_abbrev  0x00000866      0x1cb c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_pack_df.o)
+ .debug_abbrev  0x00000a31      0x18b c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_unpack_df.o)
+ .debug_abbrev  0x00000bbc       0xcf c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clz.o)
+
+.debug_loc      0x00000000      0xa6e
+ .debug_loc     0x00000000      0x4d5 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o)
+ .debug_loc     0x000004d5       0xd1 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o)
+ .debug_loc     0x000005a6       0x3b c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_df_to_si.o)
+ .debug_loc     0x000005e1       0xa6 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o)
+ .debug_loc     0x00000687      0x332 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_pack_df.o)
+ .debug_loc     0x000009b9       0xb5 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_unpack_df.o)
+
+.debug_aranges  0x00000000       0xf0
+ .debug_aranges
+                0x00000000       0x20 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o)
+ .debug_aranges
+                0x00000020       0x20 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o)
+ .debug_aranges
+                0x00000040       0x20 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_df_to_si.o)
+ .debug_aranges
+                0x00000060       0x18 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_thenan_df.o)
+ .debug_aranges
+                0x00000078       0x20 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o)
+ .debug_aranges
+                0x00000098       0x20 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_pack_df.o)
+ .debug_aranges
+                0x000000b8       0x20 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_unpack_df.o)
+ .debug_aranges
+                0x000000d8       0x18 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clz.o)
+
+.debug_ranges   0x00000000      0x1d0
+ .debug_ranges  0x00000000       0xc0 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o)
+ .debug_ranges  0x000000c0       0x48 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o)
+ .debug_ranges  0x00000108       0x38 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o)
+ .debug_ranges  0x00000140       0x90 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_pack_df.o)
+
+.debug_line     0x00000000      0xd95
+ .debug_line    0x00000000      0x358 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o)
+ .debug_line    0x00000358      0x1a1 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o)
+ .debug_line    0x000004f9      0x159 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_df_to_si.o)
+ .debug_line    0x00000652       0xb6 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_thenan_df.o)
+ .debug_line    0x00000708      0x14e c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o)
+ .debug_line    0x00000856      0x29e c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_pack_df.o)
+ .debug_line    0x00000af4      0x1ad c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_unpack_df.o)
+ .debug_line    0x00000ca1       0xf4 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clz.o)
+
+.debug_str      0x00000000      0x695
+ .debug_str     0x00000000      0x5a2 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o)
+                                0x5fa (size before relaxing)
+ .debug_str     0x000005a2       0x27 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o)
+                                0x592 (size before relaxing)
+ .debug_str     0x000005c9        0xa c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_df_to_si.o)
+                                0x5af (size before relaxing)
+ .debug_str     0x000005d3      0x545 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_thenan_df.o)
+ .debug_str     0x000005d3       0xbb c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o)
+                                0x555 (size before relaxing)
+ .debug_str     0x0000068e        0x7 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_pack_df.o)
+                                0x5a3 (size before relaxing)
+ .debug_str     0x00000695      0x585 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_unpack_df.o)
+ .debug_str     0x00000695      0x538 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clz.o)
+
+.debug_frame    0x00000000      0x1c4
+ .debug_frame   0x00000000       0x98 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_mul_df.o)
+ .debug_frame   0x00000098       0x3c c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_si_to_df.o)
+ .debug_frame   0x000000d4       0x44 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_df_to_si.o)
+ .debug_frame   0x00000118       0x20 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_clzsi2.o)
+ .debug_frame   0x00000138       0x6c c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_pack_df.o)
+ .debug_frame   0x000001a4       0x20 c:/saturn/gcc84/bin/../lib/gcc/sh-elf/8.4.0\libgcc.a(_unpack_df.o)

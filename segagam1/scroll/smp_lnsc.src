@@ -1,0 +1,1176 @@
+;	Copyright(c) 1994 SEGA
+          .IMPORT     _SMMA_initall
+          .IMPORT     _SMMA_intwait
+          .IMPORT     _SMMA_MainMode
+          .IMPORT     _SMMA_MainLevel
+          .IMPORT     _SMTA_MakeAction
+          .IMPORT     _SMTA_ActionLoop
+          .IMPORT     _SMPA_pad_data1
+          .IMPORT     _SMPA_pad_edge1
+          .IMPORT     _SMV2_SetFont8
+          .IMPORT     _SMV2_BoxWrite
+          .IMPORT     _SMV2_FilMem16
+          .IMPORT     _SMV2_TvOn
+          .IMPORT     _SMV2_TvOff
+          .IMPORT     _SMV2_nscrlreg1
+          .IMPORT     _SMV2_lparam
+          .IMPORT     _scra_info
+          .IMPORT     _SMV1_SprCmdStart
+          .IMPORT     _SMV1_SprCmdEnd
+          .IMPORT     _SMV1_SpritePutModeTbl
+          .IMPORT     _SMV1_SetFont8sp
+          .IMPORT     _SCL_Open
+          .IMPORT     _SCL_InitConfigTb
+          .IMPORT     _SCL_SetConfig
+          .IMPORT     _SCL_SetCycleTable
+          .IMPORT     _SCL_Close
+          .IMPORT     _SCL_SetColRamMode
+          .IMPORT     _SCL_SetPriority
+          .IMPORT     _SCL_InitLineParamTb
+          .IMPORT     _SMMI_Ldir8
+          .IMPORT     _SMMI_Ldir16
+          .IMPORT     _SCL_SetLineParam
+          .IMPORT     _SMMI_Sinset8
+          .IMPORT     __divls
+          .IMPORT     __quick_mvn
+          .IMPORT     __slow_mvn
+          .EXPORT     _SMLN_mode_pattbl
+          .EXPORT     _SMLN_LnscMode
+          .EXPORT     _SMLN_cgset
+          .EXPORT     _SMLN_LineScrollAct
+          .EXPORT     _SMLN_hline_init
+          .EXPORT     _SMLN_hline_main
+          .EXPORT     _SMLN_vcell_init
+          .EXPORT     _SMLN_vcell_main
+          .EXPORT     _SMLN_hzoom_init
+          .EXPORT     _SMLN_hzoom_main
+          .EXPORT     _SMLN_hvscl_init
+          .EXPORT     _SMLN_hvscl_main
+          .EXPORT     _SMLN_mixed_init
+          .EXPORT     _SMLN_mixed_main
+          .SECTION    P,CODE,ALIGN=4
+_SMLN_LnscMode:                  ; function: SMLN_LnscMode
+                                 ; frame size=48
+          MOV.L       R14,@-R15
+          MOV.L       R13,@-R15
+          MOV.L       R12,@-R15
+          MOV         #0,R12
+          MOV.L       R11,@-R15
+          MOV.L       R10,@-R15
+          MOV.L       R9,@-R15
+          MOV.L       R8,@-R15
+          STS.L       PR,@-R15
+          ADD         #-16,R15
+          MOV.L       L562+2,R8
+          MOV         R15,R1
+          MOV.L       L562+26,R2
+          MOV.L       L562+6,R9
+          MOV.L       L562+10,R10
+          MOV.L       L562+14,R11
+          MOV.L       L562+18,R13
+          MOV.L       L562+22,R14
+          MOV.L       L562+30,R3
+          JSR         @R3
+          MOV         #16,R0
+          BRA         L521
+          NOP
+L522:                             
+          MOV.B       @R14,R0
+          BRA         L523
+          EXTU.B      R0,R0
+L512:                            ; case label 
+          MOV.L       L562+34,R3
+          JSR         @R3
+          NOP
+          MOV.L       L562+38,R3
+          JSR         @R3
+          NOP
+          JSR         @R8
+          MOV         #8,R4
+          MOV.L       L562+42,R4
+          MOV.L       L562+46,R3
+          JSR         @R3
+          NOP
+          MOV.L       L562+42,R3
+          MOV.B       R12,@R3
+          MOV.L       L562+42,R5
+          MOV.L       L562+50,R3
+          JSR         @R3
+          MOV         #8,R4
+          MOV.L       L562+54,R3
+          JSR         @R3
+          MOV         R15,R4
+          MOV.L       L562+58,R3
+          JSR         @R3
+          MOV         #8,R4
+          MOV.L       L562+62,R3
+          JSR         @R3
+          MOV         #0,R4
+          MOV.W       L562,R4
+          MOV.L       L562+66,R3
+          JSR         @R3
+          MOV         #7,R5
+          MOV         #6,R5
+          MOV.L       L562+66,R3
+          JSR         @R3
+          MOV         #4,R4
+          JSR         @R8
+          MOV         #4,R4
+          MOV.L       L562+70,R4
+          MOV.L       L562+74,R3
+          JSR         @R3
+          NOP
+          MOV.L       L562+58,R3
+          JSR         @R3
+          MOV         #4,R4
+          JSR         @R11
+          NOP
+          JSR         @R9
+          NOP
+          JSR         @R13
+          NOP
+          JSR         @R13
+          NOP
+          BSR         _SMLN_cgset
+          NOP
+          MOV.L       L562+78,R4
+          MOV.L       L562+82,R3
+          JSR         @R3
+          NOP
+          MOV.L       L562+86,R3
+          JSR         @R3
+          NOP
+          MOV.B       @R14,R2
+          ADD         #1,R2
+          BRA         L524
+          MOV.B       R2,@R14
+L562:                             
+          .DATA.W     H'0100
+          .DATA.L     _SCL_Open
+          .DATA.L     _SMV1_SprCmdEnd
+          .DATA.L     _SMMA_MainMode
+          .DATA.L     _SMV1_SprCmdStart
+          .DATA.L     _SMMA_intwait
+          .DATA.L     _SMMA_MainLevel
+          .DATA.L     L393
+          .DATA.L     __slow_mvn
+          .DATA.L     _SMV2_TvOff
+          .DATA.L     _SMMA_initall
+          .DATA.L     _SMV2_nscrlreg1
+          .DATA.L     _SCL_InitConfigTb
+          .DATA.L     _SCL_SetConfig
+          .DATA.L     _SCL_SetCycleTable
+          .DATA.L     _SCL_Close
+          .DATA.L     _SCL_SetColRamMode
+          .DATA.L     _SCL_SetPriority
+          .DATA.L     _SMV2_lparam
+          .DATA.L     _SCL_InitLineParamTb
+          .DATA.L     _SMLN_LineScrollAct
+          .DATA.L     _SMTA_MakeAction
+          .DATA.L     _SMV2_TvOn
+L513:                            ; case label 
+          JSR         @R11
+          NOP
+          MOV.L       L563,R3
+          JSR         @R3
+          NOP
+          JSR         @R9
+          NOP
+          JSR         @R13
+          NOP
+          MOV.L       L563+4,R0
+          MOV.W       @R0,R0
+          TST         #128,R0
+          BT          L524
+          MOV.B       @R14,R3
+          ADD         #1,R3
+          MOV.B       R3,@R14
+          BRA         L524
+          NOP
+L514:                            ; case label 
+          MOV         #3,R2
+          MOV.B       R2,@R10
+          BRA         L524
+          MOV.B       R12,@R14
+L523:                             
+          CMP/EQ      #0,R0
+          BF          L564
+          BRA         L512
+          NOP
+L564:                             
+          CMP/EQ      #1,R0
+          BT          L513
+          CMP/EQ      #2,R0
+          BT          L514
+L524:                             
+L521:                             
+          MOV.B       @R10,R0
+          EXTU.B      R0,R0
+          CMP/EQ      #13,R0
+          BF          L565
+          BRA         L522
+          NOP
+L565:                             
+          ADD         #16,R15
+          LDS.L       @R15+,PR
+          MOV.L       @R15+,R8
+          MOV.L       @R15+,R9
+          MOV.L       @R15+,R10
+          MOV.L       @R15+,R11
+          MOV.L       @R15+,R12
+          MOV.L       @R15+,R13
+          RTS
+          MOV.L       @R15+,R14
+L563:                             
+          .DATA.L     _SMTA_ActionLoop
+          .DATA.L     _SMPA_pad_edge1
+_SMLN_cgset:                     ; function: SMLN_cgset
+                                 ; frame size=64
+          MOV.L       R14,@-R15
+          MOV.L       R13,@-R15
+          MOV.L       R12,@-R15
+          MOV         #0,R12
+          MOV.L       R11,@-R15
+          MOV.L       R10,@-R15
+          MOV.L       R9,@-R15
+          MOV.L       R8,@-R15
+          STS.L       PR,@-R15
+          ADD         #-32,R15
+          MOV         R15,R8
+          MOV         R15,R1
+          MOV.L       L566+10,R2
+          MOV.L       L566+6,R9
+          MOV.L       L566+14,R3
+          JSR         @R3
+          MOV         #32,R0
+          MOV.L       L566+18,R3
+          JSR         @R3
+          MOV         #0,R4
+          MOV.L       L566+22,R4
+          MOV.L       L566+26,R3
+          JSR         @R3
+          NOP
+          EXTU.W      R12,R2
+          MOV.L       L566+30,R3
+          MOV.W       R2,@R3
+          MOV.W       L566,R2
+          MOV.L       L566+34,R3
+          MOV.W       R2,@R3
+          EXTU.W      R12,R2
+          MOV.L       L566+38,R3
+          MOV.W       R2,@R3
+          MOV.W       L566,R2
+          MOV.L       L566+42,R3
+          MOV.W       R2,@R3
+          MOV.L       @(4,R9),R6
+          MOV.L       L566+46,R5
+          MOV.L       L566+50,R3
+          JSR         @R3
+          MOV.L       @R9,R4
+          MOV.W       @(16,R9),R0
+          MOV.L       L566+54,R5
+          MOV.L       L566+58,R3
+          MOV         R0,R6
+          EXTU.W      R6,R6
+          JSR         @R3
+          MOV.L       @(12,R9),R4
+          MOV.W       L566+2,R5
+          MOV.L       L566+62,R4
+          MOV.L       L566+66,R3
+          JSR         @R3
+          MOV         #0,R6
+          MOV.L       L566+62,R10
+          BRA         L526
+          EXTU.W      R12,R11
+L527:                             
+          MOV         R10,R13
+          EXTU.W      R12,R14
+L529:                             
+          MOV         #4,R7
+          MOV         #4,R6
+          MOV         R8,R5
+          MOV.L       L566+70,R3
+          JSR         @R3
+          MOV         R13,R4
+          ADD         #1,R14
+          MOV         #16,R3
+          EXTU.W      R14,R2
+          CMP/GE      R3,R2
+          BF/S        L529
+          ADD         #8,R13
+          MOV.W       L566+4,R3
+          ADD         R3,R10
+          ADD         #1,R11
+L526:                             
+          EXTU.W      R11,R2
+          MOV         #16,R3
+          CMP/GE      R3,R2
+          BF          L527
+          ADD         #32,R15
+          LDS.L       @R15+,PR
+          MOV.L       @R15+,R8
+          MOV.L       @R15+,R9
+          MOV.L       @R15+,R10
+          MOV.L       @R15+,R11
+          MOV.L       @R15+,R12
+          MOV.L       @R15+,R13
+          RTS
+          MOV.L       @R15+,R14
+L566:                             
+          .DATA.W     H'739C
+          .DATA.W     H'0800
+          .DATA.W     H'0200
+          .DATA.L     _scra_info
+          .DATA.L     L410
+          .DATA.L     __slow_mvn
+          .DATA.L     _SMV1_SetFont8sp
+          .DATA.L     H'25E00000
+          .DATA.L     _SMV2_SetFont8
+          .DATA.L     H'25F00000
+          .DATA.L     H'25F00002
+          .DATA.L     H'25F00020
+          .DATA.L     H'25F00022
+          .DATA.L     H'25E01000
+          .DATA.L     _SMMI_Ldir8
+          .DATA.L     H'25F00200
+          .DATA.L     _SMMI_Ldir16
+          .DATA.L     H'25E18000
+          .DATA.L     _SMV2_FilMem16
+          .DATA.L     _SMV2_BoxWrite
+_SMLN_LineScrollAct:             ; function: SMLN_LineScrollAct
+                                 ; frame size=60
+          MOV.L       R14,@-R15
+          MOV         R4,R14
+          MOV.L       R13,@-R15
+          MOV.L       R12,@-R15
+          MOV.L       R11,@-R15
+          MOV         #0,R12
+          STS.L       PR,@-R15
+          MOV         #1,R11
+          ADD         #-40,R15
+          MOV         R15,R1
+          MOV.L       L567+4,R2
+          MOV.L       L567,R13
+          MOV.L       L567+8,R3
+          ADD         #20,R1
+          JSR         @R3
+          MOV         #20,R0
+          MOV         R15,R1
+          MOV.L       L567+12,R2
+          MOV.L       L567+8,R3
+          JSR         @R3
+          MOV         #20,R0
+          MOV.B       @(2,R14),R0
+          BRA         L530
+          EXTU.B      R0,R0
+L518:                            ; case label 
+          EXTU.B      R12,R2
+          MOV         #16,R0
+          MOV.B       R2,@(R0,R14)
+          MOV         #64,R3
+          MOV         R3,R0
+          MOV.W       R0,@(22,R14)
+          MOV.L       L567+16,R3
+          MOV.L       R3,@(28,R14)
+          MOV.L       L567+20,R2
+          MOV.L       R2,@(32,R14)
+          MOV.L       L567+20,R3
+          MOV.L       R3,@(36,R14)
+          EXTS.W      R12,R2
+          MOV         R2,R0
+          MOV.W       R0,@(24,R14)
+          MOV         #120,R0
+          MOV.W       R12,@(R0,R14)
+          MOV.B       @(2,R14),R0
+          MOV         R0,R3
+          ADD         #1,R3
+          MOV         R3,R0
+          BRA         L531
+          MOV.B       R0,@(2,R14)
+L519:                            ; case label 
+          MOV.L       L567+24,R3
+          JSR         @R3
+          MOV         #4,R4
+          MOV.L       L567,R4
+          MOV.L       L567+28,R3
+          JSR         @R3
+          NOP
+          MOV.L       L567+32,R3
+          JSR         @R3
+          MOV         #4,R4
+          MOV         #120,R0
+          MOV         R15,R3
+          MOV.W       @(R0,R14),R2
+          ADD         #20,R3
+          SHLL2       R2
+          ADD         R3,R2
+          MOV.L       @R2,R2
+          JSR         @R2
+          MOV         R14,R4
+          MOV         #120,R0
+          MOV.W       @(R0,R14),R3
+          MOV         #17,R0
+          MOV.B       R3,@(R0,R14)
+          MOV.B       @(2,R14),R0
+          MOV         R0,R3
+          ADD         #1,R3
+          MOV         R3,R0
+          MOV.B       R0,@(2,R14)
+L520:                            ; case label 
+          MOV         #120,R0
+          MOV         R15,R2
+          MOV.W       @(R0,R14),R3
+          SHLL2       R3
+          ADD         R2,R3
+          MOV.L       @R3,R3
+          JSR         @R3
+          MOV         R14,R4
+          MOV.L       L567+36,R0
+          MOV.W       @R0,R0
+          TST         #32,R0
+          BT          L531
+          MOV         #120,R0
+          MOV         #5,R2
+          MOV.W       @(R0,R14),R3
+          MOV         #120,R0
+          ADD         #1,R3
+          MOV.W       R3,@(R0,R14)
+          MOV         #120,R0
+          MOV.W       @(R0,R14),R3
+          CMP/HS      R2,R3
+          BF          L533
+          EXTS.W      R12,R2
+          MOV         #120,R0
+          MOV.W       R2,@(R0,R14)
+L533:                             
+          EXTU.B      R11,R3
+          MOV         R3,R0
+          BRA         L531
+          MOV.B       R0,@(2,R14)
+L567:                             
+          .DATA.L     _SMV2_lparam
+          .DATA.L     L428
+          .DATA.L     __quick_mvn
+          .DATA.L     L430
+          .DATA.L     _SMLN_mode_pattbl
+          .DATA.L     H'00080000
+          .DATA.L     _SCL_Open
+          .DATA.L     _SCL_InitLineParamTb
+          .DATA.L     _SCL_Close
+          .DATA.L     _SMPA_pad_edge1
+L530:                             
+          CMP/EQ      #0,R0
+          BT          L518
+          CMP/EQ      #1,R0
+          BT          L519
+          CMP/EQ      #2,R0
+          BT          L520
+L531:                             
+          MOV.L       L568+4,R3
+          JSR         @R3
+          MOV         #4,R4
+          EXTU.B      R11,R2
+          EXTU.B      R11,R3
+          MOV         R2,R0
+          MOV.B       R0,@(2,R13)
+          EXTU.B      R11,R2
+          MOV         R3,R0
+          EXTU.B      R12,R3
+          MOV.B       R0,@(1,R13)
+          MOV         R2,R0
+          MOV.B       R11,@R13
+          MOV.B       R0,@(3,R13)
+          MOV         R3,R0
+          MOV.B       R0,@(4,R13)
+          MOV.L       L568+8,R3
+          MOV.L       R3,@(8,R13)
+          MOV.L       L568+12,R2
+          MOV.L       L568+16,R4
+          MOV.L       L568+20,R3
+          JSR         @R3
+          MOV.L       R2,@(12,R13)
+          MOV.L       L568+24,R3
+          JSR         @R3
+          MOV         #4,R4
+          MOV         #16,R0
+          MOV         R14,R4
+          MOV.L       L568+28,R3
+          MOV.B       @(R0,R14),R2
+          EXTU.B      R2,R2
+          SHLL2       R2
+          ADD         R3,R2
+          MOV.L       @R2,R2
+          JSR         @R2
+          ADD         #16,R4
+          ADD         #40,R15
+          LDS.L       @R15+,PR
+          MOV.L       @R15+,R11
+          MOV.L       @R15+,R12
+          MOV.L       @R15+,R13
+          RTS
+          MOV.L       @R15+,R14
+_SMLN_hline_init:                ; function: SMLN_hline_init
+                                 ; frame size=0
+          MOV         R4,R3
+          MOV         #0,R2
+          ADD         #96,R3
+          MOV.W       R2,@R3
+          MOV         R4,R3
+          MOV.W       L568,R2
+          ADD         #98,R3
+          MOV.W       R2,@R3
+          MOV         R4,R3
+          MOV         #0,R2
+          ADD         #100,R3
+          RTS
+          MOV.W       R2,@R3
+L568:                             
+          .DATA.W     H'2000
+          .RES.W      1
+          .DATA.L     _SCL_Open
+          .DATA.L     H'25E1C000
+          .DATA.L     H'25E1E000
+          .DATA.L     _SMV2_lparam
+          .DATA.L     _SCL_SetLineParam
+          .DATA.L     _SCL_Close
+          .DATA.L     _SMV1_SpritePutModeTbl
+_SMLN_hline_main:                ; function: SMLN_hline_main
+                                 ; frame size=28
+          MOV.L       R14,@-R15
+          MOV         R4,R3
+          MOV.L       R13,@-R15
+          MOV         R4,R14
+          ADD         #96,R3
+          MOV.L       R12,@-R15
+          MOV.L       R11,@-R15
+          MOV.L       R10,@-R15
+          STS.L       PR,@-R15
+          STS.L       MACL,@-R15
+          MOV.W       L569,R10
+          MOV.W       @R3,R2
+          ADD         #1,R2
+          MOV.W       R2,@R3
+          MOV         R14,R3
+          ADD         #100,R3
+          MOV.W       @R3,R2
+          ADD         #1,R2
+          MOV.W       R2,@R3
+          MOV.L       L569+8,R4
+          MOV.W       @R4,R4
+          EXTU.W      R4,R0
+          TST         #4,R0
+          BT/S        L534
+          MOV         #12,R11
+          MOV         R14,R3
+          MOV.W       L569+2,R2
+          ADD         #98,R3
+          MOV.W       @R3,R1
+          SUB         R2,R1
+          MOV.W       R1,@R3
+          MOV         R14,R3
+          ADD         #98,R3
+          MOV.W       @R3,R2
+          MOV.W       L569+4,R3
+          CMP/GE      R3,R2
+          BT          L535
+          MOV         R14,R3
+          ADD         #98,R3
+          MOV.W       L569+4,R2
+          MOV.W       R2,@R3
+L535:                             
+L534:                             
+          EXTU.W      R4,R0
+          TST         #8,R0
+          BT          L536
+          MOV         R14,R3
+          MOV.W       L569+2,R2
+          ADD         #98,R3
+          MOV.W       @R3,R1
+          ADD         R2,R1
+          MOV.W       R1,@R3
+          MOV         R14,R3
+          ADD         #98,R3
+          MOV.W       @R3,R2
+          MOV.W       L569+6,R3
+          CMP/GT      R3,R2
+          BF          L537
+          MOV         R14,R3
+          ADD         #98,R3
+          MOV.W       L569+6,R2
+          MOV.W       R2,@R3
+L537:                             
+L536:                             
+          MOV         #0,R13
+L539:                             
+          MOV         R14,R12
+          EXTU.W      R13,R3
+          ADD         #96,R12
+          MOV.W       @R12,R12
+          ADD         R3,R12
+          EXTS.W      R12,R12
+          MOV.L       L569+12,R3
+          JSR         @R3
+          EXTS.W      R12,R4
+          MOV         R0,R4
+          MOV         R14,R5
+          ADD         #96,R5
+          MOV.W       @(2,R5),R0
+          MOV         R0,R2
+          MUL.L       R2,R4
+          MOV.W       @(4,R5),R0
+          STS         MACL,R4
+          MOV.L       L569+16,R2
+          MOV         R0,R3
+          SHLL16      R3
+          ADD         R3,R4
+          EXTS.W      R11,R3
+          MULS        R3,R13
+          ADD         #1,R13
+          STS         MACL,R3
+          EXTS.W      R3,R3
+          ADD         R2,R3
+          MOV.L       R4,@R3
+          EXTU.W      R13,R3
+          CMP/GE      R10,R3
+          BF          L539
+          LDS.L       @R15+,MACL
+          LDS.L       @R15+,PR
+          MOV.L       @R15+,R10
+          MOV.L       @R15+,R11
+          MOV.L       @R15+,R12
+          MOV.L       @R15+,R13
+          RTS
+          MOV.L       @R15+,R14
+L569:                             
+          .DATA.W     H'00E0
+          .DATA.W     H'0100
+          .DATA.W     H'9000
+          .DATA.W     H'7000
+          .DATA.L     _SMPA_pad_data1
+          .DATA.L     _SMMI_Sinset8
+          .DATA.L     H'00000010+_SMV2_lparam
+_SMLN_vcell_init:                ; function: SMLN_vcell_init
+                                 ; frame size=0
+          MOV         R4,R3
+          MOV         #0,R2
+          ADD         #108,R3
+          MOV.W       R2,@R3
+          MOV         R4,R3
+          MOV.W       L570,R2
+          ADD         #110,R3
+          RTS
+          MOV.W       R2,@R3
+L570:                             
+          .DATA.W     H'2000
+_SMLN_vcell_main:                ; function: SMLN_vcell_main
+                                 ; frame size=20
+          MOV.L       R14,@-R15
+          MOV         R4,R3
+          MOV.L       R13,@-R15
+          MOV         R4,R14
+          ADD         #108,R3
+          MOV.L       R12,@-R15
+          STS.L       PR,@-R15
+          STS.L       MACL,@-R15
+          MOV.W       @R3,R2
+          ADD         #1,R2
+          MOV.W       R2,@R3
+          MOV.L       L571+6,R4
+          MOV.W       @R4,R4
+          EXTU.W      R4,R0
+          TST         #1,R0
+          BT          L540
+          MOV         R14,R3
+          MOV.W       L571,R2
+          ADD         #110,R3
+          MOV.W       @R3,R1
+          SUB         R2,R1
+          MOV.W       R1,@R3
+          MOV         R14,R3
+          ADD         #110,R3
+          MOV.W       @R3,R2
+          MOV.W       L571+2,R3
+          CMP/GE      R3,R2
+          BT          L541
+          MOV         R14,R3
+          ADD         #110,R3
+          MOV.W       L571+2,R2
+          MOV.W       R2,@R3
+L541:                             
+L540:                             
+          EXTU.W      R4,R0
+          TST         #2,R0
+          BT          L542
+          MOV         R14,R3
+          MOV.W       L571,R2
+          ADD         #110,R3
+          MOV.W       @R3,R1
+          ADD         R2,R1
+          MOV.W       R1,@R3
+          MOV         R14,R3
+          ADD         #110,R3
+          MOV.W       @R3,R2
+          MOV.W       L571+4,R3
+          CMP/GT      R3,R2
+          BF          L543
+          MOV         R14,R3
+          ADD         #110,R3
+          MOV.W       L571+4,R2
+          MOV.W       R2,@R3
+L543:                             
+L542:                             
+          MOV         #0,R13
+L545:                             
+          MOV         R14,R12
+          EXTU.W      R13,R3
+          ADD         #108,R12
+          MOV         R3,R2
+          MOV.W       @R12,R12
+          SHLL2       R2
+          MOV.L       L571+10,R3
+          ADD         R2,R12
+          EXTS.W      R12,R12
+          JSR         @R3
+          EXTS.W      R12,R4
+          MOV         R0,R4
+          MOV         R14,R2
+          ADD         #110,R2
+          MOV.W       @R2,R3
+          EXTU.W      R13,R2
+          MUL.L       R3,R4
+          SHLL2       R2
+          ADD         #1,R13
+          STS         MACL,R4
+          MOV.L       L571+14,R3
+          ADD         R3,R2
+          MOV.L       R4,@R2
+          MOV         #64,R3
+          EXTU.W      R13,R2
+          CMP/GE      R3,R2
+          BF          L545
+          LDS.L       @R15+,MACL
+          LDS.L       @R15+,PR
+          MOV.L       @R15+,R12
+          MOV.L       @R15+,R13
+          RTS
+          MOV.L       @R15+,R14
+L571:                             
+          .DATA.W     H'0100
+          .DATA.W     H'B000
+          .DATA.W     H'5000
+          .DATA.L     _SMPA_pad_data1
+          .DATA.L     _SMMI_Sinset8
+          .DATA.L     H'00001810+_SMV2_lparam
+_SMLN_hzoom_init:                ; function: SMLN_hzoom_init
+                                 ; frame size=0
+          MOV         #0,R5
+          MOV         R4,R3
+          EXTS.W      R5,R2
+          ADD         #102,R3
+          MOV.W       R5,@R3
+          MOV         R4,R3
+          ADD         #104,R3
+          MOV.W       R5,@R3
+          MOV         R4,R3
+          ADD         #106,R3
+          RTS
+          MOV.W       R2,@R3
+_SMLN_hzoom_main:                ; function: SMLN_hzoom_main
+                                 ; frame size=36
+          MOV.L       R14,@-R15
+          MOV.L       R13,@-R15
+          MOV.L       R12,@-R15
+          MOV.L       R11,@-R15
+          MOV.L       R10,@-R15
+          MOV.L       R9,@-R15
+          MOV.L       R8,@-R15
+          STS.L       PR,@-R15
+          STS.L       MACL,@-R15
+          MOV.W       L572,R8
+          MOV         #96,R9
+          MOV         #12,R10
+          MOV.L       L572+2,R11
+          MOV         R4,R13
+          MOV         R4,R3
+          ADD         #102,R3
+          MOV.W       @R3,R2
+          ADD         #1,R2
+          MOV.W       R2,@R3
+          MOV         R13,R3
+          ADD         #106,R3
+          MOV.W       @R3,R2
+          ADD         #1,R2
+          MOV.W       R2,@R3
+          MOV         #0,R14
+L547:                             
+          MOV         R13,R12
+          EXTU.W      R14,R3
+          ADD         #102,R12
+          MOV.W       @R12,R12
+          ADD         R3,R12
+          EXTS.W      R12,R12
+          MOV.L       L572+6,R3
+          JSR         @R3
+          EXTS.W      R12,R4
+          MUL.L       R9,R0
+          EXTS.W      R10,R2
+          MOV.L       L572+10,R3
+          STS         MACL,R0
+          MOV         R0,R4
+          MULS        R2,R14
+          ADD         R11,R4
+          STS         MACL,R2
+          ADD         #1,R14
+          EXTS.W      R2,R2
+          ADD         R3,R2
+          MOV.L       R4,@(8,R2)
+          EXTU.W      R14,R2
+          CMP/GE      R8,R2
+          BF          L547
+          LDS.L       @R15+,MACL
+          LDS.L       @R15+,PR
+          MOV.L       @R15+,R8
+          MOV.L       @R15+,R9
+          MOV.L       @R15+,R10
+          MOV.L       @R15+,R11
+          MOV.L       @R15+,R12
+          MOV.L       @R15+,R13
+          RTS
+          MOV.L       @R15+,R14
+L572:                             
+          .DATA.W     H'00E0
+          .DATA.L     H'0000A000
+          .DATA.L     _SMMI_Sinset8
+          .DATA.L     H'00000010+_SMV2_lparam
+_SMLN_hvscl_init:                ; function: SMLN_hvscl_init
+                                 ; frame size=0
+          MOV         #0,R5
+          MOV         R4,R3
+          EXTS.W      R5,R2
+          ADD         #96,R3
+          MOV.W       R5,@R3
+          MOV         R4,R3
+          ADD         #98,R3
+          MOV.W       R5,@R3
+          MOV         R4,R3
+          ADD         #100,R3
+          MOV.W       R5,@R3
+          MOV         R4,R3
+          ADD         #114,R3
+          MOV.W       R5,@R3
+          MOV         R4,R3
+          ADD         #116,R3
+          MOV.W       R5,@R3
+          MOV         R4,R3
+          ADD         #118,R3
+          RTS
+          MOV.W       R2,@R3
+_SMLN_hvscl_main:                ; function: SMLN_hvscl_main
+                                 ; frame size=12
+          MOV.L       R14,@-R15
+          MOV.L       R13,@-R15
+          STS.L       MACL,@-R15
+          MOV.W       L573,R13
+          MOV.W       L573+2,R14
+          MOV.L       L573+8,R7
+          MOV         #12,R6
+          MOV         R4,R3
+          ADD         #114,R3
+          MOV.W       @R3,R2
+          ADD         #1,R2
+          MOV.W       R2,@R3
+          MOV         #0,R5
+L549:                             
+          MOV         R4,R1
+          EXTU.W      R5,R3
+          EXTS.W      R6,R2
+          ADD         #114,R1
+          MULS        R2,R5
+          MOV.W       @R1,R1
+          STS         MACL,R2
+          ADD         #1,R5
+          ADD         R3,R1
+          EXTS.W      R2,R2
+          SHLL16      R1
+          MOV         R7,R3
+          ADD         #16,R3
+          ADD         R3,R2
+          MOV.L       R1,@(4,R2)
+          MOV         #32,R3
+          EXTU.W      R5,R2
+          CMP/GE      R3,R2
+          BF          L549
+          EXTU.W      R5,R3
+          MOV         #64,R2
+          CMP/GE      R2,R3
+          BT          L550
+L551:                             
+          MOV         R4,R1
+          EXTU.W      R5,R3
+          EXTS.W      R6,R2
+          ADD         #114,R1
+          MULS        R2,R5
+          MOV.W       @R1,R1
+          STS         MACL,R2
+          ADD         #1,R5
+          NEG         R1,R1
+          EXTS.W      R2,R2
+          ADD         R3,R1
+          SHLL16      R1
+          MOV         R7,R3
+          ADD         #16,R3
+          ADD         R3,R2
+          MOV.L       R1,@(4,R2)
+          MOV         #64,R3
+          EXTU.W      R5,R2
+          CMP/GE      R3,R2
+          BF          L551
+L550:                             
+          EXTU.W      R5,R1
+          MOV         R4,R0
+          EXTU.W      R5,R3
+          ADD         #114,R0
+          MOV.W       @R0,R0
+          AND         #63,R0
+          ADD         R0,R1
+          EXTS.W      R1,R1
+          EXTS.W      R1,R2
+          CMP/GE      R2,R3
+          BT          L552
+L553:                             
+          EXTU.W      R5,R0
+          EXTS.W      R6,R3
+          MOV         R7,R2
+          SHLL16      R0
+          MULS        R3,R5
+          ADD         #16,R2
+          STS         MACL,R3
+          ADD         #1,R5
+          EXTS.W      R3,R3
+          ADD         R2,R3
+          MOV.L       R0,@(4,R3)
+          EXTS.W      R1,R2
+          EXTU.W      R5,R3
+          CMP/GE      R2,R3
+          BF          L553
+L552:                             
+          EXTS.W      R1,R1
+          EXTU.W      R5,R2
+          CMP/GE      R14,R2
+          BT/S        L554
+          SHLL16      R1
+L555:                             
+          EXTS.W      R6,R2
+          MOV         R7,R3
+          MULS        R2,R5
+          ADD         #16,R3
+          STS         MACL,R2
+          ADD         #1,R5
+          EXTS.W      R2,R2
+          ADD         R3,R2
+          MOV.L       R1,@(4,R2)
+          EXTU.W      R5,R2
+          CMP/GE      R14,R2
+          BF          L555
+L554:                             
+          MOV         R4,R0
+          MOV.W       L573+4,R3
+          ADD         #114,R0
+          EXTU.W      R5,R4
+          MOV.W       @R0,R0
+          SHLL8       R4
+          AND         R3,R0
+          EXTS.W      R0,R0
+          EXTU.W      R5,R3
+          CMP/GE      R13,R3
+          BT/S        L556
+          EXTS.W      R4,R4
+L557:                             
+          EXTS.W      R4,R1
+          EXTS.W      R0,R3
+          EXTS.W      R6,R2
+          SHLL8       R1
+          ADD         R3,R4
+          MULS        R2,R5
+          MOV         R7,R3
+          STS         MACL,R2
+          ADD         #1,R5
+          ADD         #16,R3
+          EXTS.W      R2,R2
+          ADD         R3,R2
+          MOV.L       R1,@(4,R2)
+          EXTU.W      R5,R2
+          CMP/GE      R13,R2
+          BF          L557
+L556:                             
+          LDS.L       @R15+,MACL
+          MOV.L       @R15+,R13
+          RTS
+          MOV.L       @R15+,R14
+L573:                             
+          .DATA.W     H'00E0
+          .DATA.W     H'0080
+          .DATA.W     H'03F0
+          .RES.W      1
+          .DATA.L     _SMV2_lparam
+_SMLN_mixed_init:                ; function: SMLN_mixed_init
+                                 ; frame size=32
+          MOV.L       R14,@-R15
+          MOV.L       R13,@-R15
+          MOV.L       R12,@-R15
+          MOV.L       R11,@-R15
+          MOV.L       R10,@-R15
+          MOV         #12,R11
+          MOV.L       R9,@-R15
+          STS.L       PR,@-R15
+          STS.L       MACL,@-R15
+          MOV.W       L574,R9
+          MOV.W       L574+2,R10
+          MOV.W       L574+4,R12
+          BSR         _SMLN_hline_init
+          MOV         R4,R14
+          BSR         _SMLN_hzoom_init
+          MOV         R14,R4
+          BSR         _SMLN_hvscl_init
+          MOV         R14,R4
+          MOV         #0,R14
+L559:                             
+          EXTU.W      R14,R1
+          MOV.W       L574,R0
+          MOV.L       L574+6,R3
+          SHLL2       R1
+          SHLL2       R1
+          SHLL2       R1
+          JSR         @R3
+          SHLL        R1
+          EXTS.W      R0,R13
+          MOV.L       L574+10,R3
+          JSR         @R3
+          EXTS.W      R13,R4
+          MUL.L       R10,R0
+          EXTS.W      R11,R2
+          MOV.L       L574+14,R3
+          STS         MACL,R0
+          MOV         R0,R4
+          MULS        R2,R14
+          ADD         R12,R4
+          STS         MACL,R2
+          ADD         #1,R14
+          EXTS.W      R2,R2
+          ADD         R3,R2
+          MOV.L       R4,@(8,R2)
+          EXTU.W      R14,R2
+          CMP/GE      R9,R2
+          BF          L559
+          LDS.L       @R15+,MACL
+          LDS.L       @R15+,PR
+          MOV.L       @R15+,R9
+          MOV.L       @R15+,R10
+          MOV.L       @R15+,R11
+          MOV.L       @R15+,R12
+          MOV.L       @R15+,R13
+          RTS
+          MOV.L       @R15+,R14
+L574:                             
+          .DATA.W     H'00E0
+          .DATA.W     H'00C0
+          .DATA.W     H'4000
+          .DATA.L     __divls
+          .DATA.L     _SMMI_Sinset8
+          .DATA.L     H'00000010+_SMV2_lparam
+_SMLN_mixed_main:                ; function: SMLN_mixed_main
+                                 ; frame size=12
+          MOV.L       R12,@-R15
+          MOV.L       R11,@-R15
+          STS.L       MACL,@-R15
+          MOV.W       L575,R11
+          MOV.W       L575+2,R12
+          MOV.L       L575+4,R1
+          MOV         R4,R3
+          ADD         #100,R3
+          MOV.W       @R3,R2
+          ADD         #1,R2
+          MOV.W       R2,@R3
+          MOV         R4,R3
+          ADD         #114,R3
+          MOV.W       @R3,R2
+          ADD         #1,R2
+          MOV.W       R2,@R3
+          MOV.L       L575+8,R5
+          MOV         #0,R6
+L561:                             
+          MOV.L       @(8,R5),R7
+          MOV         R1,R3
+          MOV         R4,R2
+          MOV         R4,R0
+          MUL.L       R12,R7
+          ADD         #100,R2
+          ADD         #114,R0
+          STS         MACL,R7
+          MOV.W       @R0,R0
+          SUB         R7,R3
+          MOV         R3,R7
+          MOV.W       @R2,R3
+          SHLL16      R3
+          ADD         R3,R7
+          EXTU.W      R6,R3
+          MOV.L       R7,@R5
+          ADD         R3,R0
+          ADD         #1,R6
+          SHLL16      R0
+          EXTU.W      R6,R2
+          MOV.L       R0,@(4,R5)
+          CMP/GE      R11,R2
+          BF/S        L561
+          ADD         #12,R5
+          LDS.L       @R15+,MACL
+          MOV.L       @R15+,R11
+          RTS
+          MOV.L       @R15+,R12
+L575:                             
+          .DATA.W     H'00E0
+          .DATA.W     H'00A0
+          .DATA.L     H'00A00000
+          .DATA.L     H'00000010+_SMV2_lparam
+          .SECTION    D,DATA,ALIGN=4
+L362:                            ; static: SMV1_sprwk
+          .DATA.W     H'0400,H'0040,H'0040,H'0100,H'0200
+          .DATAB.B    2,0
+          .DATA.L     L359,L360,L361
+L385:                            ; static: SMLN_hlinescl_pat
+          .DATA.W     H'000C,H'0028,H'0000,H'0008,H'0008,H'0000,H'0000,H'0000,H'0000,H'0008,H'0008,H'0008,H'0000,H'002C,H'0000,H'0008,H'0008,H'0010,H'0000,H'0029,H'0000,H'0008,H'0008,H'0018,H'0000,H'002E,H'0000,H'0008,H'0008,H'0020,H'0000,H'0025,H'0000,
++                     H'0008,H'0008,H'0028,H'0000,H'0033,H'0000,H'0008,H'0008,H'0030,H'0000,H'0023,H'0000,H'0008,H'0008,H'0038,H'0000,H'0032,H'0000,H'0008,H'0008,H'0040,H'0000,H'002F,H'0000,H'0008,H'0008,H'0048,H'0000,H'002C,H'0000,H'0008,H'0008,H'0050,
++                     H'0000,H'002C,H'0000,H'0008,H'0008,H'0058,H'0000
+L386:                            ; static: SMLN_vcelscl_pat
+          .DATA.W     H'000C,H'0036,H'0000,H'0008,H'0008,H'0000,H'0000,H'0000,H'0000,H'0008,H'0008,H'0008,H'0000,H'0023,H'0000,H'0008,H'0008,H'0010,H'0000,H'0025,H'0000,H'0008,H'0008,H'0018,H'0000,H'002C,H'0000,H'0008,H'0008,H'0020,H'0000,H'002C,H'0000,
++                     H'0008,H'0008,H'0028,H'0000,H'0033,H'0000,H'0008,H'0008,H'0030,H'0000,H'0023,H'0000,H'0008,H'0008,H'0038,H'0000,H'0032,H'0000,H'0008,H'0008,H'0040,H'0000,H'002F,H'0000,H'0008,H'0008,H'0048,H'0000,H'002C,H'0000,H'0008,H'0008,H'0050,
++                     H'0000,H'002C,H'0000,H'0008,H'0008,H'0058,H'0000
+L387:                            ; static: SMLN_hvlinescl_pat
+          .DATA.W     H'000D,H'0028,H'0000,H'0008,H'0008,H'0000,H'0000,H'002C,H'0000,H'0008,H'0008,H'0008,H'0000,H'0029,H'0000,H'0008,H'0008,H'0010,H'0000,H'002E,H'0000,H'0008,H'0008,H'0018,H'0000,H'0025,H'0000,H'0008,H'0008,H'0020,H'0000,H'0000,H'0000,
++                     H'0008,H'0008,H'0028,H'0000,H'0036,H'0000,H'0008,H'0008,H'0030,H'0000,H'0033,H'0000,H'0008,H'0008,H'0038,H'0000,H'0023,H'0000,H'0008,H'0008,H'0040,H'0000,H'0032,H'0000,H'0008,H'0008,H'0048,H'0000,H'002F,H'0000,H'0008,H'0008,H'0050,
++                     H'0000,H'002C,H'0000,H'0008,H'0008,H'0058,H'0000,H'002C,H'0000,H'0008,H'0008,H'0060,H'0000
+L388:                            ; static: SMLN_hlzoomscl_pat
+          .DATA.W     H'000A,H'0028,H'0000,H'0008,H'0008,H'0000,H'0000,H'002C,H'0000,H'0008,H'0008,H'0008,H'0000,H'0029,H'0000,H'0008,H'0008,H'0010,H'0000,H'002E,H'0000,H'0008,H'0008,H'0018,H'0000,H'0025,H'0000,H'0008,H'0008,H'0020,H'0000,H'0000,H'0000,
++                     H'0008,H'0008,H'0028,H'0000,H'003A,H'0000,H'0008,H'0008,H'0030,H'0000,H'002F,H'0000,H'0008,H'0008,H'0038,H'0000,H'002F,H'0000,H'0008,H'0008,H'0040,H'0000,H'002D,H'0000,H'0008,H'0008,H'0048,H'0000
+L389:                            ; static: SMLN_mixed_pat
+          .DATA.W     H'0005,H'002D,H'0000,H'0008,H'0008,H'0000,H'0000,H'0029,H'0000,H'0008,H'0008,H'0008,H'0000,H'0038,H'0000,H'0008,H'0008,H'0010,H'0000,H'0025,H'0000,H'0008,H'0008,H'0018,H'0000,H'0024,H'0000,H'0008,H'0008,H'0020,H'0000
+          .RES.W      1
+_SMLN_mode_pattbl:               ; static: SMLN_mode_pattbl
+          .DATA.L     L385,L386,L388,L387,L389
+L428:
+          .DATA.L     _SMLN_hline_init,_SMLN_vcell_init,_SMLN_hzoom_init,_SMLN_hvscl_init,_SMLN_mixed_init
+L430:
+          .DATA.L     _SMLN_hline_main,_SMLN_vcell_main,_SMLN_hzoom_main,_SMLN_hvscl_main,_SMLN_mixed_main
+          .SECTION    C,DATA,ALIGN=4
+L393:
+          .DATA.W     H'C044,H'FFFF,H'FFFF,H'FFFF,H'FFFF,H'FFFF,H'FFFF,H'FFFF
+L410:
+          .DATA.W     H'1082,H'1084,H'1086,H'1088,H'108A,H'108C,H'108E,H'1090,H'1092,H'1094,H'1096,H'1098,H'109A,H'109C,H'109E,H'10A0
+          .SECTION    B,DATA,ALIGN=4
+L359:                            ; static: sp2CharTbl
+          .RES.W      1024
+L360:                            ; static: sp2CmdChain
+          .RES.L      2048
+L361:                            ; static: sp2DrawPrtyBlk
+          .RES.W      1024
+          .END

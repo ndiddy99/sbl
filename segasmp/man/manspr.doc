@@ -1,0 +1,128 @@
+*******************************************************************************
+●ドキュメント種別	：各サンプル説明ファイル
+●ファイル記号名称	：manspr.doc
+●対象ライブラリ記号名称：spr
+●対象ライブラリ名称	：スプライト
+●バージョン　　	：1.00
+●作成者		：H.E
+●作成日		：1994-7-25
+●その他のメッセージ　	：なし
+*******************************************************************************
+
+1.サンプルの動作内容と使用方法
+
+	●smpspr20.c
+		[タイトル]	スプライト表示基本処理のテスト
+		[動作内容]	各種スプライトコマンドの実行および
+                                次のＴＶモードのテスト
+                                (1) 320x240 モード
+                                (2) 640x240 モード
+                                (3) 640x480 モード (倍密インターレース)
+		[使用方法]	(1) 以下のコマンドでブートＲＯＭを初期化。
+                                    RS [ﾘﾀｰﾝ]
+                                    GO [ﾘﾀｰﾝ]
+                                    [CTRL-C]
+                                    G 400
+                                    [CTRL-C]
+                                (2) smpscr2.abs を 6002000H 番地にロードし、
+                                    GO 6002000 [ﾘﾀｰﾝ] で実行。
+                                (3) キーﾊﾟｯﾄﾞ操作
+       					A  : (1) 画  面＝３２０ｘ２４０
+                                                 カラー＝ＲＧＢモード
+                                           : (2) 画  面＝３２０ｘ２４０
+                                                 カラー＝８ビットモード
+                                           : (3) 画  面＝６４０ｘ４８０
+                                                 カラー＝８ビットモード
+                                                （座標値もＸ，Ｙ２倍にする）
+                                              A を押すと(1),(2),(3)が切り替わる
+                                        B  : 画  面＝６４０ｘ２４０
+                                             カラー＝８ビットモード
+                                        C  : 画  面＝６４０ｘ４８０
+                                             カラー＝８ビットモード
+		[使用ファンクション]
+                                SPR_Initial
+                                SPR_SetEraseData
+                                SPR_SetTvMode
+                                SCL_AllocColRam
+                                SCL_SetColRamMode
+                                SCL_SetColRam
+                                SCL_SetDisplayMode
+                                SCL_SetFrameInterval
+                                SCL_DisplayFrame
+	                        SCL_Vdp2Init
+	                        SCL_SetPriority
+	                        SCL_SetSpriteMode
+		[備考]		なし
+
+	●smpspr70.c
+		[タイトル]	追加機能による３Ｄテスト表示
+		[動作内容]	オブジェクト間接続ポリゴンオブジェクトと
+                                追加クラスタ定義項目である座標変換前ユーザ
+                                コールバックルーチンおよびコンテキストエリア
+                                を用いた生物モデルの動作シミュレーション。
+                                パッドによるＴＶモード切り替えとモデルの
+                                回転移動表示をする。
+		[使用方法]	(1) 以下のコマンドでブートＲＯＭを初期化。
+                                    RS [ﾘﾀｰﾝ]
+                                    GO [ﾘﾀｰﾝ]
+                                    [CTRL-C]
+                                    G 400
+                                    [CTRL-C]
+                                (2) smpscr7.abs を 6002000H 番地にロードし、
+                                    GO 6002000 [ﾘﾀｰﾝ] で実行。
+                                (3) キーﾊﾟｯﾄﾞ操作
+                                        A     : 画面＝３５２ｘ２４０
+                                                グーローシェーディング表示
+                                        B     : 画面＝７０４ｘ４８０
+                                                ８ビットモードによる
+                                                フラットシェーディング表示
+                                        C     : 画面＝３５２ｘ２４０
+                                                カラー＝ＲＧＢ   テクスチャ＋
+                                                グーローシェーディング表示
+                                        X     : モデルのＸ軸回転
+                                        Y     : モデルのＹ軸回転
+                                        Z     : モデルのＺ軸回転
+                                        LEFT  : モデルのＸ軸マイナス移動
+                                        RIGHT : モデルのＸ軸プラス移動
+                                        UP    : モデルのＺ軸マイナス移動
+                                        DOWN  : モデルのＺ軸プラス移動
+		[使用ファンクション]
+                                SYS_CHGSYSCK
+	                        SPR_2Initial
+                                SPR_2FrameChgIntr 
+                                SPR_2SetTvMode
+                                SPR_2FrameEraseData
+	                        SPR_2OpenCommand
+	                        SPR_2SysClip
+	                        SPR_2LocalCoord
+	                        SPR_2CloseCommand
+	                        SPR_3Initial
+	                        SPR_3SetTexture
+	                        SPR_3SetLight
+	                        SPR_3SetView
+	                        SPR_3MoveCluster
+	                        SPR_3SetZSortMinMax
+	                        SPR_3SetClipLevel
+	                        SPR_3CallAllCluster
+	                        SPR_3DrawModel
+	                        SPR_3Flush
+                                SPR_3SetPixelCount
+                                SCL_Vdp2Init
+	                        SCL_SetPriority
+                                SCL_SetSpriteMode
+                                SCL_SetColRamMode
+                                SCL_DisplayFrame
+                                SCL_SetDisplayMode
+		[備考]
+                                以下の定義を 26 にするとシステム動作クロックが
+                                ２６Ｍヘルツになり、画面幅も７０４から６４０に
+                                なる。
+                                #define		SYSTEM_CLOCK   28
+
+
+2.注意事項
+
+	なし
+
+********************************** end of file ********************************
+

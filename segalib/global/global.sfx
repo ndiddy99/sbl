@@ -1,0 +1,24 @@
+##############################################################
+#
+# Makefile
+#
+# DO NOT DETABIFY (unless your make doesn't care about tabs)
+# ... or BAD things will happen!!
+#
+##############################################################
+
+.SUFFIXES: .s .c .o .lst .sc
+
+## -g in .c.sc is needed, -Wa,-ahdl needs it!!
+.c.sc:
+	$(CC) $(CFLAGS) $(INCLUDES) -g -Wa,-ahdl $< > $*.sc
+
+.c.lst:
+	$(CC) $(CFLAGS) $(INCLUDES) -S -o $*.lst $<
+
+.c.o:
+	$(CC) $(CFLAGS) $(INCLUDES) -c $<
+
+.s.o:
+	$(AS) $(ASFLAGS) $(INCLUDES) -o $@ $<
+

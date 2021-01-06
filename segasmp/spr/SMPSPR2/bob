@@ -1,0 +1,4 @@
+gcc -m2 -D_SH -DMODEL_S -I../../../segalib/include -c -o smpspr20.o smpspr20.c
+ld -o smpspr2.sre -T lnk_sre.x ../../entry/entry.o ../../entry/stack.o smpspr20.o ../../v_blank/v_blank.o ../../v_blank/set_vb.o -L../../../segalib/lib -L../../../segalib/lib -lsat -lper -lsat -Lc:/gnu/lib -lgcc -lc -lm
+sretobin smpspr2.sre smpspr2.bin
+address span <6010000,601868C>

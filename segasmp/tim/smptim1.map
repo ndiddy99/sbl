@@ -1,0 +1,902 @@
+__main.o needed due to ___main
+fp-bit.o needed due to ___addsf3
+_ashiftlt.o needed due to ___ashlsi3
+_muldi3.o needed due to ___muldi3
+_lshiftrt.o needed due to ___lshrsi3
+_ashiftrt.o needed due to ___ashiftrt_r4_31
+dp-bit.o needed due to ___make_dp
+_mulsi3.o needed due to ___mulsi3
+_lshrdi3.o needed due to ___lshrdi3
+sprintf.o needed due to _sprintf
+strlen.o needed due to _strlen
+vfprintf.o needed due to _vfprintf
+reent.o needed due to __impure_ptr
+fputs.o needed due to _fputs
+fputc.o needed due to _fputc
+findfp.o needed due to ___sinit
+cvt.o needed due to __llicvt
+ecvtbuf.o needed due to __dcvt
+mallocr.o needed due to __malloc_r
+fvwrite.o needed due to ___sfvwrite
+wbuf.o needed due to ___swbuf
+stdio.o needed due to ___sread
+memset.o needed due to _memset
+fflush.o needed due to _fflush
+fwalk.o needed due to __fwalk
+dtoa.o needed due to __dtoa_r
+strcpy.o needed due to _strcpy
+mprec.o needed due to __Balloc
+sbrkr.o needed due to __sbrk_r
+memcpy.o needed due to _memcpy
+fiprintf.o needed due to _fiprintf
+wsetup.o needed due to ___swsetup
+memmove.o needed due to _memmove
+memchr.o needed due to _memchr
+filer.o needed due to __close_r
+callocr.o needed due to __calloc_r
+syscalls.o needed due to __read
+vfiprintf.o needed due to _vfiprintf
+makebuf.o needed due to ___smakebuf
+trap.o needed due to __trap3
+abort.o needed due to _abort
+fstatr.o needed due to __fstat_r
+raise.o needed due to _raise
+signalr.o needed due to __kill_r
+_divdi3.o needed due to ___divdi3
+_moddi3.o needed due to ___moddi3
+_udivdi3.o needed due to ___udivdi3
+_udivmoddi4.o needed due to ___udivmoddi4
+_umoddi3.o needed due to ___umoddi3
+_movstr.o needed due to ___movstr
+_sdivsi3.o needed due to ___sdivsi3
+_udivsi3.o needed due to ___udivsi3
+_ashiftrt_n.o needed due to ___ashrsi3
+Allocating common _max_count_si: 4 at 0 __main.o
+Allocating common _max_count_hi: 4 at 4 __main.o
+Allocating common _max_si: 4 at 8 __main.o
+Allocating common _max_hi: 4 at c __main.o
+Allocating common _errno: 4 at 0 sbrkr.o
+**FILES**
+
+  ../entry/entry.o
+00000000 00000000 2** 2d .text
+00000000 00000000 2** 2d .data
+00000000 00000000 2** 2d .bss
+00000000 00000050 2** 2d .entry
+
+  ../entry/stack.o
+00000000 00000000 2** 2d .text
+00000000 00000000 2** 2d .data
+00000000 00000000 2** 2d .bss
+00000000 00002000 2** 2d .stack
+
+  smptim1.o
+00000000 00000280 2** 2d .text
+00000000 00000000 2** 2d .data
+00000000 00000000 2** 2d .bss
+
+  __main.o
+00000280 00000090 2** 2d .text
+00000000 00000004 2** 2d .data
+00000000 00000000 2** 2d .bss
+00000028 00000010 2** 2d COMMON
+
+  fp-bit.o
+00000310 00000b9c 2** 2d .text
+00000004 00000000 2** 2d .data
+00000000 00000010 2** 2d .bss
+
+  _ashiftlt.o
+00000eac 000000b4 2** 2d .text
+00000004 00000000 2** 2d .data
+00000010 00000000 2** 2d .bss
+
+  _muldi3.o
+00000f60 000000c4 2** 2d .text
+00000004 00000000 2** 2d .data
+00000010 00000000 2** 2d .bss
+
+  _lshiftrt.o
+00001024 000000b4 2** 2d .text
+00000004 00000000 2** 2d .data
+00000010 00000000 2** 2d .bss
+
+  _ashiftrt.o
+000010d8 00000052 2** 2d .text
+00000004 00000000 2** 2d .data
+00000010 00000000 2** 2d .bss
+
+  dp-bit.o
+0000112c 00001098 2** 2d .text
+00000004 00000000 2** 2d .data
+00000010 00000014 2** 2d .bss
+
+  _mulsi3.o
+000021c4 00000022 2** 2d .text
+00000004 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  _lshrdi3.o
+000021e8 0000007c 2** 2d .text
+00000004 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  sprintf.o
+00002264 000000b0 2** 2d .text
+00000004 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  strlen.o
+00002314 0000001e 2** 2d .text
+00000004 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  vfprintf.o
+00002334 00000c48 2** 2d .text
+00000004 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  reent.o
+00002f7c 00000148 2** 2d .text
+00000004 00000318 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  fputs.o
+000030c4 0000003c 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  fputc.o
+00003100 00000058 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  findfp.o
+00003158 00000218 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  cvt.o
+00003370 00000598 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  ecvtbuf.o
+00003908 00000728 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  mallocr.o
+00004030 00000300 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  fvwrite.o
+00004330 00000260 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  wbuf.o
+00004590 000000c4 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  stdio.o
+00004654 00000140 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  memset.o
+00004794 0000005c 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  fflush.o
+000047f0 000000b8 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  fwalk.o
+000048a8 00000062 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  dtoa.o
+0000490c 00001564 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  strcpy.o
+00005e70 00000020 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  mprec.o
+00005e90 00000cc8 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  sbrkr.o
+00006b58 00000034 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+00000038 00000004 2** 2d COMMON
+
+  memcpy.o
+00006b8c 00000022 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  fiprintf.o
+00006bb0 00000024 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  wsetup.o
+00006bd4 000000d4 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  memmove.o
+00006ca8 00000048 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  memchr.o
+00006cf0 00000024 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  filer.o
+00006d14 00000114 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  callocr.o
+00006e28 0000004c 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000000 2** 2d .bss
+
+  syscalls.o
+00006e74 000002ac 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000024 00000004 2** 2d .bss
+
+  vfiprintf.o
+00007120 00000aac 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  makebuf.o
+00007bcc 00000120 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  trap.o
+00007cec 00000012 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  abort.o
+00007d00 00000024 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  fstatr.o
+00007d24 00000038 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  raise.o
+00007d5c 00000050 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  signalr.o
+00007dac 00000050 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  _divdi3.o
+00007dfc 0000009c 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  _moddi3.o
+00007e98 00000094 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  _udivdi3.o
+00007f2c 0000001c 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  _udivmoddi4.o
+00007f48 00000a28 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  _umoddi3.o
+00008970 00000024 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  _movstr.o
+00008994 000000ac 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  _sdivsi3.o
+00008a40 0000009e 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  _udivsi3.o
+00008ae0 0000008a 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+  _ashiftrt_n.o
+00008b6c 000000a6 2** 2d .text
+0000031c 00000000 2** 2d .data
+00000028 00000000 2** 2d .bss
+
+**GLOBAL SYMBOLS**
+
+offset    section    offset   symbol
+00000038  .text      00000038 __getpid_r 
+00000000  .text      00000000 ___moddi3 
+00000000  .text      00000000 ___ashlsi3 
+0000000c  .text      0000000c ___ashiftrt_r4_27 
+00000a60  .text      00000a60 ___fixsfsi 
+000008ec  .text      000008ec ___muldf3 
+00000000  .stack     00000000 _PROG_STK 
+00000054  .text      00000054 _sprintf 
+00000000  .text      00000000 ___divdi3 
+00000144  .text      00000144 __exit 
+00001040  .text      00001040 ___truncdfsf2 
+00000380  .text      00000380 ___subsf3 
+000000a4  .text      000000a4 __read_r 
+00000188  .text      00000188 __getpid 
+00000000  .text      00000000 ___muldi3 
+00000200  .text      00000200 __utime 
+00000020  .text      00000020 __raise_r 
+00000040  .text      00000040 ___ashiftrt_r4_6 
+000000a8  .text      000000a8 ___sfp 
+00000e4c  .text      00000e4c ___ledf2 
+00000030  .text      00000030 ___ashiftrt_r4_14 
+00000040  .text      00000040 ___movstrSI16 
+00000186  .text      00000186 __realloc_r 
+00000000  COMMON     00000000 _max_count_si 
+0000004c  .text      0000004c __write 
+00000194  .text      00000194 __vfprintf_r 
+00000988  .text      00000988 _d2b 
+00000638  .text      00000638 __dcvt 
+00008c12  .text      06018c72 _etext 
+00000f48  .text      00000f48 ___fixdfsi 
+00000770  .text      00000770 ___cmpsf2 
+000004f8  .text      000004f8 ___subdf3 
+00000000  .text      00000000 __open_r 
+00000022  .text      00000022 ___ashiftrt_r4_19 
+00000b40  .text      00000b40 ___extendsfdf2 
+00000000  .text      00000000 _cleanup_glue 
+00000180  .text      00000180 _s2b 
+00000014  .text      00000014 ___movstrSI60 
+00000312  .text      00000312 _i2b 
+00000020  .text      00000020 ___movstrSI48 
+0000003a  .text      0000003a ___ashiftrt_r4_9 
+00000000  .text      00000000 __read 
+00000130  .text      00000130 __unlink 
+000006b8  .text      000006b8 ___mcmp 
+00000000  .text      00000000 ___swsetup 
+00000004  COMMON     00000004 _max_count_hi 
+00000aac  .text      00000aac __ratio 
+00000110  .text      00000110 __open 
+0000019c  .text      0000019c __stat 
+00000cc4  .text      00000cc4 ___nedf2 
+0000001c  .text      0000001c ___movstrSI52 
+00000000  .bss       06018fa0 _bss_start 
+00000000  .text      00000000 _fputc 
+00000000  .text      00000000 _fiprintf 
+0000032c  .text      0000032c ___addsf3 
+00000810  .text      00000810 ___nesf2 
+00000000  .text      00000000 ___umoddi3 
+00000000  .text      00000000 _fputs 
+00000528  .text      00000528 ___mulsf3 
+00000894  .text      00000894 __b2d 
+0000013a  .text      0000013a _isatty 
+00000238  .text      00000238 __wait 
+000000dc  .text      000000dc __write_r 
+0000004e  .text      0000004e ___ashiftrt_r4_0 
+0000028c  .text      0000028c _lo0bits 
+00000eb4  .text      00000eb4 ___floatsidf 
+00000000  .text      00000000 ___ashiftrt_r4_31 
+0000086c  .text      0000086c ___gtsf2 
+00000000  .text      00000000 _raise 
+00000000  .text      00000000 __calloc_r 
+00000000  .text      00000000 ___udivdi3 
+00000164  .text      00000164 __kill 
+0000003c  .bss       06018fdc _bss_end 
+00000100  .text      00000100 ___udivmoddi4 
+0000000e  .text      0000000e ___ashiftrt_r4_26 
+0000021c  .text      0000021c __hi0bits 
+0000034c  .text      0000034c _ecvtbuf 
+00000194  .text      00000194 ___sinit 
+000001bc  .text      000001bc __chmod 
+00000140  .text      00000140 _vfiprintf 
+00000000  .text      00000000 _memcpy 
+00000274  .text      00000274 __execv 
+00000010  .text      00000010 ___movstrSI64 
+00000254  .text      00000254 __execve 
+00000d88  .text      00000d88 ___gedf2 
+0000001c  .text      0000001c ___ashiftrt_r4_22 
+00000000  .text      00000000 _memset 
+00000028  .text      00000028 ___ashiftrt_r4_16 
+00000000  .text      00000000 __fstat_r 
+00000174  .text      00000174 __cleanup 
+00000034  .text      00000034 ___ashiftrt_r4_12 
+00000038  .text      00000038 __close_r 
+00000192  .text      00000192 __raise 
+000006f6  .text      000006f6 ___mdiff 
+00000508  .text      00000508 _pow5mult 
+00000024  .text      00000024 ___movstrSI44 
+00000008  COMMON     00000008 _max_si 
+00000000  .text      00000000 ___ashrsi3 
+00000000  .text      00000000 _fflush 
+00000008  .text      00000008 ___ashiftrt_r4_29 
+00000050  .entry     06010050 _eentry 
+00000050  .text      00000050 ___swrite 
+00000026  .text      00000026 ___ashiftrt_r4_17 
+00000068  .text      00000068 ___main 
+00000006  .text      00000006 ___ashiftrt_r4_30 
+00000042  .text      00000042 ___ashiftrt_r4_5 
+00000000  .text      00000000 __sbrk_r 
+0000003c  .text      0000003c ___ashiftrt_r4_8 
+00000028  .text      00000028 ___movstrSI40 
+00000000  .tors      06018c80 ___dtors 
+0000002c  .text      0000002c ___movstrSI36 
+00000988  .text      00000988 ___lesf2 
+00000000  .text      00000000 ___ashiftrt_r4_32 
+00000000  .text      00000000 ___lshrsi3 
+00000010  .text      00000010 ___ashiftrt_r4_25 
+000007b4  .text      000007b4 ___eqsf2 
+00000000  .text      00000000 ___sdivsi3 
+00000644  .text      00000644 ___divsf3 
+00000d24  .text      00000d24 ___gtdf2 
+00000000  .text      00000000 __Balloc 
+00000000  .text      00000000 ___do_global_dtors 
+0000000c  COMMON     0000000c _max_hi 
+00000c24  .text      00000c24 ___mprec_tinytens 
+00000338  .text      00000338 _mult 
+00000048  .text      00000048 ___ashiftrt_r4_2 
+000008cc  .text      000008cc ___gesf2 
+0000011c  .text      0000011c ___sclose 
+00000000  .entry     00000000 _entry 
+00000012  .text      00000012 ___ashiftrt_r4_24 
+00000c5c  .text      00000c5c __mprec_log10 
+0000002e  .text      0000002e ___ashiftrt_r4_15 
+00000000  .text      00000000 ___trap3 
+00000290  .text      00000290 __pipe 
+00000000  .text      00000000 _memchr 
+00000430  .text      00000430 __gcvt 
+00000060  .text      00000060 ___movstr 
+00000038  .text      00000038 __llicvt 
+000001dc  .text      000001dc __chown 
+00000018  .text      00000018 ___movstrSI56 
+00000fd8  .text      00000fd8 ___negdf2 
+0000014c  .text      0000014c __free_r 
+00000c64  .text      00000c64 ___eqdf2 
+00000038  .text      00000038 ___ashiftrt_r4_10 
+00000020  .text      00000020 __lseek 
+00000000  .tors      06018c80 ___ctors_end 
+00000ae8  .text      00000ae8 ___negsf2 
+00000240  .text      00000240 _fcvtbuf 
+0000006c  .text      0000006c __lseek_r 
+0000004a  .text      0000004a ___ashiftrt_r4_1 
+00000000  .text      00000000 _strcpy 
+00000084  .text      00000084 __reclaim_reent 
+00000158  .text      00000158 __cleanup_r 
+00000bfc  .text      00000bfc ___mprec_bigtens 
+0000000a  .text      0000000a ___ashiftrt_r4_28 
+00000000  .text      00000000 __fwalk 
+00000000  .tors      06018c80 ___ctors 
+00000034  .text      00000034 ___do_global_ctors 
+00000c1a  .text      00000c1a ___cmpdf2 
+00000000  .text      00000000 ___sread 
+00000000  .text      00000000 _abort 
+00000020  .text      00000020 ___ashiftrt_r4_20 
+00000034  .text      00000034 ___movstrSI28 
+0000027c  .text      0000027c __icvt 
+0000003e  .text      0000003e ___ashiftrt_r4_7 
+00000228  .text      00000228 __dtoa_r 
+00000b1c  .text      00000b1c ___make_fp 
+00000abc  .text      00000abc ___divdf3 
+000000cc  .text      000000cc __malloc_r 
+00000030  .text      00000030 ___movstrSI32 
+00000000  .text      00000000 __trap3 
+00000814  .text      00000814 __ulp 
+000000c4  .text      000000c4 ___sseek 
+00000000  .text      00000000 ___lshrdi3 
+00001010  .text      00001010 ___make_dp 
+0000092c  .text      0000092c ___ltsf2 
+00000314  .data      0000045c __impure_ptr 
+00000044  .text      00000044 ___movstrSI12 
+0000008c  .text      0000008c __Bfree 
+00000048  .text      00000048 ___movstrSI8 
+00000032  .text      00000032 ___ashiftrt_r4_13 
+0000006c  .text      0000006c __close 
+00000036  .text      00000036 ___ashiftrt_r4_11 
+0000031c  .data      06018f9c _edata 
+0000003c  .bss       06018fdc _end 
+00000044  .text      00000044 ___ashiftrt_r4_4 
+00000418  .text      00000418 __sicvt 
+00000000  .text      00000000 ___swbuf 
+00000000  .text      00000000 ___udivsi3 
+0000018a  .text      0000018a __vfiprintf_r 
+0000001a  .text      0000001a ___ashiftrt_r4_23 
+00000264  .text      00000264 __mstats_r 
+00000000  .text      00000000 ___sfvwrite 
+00000000  .text      00000000 _strlen 
+00000038  .text      00000038 ___movstrSI24 
+00000000  COMMON     00000000 _errno 
+00000000  .text      00000000 _memmove 
+00000024  .text      00000024 ___ashiftrt_r4_18 
+00000100  .text      00000100 __fstat 
+00000b34  .text      00000b34 ___mprec_tens 
+000009e8  .text      000009e8 ___floatsisf 
+0000003c  .text      0000003c ___movstrSI20 
+00000000  .text      00000000 ___smakebuf 
+00000000  .text      00000000 __kill_r 
+00002000  .stack     0601afe0 _stack 
+0000001e  .text      0000001e ___ashiftrt_r4_21 
+00000dec  .text      00000dec ___ltdf2 
+00000220  .text      00000220 __fork 
+00000000  .text      00000000 __sprintf_r 
+000000a6  .text      000000a6 __sbrk 
+00000046  .text      00000046 ___ashiftrt_r4_3 
+00000048  .text      00000048 ___sfmoreglue 
+0000004c  .text      0000004c ___movstrSI4 
+00000498  .text      00000498 ___adddf3 
+00000000  .tors      06018c80 ___dtors_end 
+00000000  .text      00000000 ___mulsi3 
+00000028  .text      00000028 _main 
+00000140  .text      00000140 _vfprintf 
+000005c8  .text      000005c8 _lshift 
+000000b4  .text      000000b4 __multadd 
+**MEMORY CONFIGURATION**
+
+name		origin   length   r_size   c_size    is    attributes
+*default*       00000000 ffffffff 00000000 0601afe0 ()
+
+
+**LINK EDITOR MEMORY MAP**
+
+output   input     virtual
+section  section   address    tsize
+
+
+*ABS*             00000000     0     0 2**0 
+
+.entry            06010000    50     0 2**2 load alloc reloc contents 
+ from *(.entry)
+         .entry   06010000    50    50 2**2  coff-sh ../entry/entry.o(overhead 5344 bytes)
+                  06010000              _entry
+                  06010050 00000050 _eentry =.
+
+.text             06010060  8c12     0 2**2 load alloc reloc contents 
+ from *(.text)
+         .text    06010060   280   280 2**2  coff-sh smptim1.o(overhead 21048 bytes)
+                  06010088              _main
+         .text    060102e0    90    90 2**2  coff-sh [c:/gnu/lib/libgcc.a]__main.o(overhead 17208 bytes)
+                  06010348              ___main
+                  060102e0              ___do_global_dtors
+                  06010314              ___do_global_ctors
+         .text    06010370   b9c   b9c 2**2  coff-sh [c:/gnu/lib/libgcc.a]fp-bit.o(overhead 74904 bytes)
+                  06010dd0              ___fixsfsi
+                  060106f0              ___subsf3
+                  06010ae0              ___cmpsf2
+                  06010eb0              ___extendsfdf2
+                  0601069c              ___addsf3
+                  06010b80              ___nesf2
+                  06010898              ___mulsf3
+                  06010bdc              ___gtsf2
+                  06010cf8              ___lesf2
+                  06010b24              ___eqsf2
+                  060109b4              ___divsf3
+                  06010c3c              ___gesf2
+                  06010e58              ___negsf2
+                  06010e8c              ___make_fp
+                  06010c9c              ___ltsf2
+                  06010d58              ___floatsisf
+         .text    06010f0c    b4    b4 2**2  coff-sh [c:/gnu/lib/libgcc.a]_ashiftlt.o(overhead 4782 bytes)
+                  06010f0c              ___ashlsi3
+         .text    06010fc0    c4    c4 2**2  coff-sh [c:/gnu/lib/libgcc.a]_muldi3.o(overhead 14706 bytes)
+                  06010fc0              ___muldi3
+         .text    06011084    b4    b4 2**2  coff-sh [c:/gnu/lib/libgcc.a]_lshiftrt.o(overhead 4782 bytes)
+                  06011084              ___lshrsi3
+         .text    06011138    52    52 2**2  coff-sh [c:/gnu/lib/libgcc.a]_ashiftrt.o(overhead 8294 bytes)
+                  06011144              ___ashiftrt_r4_27
+                  06011178              ___ashiftrt_r4_6
+                  06011168              ___ashiftrt_r4_14
+                  0601115a              ___ashiftrt_r4_19
+                  06011172              ___ashiftrt_r4_9
+                  06011186              ___ashiftrt_r4_0
+                  06011138              ___ashiftrt_r4_31
+                  06011146              ___ashiftrt_r4_26
+                  06011154              ___ashiftrt_r4_22
+                  06011160              ___ashiftrt_r4_16
+                  0601116c              ___ashiftrt_r4_12
+                  06011140              ___ashiftrt_r4_29
+                  0601115e              ___ashiftrt_r4_17
+                  0601113e              ___ashiftrt_r4_30
+                  0601117a              ___ashiftrt_r4_5
+                  06011174              ___ashiftrt_r4_8
+                  06011138              ___ashiftrt_r4_32
+                  06011148              ___ashiftrt_r4_25
+                  06011180              ___ashiftrt_r4_2
+                  0601114a              ___ashiftrt_r4_24
+                  06011166              ___ashiftrt_r4_15
+                  06011170              ___ashiftrt_r4_10
+                  06011182              ___ashiftrt_r4_1
+                  06011142              ___ashiftrt_r4_28
+                  06011158              ___ashiftrt_r4_20
+                  06011176              ___ashiftrt_r4_7
+                  0601116a              ___ashiftrt_r4_13
+                  0601116e              ___ashiftrt_r4_11
+                  0601117c              ___ashiftrt_r4_4
+                  06011152              ___ashiftrt_r4_23
+                  0601115c              ___ashiftrt_r4_18
+                  06011156              ___ashiftrt_r4_21
+                  0601117e              ___ashiftrt_r4_3
+         *fill*   0601118a     2 0000
+         .text    0601118c  1098  1098 2**2  coff-sh [c:/gnu/lib/libgcc.a]dp-bit.o(overhead 77132 bytes)
+                  06011a78              ___muldf3
+                  060121cc              ___truncdfsf2
+                  06011fd8              ___ledf2
+                  060120d4              ___fixdfsi
+                  06011684              ___subdf3
+                  06011e50              ___nedf2
+                  06012040              ___floatsidf
+                  06011f14              ___gedf2
+                  06011eb0              ___gtdf2
+                  06012164              ___negdf2
+                  06011df0              ___eqdf2
+                  06011da6              ___cmpdf2
+                  06011c48              ___divdf3
+                  0601219c              ___make_dp
+                  06011f78              ___ltdf2
+                  06011624              ___adddf3
+         .text    06012224    22    22 2**2  coff-sh [c:/gnu/lib/libgcc.a]_mulsi3.o(overhead 5108 bytes)
+                  06012224              ___mulsi3
+         *fill*   06012246     2 0000
+         .text    06012248    7c    7c 2**2  coff-sh [c:/gnu/lib/libgcc.a]_lshrdi3.o(overhead 14284 bytes)
+                  06012248              ___lshrdi3
+         .text    060122c4    b0    b0 2**2  coff-sh [c:/gnu/lib/libc.a]sprintf.o(overhead 3984 bytes)
+                  06012318              _sprintf
+                  060122c4              __sprintf_r
+         .text    06012374    1e    1e 2**2  coff-sh [c:/gnu/lib/libc.a]strlen.o(overhead 3574 bytes)
+                  06012374              _strlen
+         *fill*   06012392     2 0000
+         .text    06012394   c48   c48 2**2  coff-sh [c:/gnu/lib/libc.a]vfprintf.o(overhead 5970 bytes)
+                  06012528              __vfprintf_r
+                  060124d4              _vfprintf
+         .text    06012fdc   148   148 2**2  coff-sh [c:/gnu/lib/libc.a]reent.o(overhead 4678 bytes)
+                  06012fdc              _cleanup_glue
+                  06013060              __reclaim_reent
+         .text    06013124    3c    3c 2**2  coff-sh [c:/gnu/lib/libc.a]fputs.o(overhead 3754 bytes)
+                  06013124              _fputs
+         .text    06013160    58    58 2**2  coff-sh [c:/gnu/lib/libc.a]fputc.o(overhead 3664 bytes)
+                  06013160              _fputc
+         .text    060131b8   218   218 2**2  coff-sh [c:/gnu/lib/libc.a]findfp.o(overhead 5980 bytes)
+                  06013260              ___sfp
+                  0601334c              ___sinit
+                  0601332c              __cleanup
+                  06013310              __cleanup_r
+                  06013200              ___sfmoreglue
+         .text    060133d0   598   598 2**2  coff-sh [c:/gnu/lib/libc.a]cvt.o(overhead 5436 bytes)
+                  06013408              __llicvt
+                  0601364c              __icvt
+                  060137e8              __sicvt
+         .text    06013968   728   728 2**2  coff-sh [c:/gnu/lib/libc.a]ecvtbuf.o(overhead 6688 bytes)
+                  06013fa0              __dcvt
+                  06013cb4              _ecvtbuf
+                  06013d98              __gcvt
+                  06013ba8              _fcvtbuf
+         .text    06014090   300   300 2**2  coff-sh [c:/gnu/lib/libc.a]mallocr.o(overhead 4826 bytes)
+                  06014216              __realloc_r
+                  060141dc              __free_r
+                  0601415c              __malloc_r
+                  060142f4              __mstats_r
+         .text    06014390   260   260 2**2  coff-sh [c:/gnu/lib/libc.a]fvwrite.o(overhead 4310 bytes)
+                  06014390              ___sfvwrite
+         .text    060145f0    c4    c4 2**2  coff-sh [c:/gnu/lib/libc.a]wbuf.o(overhead 4090 bytes)
+                  060145f0              ___swbuf
+         .text    060146b4   140   140 2**2  coff-sh [c:/gnu/lib/libc.a]stdio.o(overhead 4344 bytes)
+                  06014704              ___swrite
+                  060147d0              ___sclose
+                  060146b4              ___sread
+                  06014778              ___sseek
+         .text    060147f4    5c    5c 2**2  coff-sh [c:/gnu/lib/libc.a]memset.o(overhead 3574 bytes)
+                  060147f4              _memset
+         .text    06014850    b8    b8 2**2  coff-sh [c:/gnu/lib/libc.a]fflush.o(overhead 4000 bytes)
+                  06014850              _fflush
+         .text    06014908    62    62 2**2  coff-sh [c:/gnu/lib/libc.a]fwalk.o(overhead 3574 bytes)
+                  06014908              __fwalk
+         *fill*   0601496a     2 0000
+         .text    0601496c  1564  1564 2**2  coff-sh [c:/gnu/lib/libc.a]dtoa.o(overhead 10814 bytes)
+                  06014b94              __dtoa_r
+         .text    06015ed0    20    20 2**2  coff-sh [c:/gnu/lib/libc.a]strcpy.o(overhead 3574 bytes)
+                  06015ed0              _strcpy
+         .text    06015ef0   cc8   cc8 2**2  coff-sh [c:/gnu/lib/libc.a]mprec.o(overhead 8476 bytes)
+                  06016878              _d2b
+                  06016070              _s2b
+                  06016202              _i2b
+                  060165a8              ___mcmp
+                  0601699c              __ratio
+                  06016784              __b2d
+                  0601617c              _lo0bits
+                  0601610c              __hi0bits
+                  060165e6              ___mdiff
+                  060163f8              _pow5mult
+                  06015ef0              __Balloc
+                  06016b14              ___mprec_tinytens
+                  06016228              _mult
+                  06016b4c              __mprec_log10
+                  06016aec              ___mprec_bigtens
+                  06016704              __ulp
+                  06015f7c              __Bfree
+                  06016a24              ___mprec_tens
+                  060164b8              _lshift
+                  06015fa4              __multadd
+         .text    06016bb8    34    34 2**2  coff-sh [c:/gnu/lib/libc.a]sbrkr.o(overhead 4386 bytes)
+                  06016bb8              __sbrk_r
+         .text    06016bec    22    22 2**2  coff-sh [c:/gnu/lib/libc.a]memcpy.o(overhead 3574 bytes)
+                  06016bec              _memcpy
+         *fill*   06016c0e     2 0000
+         .text    06016c10    24    24 2**2  coff-sh [c:/gnu/lib/libc.a]fiprintf.o(overhead 3664 bytes)
+                  06016c10              _fiprintf
+         .text    06016c34    d4    d4 2**2  coff-sh [c:/gnu/lib/libc.a]wsetup.o(overhead 4090 bytes)
+                  06016c34              ___swsetup
+         .text    06016d08    48    48 2**2  coff-sh [c:/gnu/lib/libc.a]memmove.o(overhead 3574 bytes)
+                  06016d08              _memmove
+         .text    06016d50    24    24 2**2  coff-sh [c:/gnu/lib/libc.a]memchr.o(overhead 3574 bytes)
+                  06016d50              _memchr
+         .text    06016d74   114   114 2**2  coff-sh [c:/gnu/lib/libc.a]filer.o(overhead 4934 bytes)
+                  06016e18              __read_r
+                  06016d74              __open_r
+                  06016e50              __write_r
+                  06016dac              __close_r
+                  06016de0              __lseek_r
+         .text    06016e88    4c    4c 2**2  coff-sh [c:/gnu/lib/libc.a]callocr.o(overhead 3984 bytes)
+                  06016e88              __calloc_r
+         .text    06016ed4   2ac   2ac 2**2  coff-sh [c:/gnu/lib/libc.a]syscalls.o(overhead 7446 bytes)
+                  06017018              __exit
+                  0601705c              __getpid
+                  060170d4              __utime
+                  06016f20              __write
+                  06016ed4              __read
+                  06017004              __unlink
+                  06016fe4              __open
+                  06017070              __stat
+                  0601700e              _isatty
+                  0601710c              __wait
+                  06017038              __kill
+                  06017090              __chmod
+                  06017148              __execv
+                  06017128              __execve
+                  06017066              __raise
+                  06017164              __pipe
+                  060170b0              __chown
+                  06016ef4              __lseek
+                  06016f40              __close
+                  06016fd4              __fstat
+                  060170f4              __fork
+                  06016f7a              __sbrk
+         .text    06017180   aac   aac 2**2  coff-sh [c:/gnu/lib/libc.a]vfiprintf.o(overhead 5574 bytes)
+                  060172c0              _vfiprintf
+                  0601730a              __vfiprintf_r
+         .text    06017c2c   120   120 2**2  coff-sh [c:/gnu/lib/libc.a]makebuf.o(overhead 4196 bytes)
+                  06017c2c              ___smakebuf
+         .text    06017d4c    12    12 2**2  coff-sh [c:/gnu/lib/libc.a]trap.o(overhead 3754 bytes)
+                  06017d4c              ___trap3
+                  06017d4c              __trap3
+         *fill*   06017d5e     2 0000
+         .text    06017d60    24    24 2**2  coff-sh [c:/gnu/lib/libc.a]abort.o(overhead 3754 bytes)
+                  06017d60              _abort
+         .text    06017d84    38    38 2**2  coff-sh [c:/gnu/lib/libc.a]fstatr.o(overhead 3754 bytes)
+                  06017d84              __fstat_r
+         .text    06017dbc    50    50 2**2  coff-sh [c:/gnu/lib/libc.a]raise.o(overhead 4090 bytes)
+                  06017ddc              __raise_r
+                  06017dbc              _raise
+         .text    06017e0c    50    50 2**2  coff-sh [c:/gnu/lib/libc.a]signalr.o(overhead 4074 bytes)
+                  06017e44              __getpid_r
+                  06017e0c              __kill_r
+         .text    06017e5c    9c    9c 2**2  coff-sh [c:/gnu/lib/libgcc.a]_divdi3.o(overhead 17216 bytes)
+                  06017e5c              ___divdi3
+         .text    06017ef8    94    94 2**2  coff-sh [c:/gnu/lib/libgcc.a]_moddi3.o(overhead 17298 bytes)
+                  06017ef8              ___moddi3
+         .text    06017f8c    1c    1c 2**2  coff-sh [c:/gnu/lib/libgcc.a]_udivdi3.o(overhead 13096 bytes)
+                  06017f8c              ___udivdi3
+         .text    06017fa8   a28   a28 2**2  coff-sh [c:/gnu/lib/libgcc.a]_udivmoddi4.o(overhead 26286 bytes)
+                  060180a8              ___udivmoddi4
+         .text    060189d0    24    24 2**2  coff-sh [c:/gnu/lib/libgcc.a]_umoddi3.o(overhead 13342 bytes)
+                  060189d0              ___umoddi3
+         .text    060189f4    ac    ac 2**2  coff-sh [c:/gnu/lib/libgcc.a]_movstr.o(overhead 6922 bytes)
+                  06018a34              ___movstrSI16
+                  06018a08              ___movstrSI60
+                  06018a14              ___movstrSI48
+                  06018a10              ___movstrSI52
+                  06018a04              ___movstrSI64
+                  06018a18              ___movstrSI44
+                  06018a1c              ___movstrSI40
+                  06018a20              ___movstrSI36
+                  06018a54              ___movstr
+                  06018a0c              ___movstrSI56
+                  06018a28              ___movstrSI28
+                  06018a24              ___movstrSI32
+                  06018a38              ___movstrSI12
+                  06018a3c              ___movstrSI8
+                  06018a2c              ___movstrSI24
+                  06018a30              ___movstrSI20
+                  06018a40              ___movstrSI4
+         .text    06018aa0    9e    9e 2**2  coff-sh [c:/gnu/lib/libgcc.a]_sdivsi3.o(overhead 5108 bytes)
+                  06018aa0              ___sdivsi3
+         *fill*   06018b3e     2 0000
+         .text    06018b40    8a    8a 2**2  coff-sh [c:/gnu/lib/libgcc.a]_udivsi3.o(overhead 5390 bytes)
+                  06018b40              ___udivsi3
+         *fill*   06018bca     2 0000
+         .text    06018bcc    a6    a6 2**2  coff-sh [c:/gnu/lib/libgcc.a]_ashiftrt_n.o(overhead 4782 bytes)
+                  06018bcc              ___ashrsi3
+ from *(.strings)
+                  06018c72 00008c12 _etext =.
+
+.tors             06018c80     0     0 2**0 
+                  06018c80 00000000 ___ctors =.
+ from *(.ctors)
+                  06018c80 00000000 ___ctors_end =.
+                  06018c80 00000000 ___dtors =.
+ from *(.dtors)
+                  06018c80 00000000 ___dtors_end =.
+
+.data             06018c80   31c     0 2**2 load alloc reloc contents 
+ from *(.data)
+         .data    06018c80     4     4 2**2  coff-sh [c:/gnu/lib/libgcc.a]__main.o(overhead 17208 bytes)
+         .data    06018c84   318   318 2**2  coff-sh [c:/gnu/lib/libc.a]reent.o(overhead 4678 bytes)
+                  06018f98              __impure_ptr
+                  06018f9c 0000031c _edata =.
+
+.bss              06018fa0    3c     0 2**2 alloc 
+                  06018fa0 00000000 _bss_start =.
+ from *(.bss)
+         .bss     06018fa0    10    10 2**2  coff-sh [c:/gnu/lib/libgcc.a]fp-bit.o(overhead 74904 bytes)
+         .bss     06018fb0    14    14 2**2  coff-sh [c:/gnu/lib/libgcc.a]dp-bit.o(overhead 77132 bytes)
+         .bss     06018fc4     4     4 2**2  coff-sh [c:/gnu/lib/libc.a]syscalls.o(overhead 7446 bytes)
+ from *(COMMON)
+         COMMON   06018fc8    10    10 2**2  coff-sh [c:/gnu/lib/libgcc.a]__main.o(overhead 17208 bytes)
+                  06018fc8              _max_count_si
+                  06018fcc              _max_count_hi
+                  06018fd0              _max_si
+                  06018fd4              _max_hi
+         COMMON   06018fd8     4     4 2**2  coff-sh [c:/gnu/lib/libc.a]sbrkr.o(overhead 4386 bytes)
+                  06018fd8              _errno
+                  06018fdc 0000003c _bss_end =ALIGN(00000004)
+                  06018fdc 0000003c _end =.
+
+.stack            06018fe0  2000     0 2**2 alloc contents 
+ from *(.stack)
+         .stack   06018fe0  2000  2000 2**2  coff-sh ../entry/stack.o(overhead 4242 bytes)
+                  06018fe0              _PROG_STK
+                  0601afe0 00002000 _stack =.
+LOAD ../entry/entry.o
+LOAD ../entry/stack.o
+LOAD smptim1.o
+LOAD ../../segalib/lib/libsat.a
+LOAD ../../segalib/lib/libcdc.a
+LOAD ../../segalib/lib/libper.a
+LOAD ../../segalib/lib/libsat.a
+LOAD c:/gnu/lib/libm.a
+LOAD c:/gnu/lib/libgcc.a
+LOAD c:/gnu/lib/libc.a
+LOAD c:/gnu/lib/libgcc.a
+OUTPUT(smptim1.sre srec)

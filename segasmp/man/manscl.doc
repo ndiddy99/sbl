@@ -1,0 +1,158 @@
+*******************************************************************************
+●ファイル記号名称	：manscl.doc
+●対象ライブラリ記号名称：scl
+●対象ライブラリ名称	：ＶＤＰ２ライブラリ
+●バージョン　　	：1.00
+●作成者		：K.M
+●作成日		：1994-07-29
+●その他のメッセージ　	：なし
+*******************************************************************************
+
+1.サンプルの動作内容と使用方法
+	●smpsmp1.c
+		[タイトル]	256色カラー画像をノーマルスクロール０に表示
+		[動作内容]	320X224の256色カラー画像をセル形式で表示する。
+				パッド１の方向キー以外を押すとモザイクがかかり
+				ます。STARTボタンで初期状態に戻ります。
+		[使用方法]	(1)以下のコマンドでブートＲＯＭを初期化。
+                                    RS [ﾘﾀｰﾝ]
+                                    G  [ﾘﾀｰﾝ]
+                                    [CTRL-C]
+                                (2)smpscl1.abs を 6002000H 番地にロードします。
+                                    l ;r:smpscl1.abs [ﾘﾀｰﾝ]
+				(3)実行
+				    G 6002000 [ﾘﾀｰﾝ] で実行。
+				(4)パッド操作について
+				  [PAD1]	START:初期状態
+						Rﾎﾞﾀﾝ:モザイク  2x2
+						Lﾎﾞﾀﾝ:モザイク  4x4
+						Xﾎﾞﾀﾝ:モザイク  6x6
+						Yﾎﾞﾀﾝ:モザイク  8x8
+						Zﾎﾞﾀﾝ:モザイク 10x10
+						Aﾎﾞﾀﾝ:モザイク 12x12
+						Bﾎﾞﾀﾝ:モザイク 14x14
+						Cﾎﾞﾀﾝ:モザイク 16x16
+						上ｷｰ :ﾌｪｰﾄﾞｱｳﾄ(ｶﾗｰｵｯﾌｾｯﾄ)
+						下ｷｰ :ﾌｪｰﾄﾞｲﾝ(ｶﾗｰｵｯﾌｾｯﾄ)
+		[使用ファンクション]
+				SCL_Vdp2Init
+				SCL_SetColRamMode
+				SCL_SetFrameInterval
+				SCL_DisplayFrame
+				SCL_SetBack
+				SCL_AllocColRam
+				SCL_SetColRam
+				SCL_InitConfigTb
+				SCL_SetConfig
+				SCL_SetCycleTable
+				SCL_SetPriority
+				SCL_Open
+				SCL_Close
+				SCL_MoveTo
+				SCL_Scale
+				SCL_SetMosaic
+		[備考]		関数"SetVblank"と変数"PadData1","PadData2"は、
+				割り込み処理登録のサンプルとして、ディレトリ
+				"V_BLANK"の中にあります。
+
+	●smpsmp3.c
+		[タイトル]	ﾉｰﾏﾙｽｸﾛｰﾙ２面の表示とﾗｲﾝﾊﾟﾗﾒｰﾀﾃｰﾌﾞﾙの使用
+		[動作内容]	ノーマルスクロール画像を２面セル形式で表示する。
+				一方をラインパラメータで変形させる。
+		[使用方法]	(1)以下のコマンドでブートＲＯＭを初期化。
+                                    RS [ﾘﾀｰﾝ]
+                                    G  [ﾘﾀｰﾝ]
+                                    [CTRL-C]
+                                (2)smpscl3.abs を 6002000H 番地にロードします。
+                                    l ;r:smpscl3.abs [ﾘﾀｰﾝ]
+				(3)実行
+				    G 6002000 [ﾘﾀｰﾝ] で実行。
+		[使用ファンクション]
+				SCL_Vdp2Init
+				SCL_SetFrameInterval
+				SCL_SetColRamMode
+				SCL_InitConfigTb
+				SCL_SetConfig
+				SCL_SetCycleTable
+				SCL_SetPriority
+				SCL_Open
+				SCL_Close
+				SCL_MoveTo
+				SCL_Move
+				SCL_Scale
+				SCL_DisplayFrame
+				SCL_InitLineParamTb
+				SCL_SetLineParam
+		[備考]		関数"SetVblank"と変数"PadData1","PadData2"は、
+				割り込み処理登録のサンプルとして、ディレトリ
+				"V_BLANK"の中にあります。
+
+
+	●smpsmp5.c
+		[タイトル]	回転スクロール２面(RBG0,RBG1)表示
+		[動作内容]	文字を256色ビットマップで回転スクロール０に
+				表示する。
+				ラインカラー画面を挿入した256色カラー画像を
+				セル形式で回転スクロール１に表示する。
+				PAD1動かせます。
+		[使用方法]	(1)以下のコマンドでブートＲＯＭを初期化。
+                                    RS [ﾘﾀｰﾝ]
+                                    G  [ﾘﾀｰﾝ]
+                                    [CTRL-C]
+                                (2)smpscl5.abs を 6002000H 番地にロードします。
+                                    l ;r:smpscl2.abs [ﾘﾀｰﾝ]
+				(3)実行
+				    G 6002000 [ﾘﾀｰﾝ] で実行。
+				(4)パッド操作について
+				  [PAD1]　スクロール面の操作
+				  		START:回転角度と位置の初期化
+						上ｷｰ :Ｙ方向移動
+						下ｷｰ :　　〃
+						左ｷｰ :Ｘ方向移動
+						右ｷｰ :　　〃
+						Rﾎﾞﾀﾝ:Ｚ方向移動
+						Lﾎﾞﾀﾝ:　　〃
+						Xﾎﾞﾀﾝ:Ｘ回転
+						Yﾎﾞﾀﾝ:画面回転
+						Zﾎﾞﾀﾝ:Ｚ回転
+						Aﾎﾞﾀﾝ:RBG0を選択
+						Bﾎﾞﾀﾝ:RBG1を選択
+						Cﾎﾞﾀﾝ:RBG1のﾌﾟﾗｲｵﾘﾃｨを変更
+						　　　(RBG0より上か下か)
+		[使用ファンクション]
+				SCL_Vdp2Init
+				SCL_SetSpriteMode
+				SCL_SetColRamMode
+				SCL_SetBack
+				SCL_InitRotateTable
+				SCL_InitVramConfigTb
+				SCL_SetVramConfig
+				SCL_InitConfigTb
+				SCL_SetConfig
+				SCL_SetPriority
+				SCL_AllocColRam
+				SCL_SetColRam
+				SCL_SetShadowBit
+				SCL_SetLncl
+				SCL_EnableLineCol
+				SCL_SetColMixRate
+				SCL_SetFrameInterval
+				SCL_Open
+				SCL_Close
+				SCL_MoveTo
+				SCL_Move
+				SCL_RotateTo
+				SCL_Rotate
+				SCL_Scale
+				SCL_DisplayFrame
+		[備考]		関数"SetVblank"と変数"PadData1","PadData2"は、
+				割り込み処理登録のサンプルとして、ディレトリ
+				"V_BLANK"の中にあります。
+
+
+2.注意事項
+
+	なし
+
+********************************** end of file ********************************
+

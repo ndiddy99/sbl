@@ -1,0 +1,6 @@
+File GFS_CDF.C:
+        return GFS_ERR_CDOPEN;
+        err = GFS_ERR_CDOPEN;
+File GFS.C:
+        GFS_FILE_ASTAT(gfs) = GFS_ERR_CDOPEN;
+        return gfs_mngSetErrCode(GFS_ERR_CDOPEN);

@@ -1,0 +1,16 @@
+INPUT	..\lib\smpstrt1.obj
+INPUT	..\lib\smpstrt2.obj
+library ..\..\segalib\lib\sega_dma.lib
+library ..\..\segalib\lib\sega_csh.lib
+library ..\..\segalib\lib\sega_cdc.lib
+;
+library ..\..\segalib\lib\sega_gfs.lib
+library ..\..\segalib\lib\sega_stm.lib
+PRINT	smpstm1.map
+OUTPUT	smpstm1.abs
+INPUT	smpstm1.obj
+START   P,C,D,B(06010000)
+FORM A
+EXIT
+
+

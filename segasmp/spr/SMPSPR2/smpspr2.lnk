@@ -1,0 +1,30 @@
+;---------------------------------------------------------------------
+; Make file for Sprite 1 Sample program
+;
+;	Y.O.  11/15/94
+;
+;
+SH2	group	org $6010000
+	section	.text,SH2
+	section .data,SH2
+BSS	group	bss
+	section .bss,BSS
+	section .stack,BSS
+	
+	ds.l	2048
+_stack
+
+_bss_start equ grouporg(BSS)
+_bss_end equ groupend(BSS)
+
+;
+	include ..\..\entry\entry.o,gnu
+	include smpspr20.o,gnu
+	include ..\..\v_blank\set_vb.o,gnu
+	include ..\..\v_blank\v_blank.o,gnu
+	include ..\..\..\segalib\lib\libsat.a,gnu
+	include ..\..\..\segalib\lib\libper.a,gnu
+        include c:\gnu\lib\libgcc.a,gnu
+        include c:\gnu\lib\libc.a,gnu
+
+	end _entry

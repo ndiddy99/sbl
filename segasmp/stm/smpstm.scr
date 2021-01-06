@@ -1,0 +1,66 @@
+Disc    "SMPSTM.DSK"
+CatalogNo       0
+Session SEMIXA
+LeadIn  MODE1
+EndLeadIn
+Track   MODE1
+    Volume ISO9660 "SMPSTM.PVD"
+        PrimaryVolume    0:2:16
+	        SystemIdentifier "SMPSTM"
+        EndPrimaryVolume
+    EndVolume
+    File DUMMY.DAT;1
+        FileSource       "dummy.dat"
+        EndFileSource
+    EndFile
+    PostGap 300
+EndTrack
+Track   MODE2
+    Extent
+        FileInterleave	1	2
+            File    SMP_STM.FN1;1
+                FileSource    "smp_stm.fn1"
+                EndFileSource
+            EndFile
+        EndFileInterleave
+        FileInterleave	1	2
+            File    SMP_STM.FN2;1
+                FileSource    "smp_stm.fn2"
+                EndFileSource
+            EndFile
+        EndFileInterleave
+        FileInterleave	1	2
+            File    SMP_STM.FN3;1
+                FileSource    "smp_stm.fn3"
+                EndFileSource
+            EndFile
+        EndFileInterleave
+    EndExtent
+    File    SMP_STM.1ST;1
+        FileSource    "smp_stm.1st"
+        EndFileSource
+    EndFile
+    File    SMP_STM.2ND;1
+        FileSource    "smp_stm.2nd"
+        EndFileSource
+    EndFile
+    File    SMP_STM.3RD;1
+        FileSource    "smp_stm.3rd"
+        EndFileSource
+    EndFile
+    File    SMP_STM.4TH;1
+        FileSource    "smp_stm.4th"
+        EndFileSource
+    EndFile
+    File    SMP_STM.5TH;1
+        FileSource    "smp_stm.5th"
+        EndFileSource
+    EndFile
+    PostGap 300
+EndTrack
+LeadOut MODE2
+    Empty 600
+EndLeadOut
+EndSession
+EndDisc
+

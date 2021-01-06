@@ -1,0 +1,1528 @@
+PER_PRT.o needed due to _PER_Init
+SCL_Func.o needed due to _SCL_Vdp2Init
+SCL_Fu01.o needed due to _SCL_SetDisplayMode
+SCL_Back.o needed due to _SCL_SetBack
+SCL_VblV.o needed due to _SCL_SetFrameInterval
+SCL_PR03.o needed due to _SCL_AllocColRam
+SCL_PR02.o needed due to _SCL_SetColRam
+SCL_PR07.o needed due to _SCL_SetPriority
+SCL_Fu03.o needed due to _SCL_InitConfigTb
+SCL_Pri.o needed due to _SclRealOtherPri
+SCL_Ro00.o needed due to _SCL_Rotate
+SCL_PR06.o needed due to _SCL_SetColRamOffset
+SCL_PR05.o needed due to _SCL_GetColRamOffset
+mth_fixd.o needed due to _MTH_Mul
+mth_tri.o needed due to _fsin
+spr_1c.o needed due to _SpInitialFlag
+FNT_COD1.o needed due to _FNT_Print256
+FNT_COD0.o needed due to _FntBitPat
+FNT_DAT0.o needed due to _FntAsciiFontData
+FNT_DAT1.o needed due to _FntKanaFontData
+sprintf.o needed due to _sprintf
+strlen.o needed due to _strlen
+vfprintf.o needed due to _vfprintf
+reent.o needed due to __impure_ptr
+fputs.o needed due to _fputs
+fputc.o needed due to _fputc
+findfp.o needed due to ___sinit
+cvt.o needed due to __llicvt
+ecvtbuf.o needed due to __dcvt
+mallocr.o needed due to __malloc_r
+fvwrite.o needed due to ___sfvwrite
+wbuf.o needed due to ___swbuf
+stdio.o needed due to ___sread
+memset.o needed due to _memset
+fflush.o needed due to _fflush
+fwalk.o needed due to __fwalk
+dtoa.o needed due to __dtoa_r
+strcpy.o needed due to _strcpy
+mprec.o needed due to __Balloc
+sbrkr.o needed due to __sbrk_r
+memcpy.o needed due to _memcpy
+fiprintf.o needed due to _fiprintf
+wsetup.o needed due to ___swsetup
+memmove.o needed due to _memmove
+memchr.o needed due to _memchr
+filer.o needed due to __close_r
+callocr.o needed due to __calloc_r
+syscalls.o needed due to __read
+vfiprintf.o needed due to _vfiprintf
+makebuf.o needed due to ___smakebuf
+trap.o needed due to __trap3
+abort.o needed due to _abort
+fstatr.o needed due to __fstat_r
+raise.o needed due to _raise
+signalr.o needed due to __kill_r
+__main.o needed due to ___main
+_ashiftrt.o needed due to ___ashiftrt_r4_6
+_ashiftlt.o needed due to ___ashlsi3
+_udivsi3.o needed due to ___udivsi3
+dp-bit.o needed due to ___adddf3
+_movstr.o needed due to ___movstr
+_mulsi3.o needed due to ___mulsi3
+_moddi3.o needed due to ___moddi3
+_divdi3.o needed due to ___divdi3
+_umoddi3.o needed due to ___umoddi3
+_udivdi3.o needed due to ___udivdi3
+_sdivsi3.o needed due to ___sdivsi3
+_lshiftrt.o needed due to ___lshrsi3
+_ashiftrt_n.o needed due to ___ashrsi3
+_lshrdi3.o needed due to ___lshrdi3
+_muldi3.o needed due to ___muldi3
+_udivmoddi4.o needed due to ___udivmoddi4
+fp-bit.o needed due to ___make_fp
+Allocating common _SclRbgKtbAddr: 8 at 0 SCL_Func.o
+Allocating common _SclRb: 1 at 8 SCL_Func.o
+Allocating common _SpScreenY: 4 at 0 spr_1c.o
+Allocating common _SclK_TableBuff: cd0 at 10 SCL_Func.o
+Allocating common _SclAutoEndBlue2: 2 at 0 SCL_Pri.o
+Allocating common _SpFbcrMode: 2 at 4 spr_1c.o
+Allocating common _DirTb: 708 at 0 smpbup1.o
+Allocating common _max_count_si: 4 at 0 __main.o
+Allocating common _SclRotregBuff: 100 at ce0 SCL_Func.o
+Allocating common _SclColOffset: 10 at 10 SCL_Pri.o
+Allocating common _SclAddrCsTbl: 8 at de0 SCL_Func.o
+Allocating common _clock: 4 at 708 smpbup1.o
+Allocating common _SclPriBuffDirty: 1 at 20 SCL_Pri.o
+Allocating common _SclAutoEndRed: 2 at 22 SCL_Pri.o
+Allocating common _PadWorkArea: 1c at 0 ../v_blank/v_blank.o
+Allocating common _SclAutoSurface: 4 at 24 SCL_Pri.o
+Allocating common _SclCsx: 8 at 0 SCL_Ro00.o
+Allocating common _Scl_s_reg: 28 at df0 SCL_Func.o
+Allocating common _FntYsize: 2 at 0 FNT_COD0.o
+Allocating common _SclAutoGreen: 2 at 28 SCL_Pri.o
+Allocating common _max_count_hi: 4 at 4 __main.o
+Allocating common _SclAutoEndGreen: 2 at 2a SCL_Pri.o
+Allocating common _SclAutoCount: 4 at 2c SCL_Pri.o
+Allocating common _SclColRamAlloc256: 20 at 30 SCL_Pri.o
+Allocating common _SclRotateXy: 8 at e18 SCL_Func.o
+Allocating common _SclAutoCurRate: 1 at 50 SCL_Pri.o
+Allocating common _SclAutoPlusFlag: 1 at 51 SCL_Pri.o
+Allocating common _per_set_sys_flg: 1 at 0 PER_PRT.o
+Allocating common _Scl_d_reg: 48 at e20 SCL_Func.o
+Allocating common _SclRotateDisp: 8 at e68 SCL_Func.o
+Allocating common _StTb: 18 at 710 smpbup1.o
+Allocating common _SclSpColMix: 8 at 58 SCL_Pri.o
+Allocating common _SpDil: 2 at 6 spr_1c.o
+Allocating common _device: 4 at 728 smpbup1.o
+Allocating common _SclAutoMax: 4 at 60 SCL_Pri.o
+Allocating common _SclRotateMoveZ: 8 at e70 SCL_Func.o
+Allocating common _SclLineColRamOffset: 4 at 64 SCL_Pri.o
+Allocating common _SclRotXySw: 4 at e78 SCL_Func.o
+Allocating common _per_get_time_adr: 4 at 4 PER_PRT.o
+Allocating common _max_si: 4 at 8 __main.o
+Allocating common _SclColRamAlloc2048: 4 at 68 SCL_Pri.o
+Allocating common _SclBgPriNum: 6 at 70 SCL_Pri.o
+Allocating common _SclAutoEndBlue: 2 at 76 SCL_Pri.o
+Allocating common _SclAutoEndGreen2: 2 at 78 SCL_Pri.o
+Allocating common _frameChgFlag: 4 at 0 SCL_VblV.o
+Allocating common _Scl_r_reg: 10 at e80 SCL_Func.o
+Allocating common _max_hi: 4 at c __main.o
+Allocating common _SclRPMD: 2 at e90 SCL_Func.o
+Allocating common _SpDie: 2 at 8 spr_1c.o
+Allocating common _SclAutoVeFlag: 1 at 7a SCL_Pri.o
+Allocating common _SclBgColMix: 8 at 80 SCL_Pri.o
+Allocating common _per_get_sys_data: c at 10 PER_PRT.o
+Allocating common _SclRbgKtbOffset: 8 at e98 SCL_Func.o
+Allocating common _SclAutoIndex: 4 at 88 SCL_Pri.o
+Allocating common _SclAutoEndRate: 1 at 8c SCL_Pri.o
+Allocating common _SclAutoBlue: 2 at 8e SCL_Pri.o
+Allocating common _SpTvMode: 2 at a spr_1c.o
+Allocating common _SpScreenX: 4 at c spr_1c.o
+Allocating common _SclRa: 1 at ea0 SCL_Func.o
+Allocating common _SclRotateZ: 8 at ea8 SCL_Func.o
+Allocating common _SclAddrLsTbl: 8 at eb0 SCL_Func.o
+Allocating common _BackUpRamWork: 2000 at 730 smpbup1.o
+Allocating common _SclK_TableNum: 8 at eb8 SCL_Func.o
+Allocating common _SclAutoRed: 2 at 90 SCL_Pri.o
+Allocating common _SclAutoInterval: 4 at 94 SCL_Pri.o
+Allocating common _perFlag: 4 at 0 ../v_blank/set_vb.o
+Allocating common _SclOtherPri: 10 at a0 SCL_Pri.o
+Allocating common _CnTb: c at 2730 smpbup1.o
+Allocating common _SclRotateTableAddress: 4 at ec0 SCL_Func.o
+Allocating common _SclAutoRGB: 600 at b0 SCL_Pri.o
+Allocating common _FntXsize: 2 at 2 FNT_COD0.o
+Allocating common _errno: 4 at 0 sbrkr.o
+Allocating common _SclK_TableFlag: 4 at ec4 SCL_Func.o
+Allocating common _SclAutoEndRed2: 2 at 6b0 SCL_Pri.o
+Allocating common _SclCsy: 8 at 8 SCL_Ro00.o
+Allocating common _SclSpPriNum: 8 at 6b8 SCL_Pri.o
+Allocating common _DateTb: 6 at 2740 smpbup1.o
+Allocating common _Scl_w_reg: 20 at ed0 SCL_Func.o
+Allocating common _FntContry: 1 at 4 FNT_COD0.o
+Allocating common _Scl_n_reg: 40 at ef0 SCL_Func.o
+**FILES**
+
+  ../entry/entry.o
+00000000 00000000 2** 2d .text
+00000000 00000000 2** 2d .data
+00000000 00000000 2** 2d .bss
+00000000 00000050 2** 2d .entry
+
+  ../entry/stack.o
+00000000 00000000 2** 2d .text
+00000000 00000000 2** 2d .data
+00000000 00000000 2** 2d .bss
+00000000 00002000 2** 2d .stack
+
+  smpbup1.o
+00000000 00001688 2** 2d .text
+00000000 00000050 2** 2d .data
+00000000 00000000 2** 2d .bss
+00000100 00002746 2** 4d COMMON
+
+  ../v_blank/v_blank.o
+00001688 0000007c 2** 2d .text
+00000050 00000008 2** 2d .data
+00000000 00000000 2** 2d .bss
+00002850 0000001c 2** 4d COMMON
+
+  ../v_blank/set_vb.o
+00001704 000000a0 2** 2d .text
+00000058 00000000 2** 2d .data
+00000000 00000000 2** 2d .bss
+0000286c 00000004 2** 2d COMMON
+
+  PER_PRT.o
+000017a4 0000154c 2** 2d .text
+00000058 0000000c 2** 2d .data
+00000000 0000007c 2** 2d .bss
+00002870 0000001c 2** 4d COMMON
+
+  SCL_Func.o
+00002cf0 00000984 2** 2d .text
+00000064 00000014 2** 2d .data
+0000007c 00000008 2** 2d .bss
+00002890 00000f30 2** 4d COMMON
+
+  SCL_Fu01.o
+00003674 0000020c 2** 2d .text
+00000078 00000000 2** 2d .data
+00000084 00000000 2** 2d .bss
+
+  SCL_Back.o
+00003880 0000007c 2** 2d .text
+00000078 00000000 2** 2d .data
+00000084 00000000 2** 2d .bss
+
+  SCL_VblV.o
+000038fc 000002cc 2** 2d .text
+00000078 0000001c 2** 2d .data
+00000084 00000000 2** 2d .bss
+000037c0 00000004 2** 2d COMMON
+
+  SCL_PR03.o
+00003bc8 0000013c 2** 2d .text
+00000094 00000000 2** 2d .data
+00000084 00000000 2** 2d .bss
+
+  SCL_PR02.o
+00003d04 000000a4 2** 2d .text
+00000094 00000000 2** 2d .data
+00000084 00000000 2** 2d .bss
+
+  SCL_PR07.o
+00003da8 00000224 2** 2d .text
+00000094 00000000 2** 2d .data
+00000084 00000000 2** 2d .bss
+
+  SCL_Fu03.o
+00003fcc 00000998 2** 2d .text
+00000094 00000000 2** 2d .data
+00000084 00000000 2** 2d .bss
+
+  SCL_Pri.o
+00004964 00001410 2** 2d .text
+00000094 00000018 2** 2d .data
+00000084 00000000 2** 2d .bss
+000037d0 000006c0 2** 4d COMMON
+
+  SCL_Ro00.o
+00005d74 000013ac 2** 2d .text
+000000ac 00000000 2** 2d .data
+00000084 00000048 2** 2d .bss
+00003e90 00000010 2** 3d COMMON
+
+  SCL_PR06.o
+00007120 000001d0 2** 2d .text
+000000ac 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  SCL_PR05.o
+000072f0 0000009c 2** 2d .text
+000000ac 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  mth_fixd.o
+0000738c 00000078 2** 2d .text
+000000ac 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  mth_tri.o
+00007404 000005d4 2** 2d .text
+000000ac 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  spr_1c.o
+000079d8 000002c4 2** 2d .text
+000000ac 00000034 2** 2d .data
+000000cc 00000000 2** 2d .bss
+00003ea0 00000010 2** 2d COMMON
+
+  FNT_COD1.o
+00007c9c 0000023c 2** 2d .text
+000000e0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  FNT_COD0.o
+00007ed8 0000001c 2** 2d .text
+000000e0 00000008 2** 2d .data
+000000cc 00000000 2** 2d .bss
+00003eb0 00000005 2** 2d COMMON
+
+  FNT_DAT0.o
+00007ef4 00000000 2** 2d .text
+000000e8 00000600 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  FNT_DAT1.o
+00007ef4 00000000 2** 2d .text
+000006e8 000003f0 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  sprintf.o
+00007ef4 000000b0 2** 2d .text
+00000ad8 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  strlen.o
+00007fa4 0000001e 2** 2d .text
+00000ad8 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  vfprintf.o
+00007fc4 00000c48 2** 2d .text
+00000ad8 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  reent.o
+00008c0c 00000148 2** 2d .text
+00000ad8 00000318 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  fputs.o
+00008d54 0000003c 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  fputc.o
+00008d90 00000058 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  findfp.o
+00008de8 00000218 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  cvt.o
+00009000 00000598 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  ecvtbuf.o
+00009598 00000728 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  mallocr.o
+00009cc0 00000300 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  fvwrite.o
+00009fc0 00000260 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  wbuf.o
+0000a220 000000c4 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  stdio.o
+0000a2e4 00000140 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  memset.o
+0000a424 0000005c 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  fflush.o
+0000a480 000000b8 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  fwalk.o
+0000a538 00000062 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  dtoa.o
+0000a59c 00001564 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  strcpy.o
+0000bb00 00000020 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  mprec.o
+0000bb20 00000cc8 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  sbrkr.o
+0000c7e8 00000034 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+00003eb8 00000004 2** 2d COMMON
+
+  memcpy.o
+0000c81c 00000022 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  fiprintf.o
+0000c840 00000024 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  wsetup.o
+0000c864 000000d4 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  memmove.o
+0000c938 00000048 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  memchr.o
+0000c980 00000024 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  filer.o
+0000c9a4 00000114 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  callocr.o
+0000cab8 0000004c 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000000 2** 2d .bss
+
+  syscalls.o
+0000cb04 000002ac 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000cc 00000004 2** 2d .bss
+
+  vfiprintf.o
+0000cdb0 00000aac 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000d0 00000000 2** 2d .bss
+
+  makebuf.o
+0000d85c 00000120 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000d0 00000000 2** 2d .bss
+
+  trap.o
+0000d97c 00000012 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000d0 00000000 2** 2d .bss
+
+  abort.o
+0000d990 00000024 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000d0 00000000 2** 2d .bss
+
+  fstatr.o
+0000d9b4 00000038 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000d0 00000000 2** 2d .bss
+
+  raise.o
+0000d9ec 00000050 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000d0 00000000 2** 2d .bss
+
+  signalr.o
+0000da3c 00000050 2** 2d .text
+00000df0 00000000 2** 2d .data
+000000d0 00000000 2** 2d .bss
+
+  __main.o
+0000da8c 00000090 2** 2d .text
+00000df0 00000004 2** 2d .data
+000000d0 00000000 2** 2d .bss
+00003ebc 00000010 2** 2d COMMON
+
+  _ashiftrt.o
+0000db1c 00000052 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000d0 00000000 2** 2d .bss
+
+  _ashiftlt.o
+0000db70 000000b4 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000d0 00000000 2** 2d .bss
+
+  _udivsi3.o
+0000dc24 0000008a 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000d0 00000000 2** 2d .bss
+
+  dp-bit.o
+0000dcb0 00001098 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000d0 00000014 2** 2d .bss
+
+  _movstr.o
+0000ed48 000000ac 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000e4 00000000 2** 2d .bss
+
+  _mulsi3.o
+0000edf4 00000022 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000e4 00000000 2** 2d .bss
+
+  _moddi3.o
+0000ee18 00000094 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000e4 00000000 2** 2d .bss
+
+  _divdi3.o
+0000eeac 0000009c 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000e4 00000000 2** 2d .bss
+
+  _umoddi3.o
+0000ef48 00000024 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000e4 00000000 2** 2d .bss
+
+  _udivdi3.o
+0000ef6c 0000001c 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000e4 00000000 2** 2d .bss
+
+  _sdivsi3.o
+0000ef88 0000009e 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000e4 00000000 2** 2d .bss
+
+  _lshiftrt.o
+0000f028 000000b4 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000e4 00000000 2** 2d .bss
+
+  _ashiftrt_n.o
+0000f0dc 000000a6 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000e4 00000000 2** 2d .bss
+
+  _lshrdi3.o
+0000f184 0000007c 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000e4 00000000 2** 2d .bss
+
+  _muldi3.o
+0000f200 000000c4 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000e4 00000000 2** 2d .bss
+
+  _udivmoddi4.o
+0000f2c4 00000a28 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000e4 00000000 2** 2d .bss
+
+  fp-bit.o
+0000fcec 00000b9c 2** 2d .text
+00000df4 00000000 2** 2d .data
+000000e4 00000010 2** 2d .bss
+
+**GLOBAL SYMBOLS**
+
+offset    section    offset   symbol
+00000038  .text      00000038 __getpid_r 
+00000000  .text      00000000 ___moddi3 
+00000298  .text      00000298 _SPR_WaitDrawEnd 
+00000008  .data      000002d4 _VBInterval 
+00000000  COMMON     00000000 _SclRbgKtbAddr 
+00000000  .text      00000000 ___ashlsi3 
+0000000c  .text      0000000c ___ashiftrt_r4_27 
+00000a60  .text      00000a60 ___fixsfsi 
+000008ec  .text      000008ec ___muldf3 
+00000000  .stack     00000000 _PROG_STK 
+00000054  .text      00000054 _sprintf 
+00000084  .text      00000084 _fcos 
+000003d0  .text      000003d0 _PER_IntFunc 
+00000008  COMMON     00000008 _SclRb 
+00000000  .text      00000000 ___divdi3 
+00000144  .text      00000144 __exit 
+00001040  .text      00001040 ___truncdfsf2 
+00000380  .text      00000380 ___subsf3 
+00000006  .data      00000082 _PadData2E 
+00000000  .text      00000000 _SCL_FreeColRam 
+000000a4  .text      000000a4 __read_r 
+0000123c  .text      0000123c _SCL_RotateZD 
+00000188  .text      00000188 __getpid 
+00000000  .text      00000000 ___muldi3 
+00000200  .text      00000200 __utime 
+00000000  .data      00001688 _DummyData 
+00000020  .text      00000020 __raise_r 
+00000000  COMMON     00000000 _SpScreenY 
+00000890  .text      00000890 _SCL_PriIntProc 
+00001250  .text      00001250 _err_disp 
+00000000  .text      00000000 _SetVblank 
+00000088  .text      00000088 _SCL_AbortAutoVe 
+00000040  .text      00000040 ___ashiftrt_r4_6 
+00000010  COMMON     00000010 _SclK_TableBuff 
+00000030  .text      00000030 _MTH_FixedToInt 
+00000000  COMMON     00000000 _SclAutoEndBlue2 
+00000004  COMMON     00000004 _SpFbcrMode 
+00001284  .text      00001284 _SCL_SetShadowBit 
+000000a8  .text      000000a8 ___sfp 
+00000000  COMMON     00000000 _DirTb 
+00000e4c  .text      00000e4c ___ledf2 
+00000030  .text      00000030 ___ashiftrt_r4_14 
+00000040  .text      00000040 ___movstrSI16 
+00000186  .text      00000186 __realloc_r 
+00000510  .text      00000510 _SCL_AutoExec 
+00000000  COMMON     00000000 _max_count_si 
+00000124  .text      00000124 _FNT_Print256 
+0000004c  .text      0000004c __write 
+00000194  .text      00000194 __vfprintf_r 
+00000ce0  COMMON     00000ce0 _SclRotregBuff 
+00000010  COMMON     00000010 _SclColOffset 
+00000de0  COMMON     00000de0 _SclAddrCsTbl 
+00000988  .text      00000988 _d2b 
+00000708  COMMON     00000708 _clock 
+00000020  COMMON     00000020 _SclPriBuffDirty 
+00000638  .text      00000638 __dcvt 
+00010888  .text      060208e8 _etext 
+00000022  COMMON     00000022 _SclAutoEndRed 
+00000000  .text      00000000 _SCL_PriorityInit 
+00000f48  .text      00000f48 ___fixdfsi 
+00000000  COMMON     00000000 _PadWorkArea 
+00000770  .text      00000770 ___cmpsf2 
+000004f8  .text      000004f8 ___subdf3 
+00000000  .text      00000000 __open_r 
+00000b40  .text      00000b40 ___extendsfdf2 
+00000022  .text      00000022 ___ashiftrt_r4_19 
+00000024  COMMON     00000024 _SclAutoSurface 
+00000000  .text      00000000 _cleanup_glue 
+00000180  .text      00000180 _s2b 
+00000014  .text      00000014 ___movstrSI60 
+00000312  .text      00000312 _i2b 
+00000001  .data      0000154d _per_hot_res 
+00000028  .text      00000028 _MTH_IntToFixed 
+00000020  .text      00000020 ___movstrSI48 
+0000003a  .text      0000003a ___ashiftrt_r4_9 
+00000000  COMMON     00000000 _SclCsx 
+00000000  .text      00000000 _MTH_Mul 
+00000000  .data      000002c4 _SpInitialFlag 
+00000000  .text      00000000 __read 
+00000df0  COMMON     00000df0 _Scl_s_reg 
+00000000  .text      00000000 _SCL_SetDisplayMode 
+00000130  .text      00000130 __unlink 
+000006b8  .text      000006b8 ___mcmp 
+00000010  .data      00000994 _SclDisplayY 
+00000000  COMMON     00000000 _FntYsize 
+00000000  .text      00000000 ___swsetup 
+00000012  .data      00000996 _SclRotateTableMode 
+00000028  COMMON     00000028 _SclAutoGreen 
+00000017  .data      0000169f _Week 
+00000004  COMMON     00000004 _max_count_hi 
+00000aac  .text      00000aac __ratio 
+0000081c  .text      0000081c _SCL_Memcpyw 
+0000002a  COMMON     0000002a _SclAutoEndGreen 
+00000110  .text      00000110 __open 
+0000019c  .text      0000019c __stat 
+0000002c  COMMON     0000002c _SclAutoCount 
+00000cc4  .text      00000cc4 ___nedf2 
+0000001c  .text      0000001c ___movstrSI52 
+00000000  .bss       060216f0 _bss_start 
+00000010  .data      000002dc _ReqDisplayFlag 
+00000000  .text      00000000 _fputc 
+00000000  .text      00000000 _fiprintf 
+00000000  .text      00000000 _SCL_SetColRam 
+000002ac  .text      000002ac _SPR_SetEosMode 
+00000004  .data      00001414 _SclRealSpPriNum 
+00000030  COMMON     00000030 _SclColRamAlloc256 
+0000032c  .text      0000032c ___addsf3 
+00000e18  COMMON     00000e18 _SclRotateXy 
+00000000  .text      00000000 _SCL_GetColRamOffset 
+000011a2  .text      000011a2 _PadInputWait 
+00000810  .text      00000810 ___nesf2 
+00000000  .text      00000000 ___umoddi3 
+00000050  COMMON     00000050 _SclAutoCurRate 
+00000000  .text      00000000 _fputs 
+00000528  .text      00000528 ___mulsf3 
+00000038  .text      00000038 _MTH_Product 
+00000894  .text      00000894 __b2d 
+0000013a  .text      0000013a _isatty 
+00000238  .text      00000238 __wait 
+000000dc  .text      000000dc __write_r 
+0000004e  .text      0000004e ___ashiftrt_r4_0 
+000004a0  .text      000004a0 _SCL_Rotate 
+0000028c  .text      0000028c _lo0bits 
+00000eb4  .text      00000eb4 ___floatsidf 
+00000000  .text      00000000 ___ashiftrt_r4_31 
+00000aa0  .text      00000aa0 _DispInit 
+00001620  .text      00001620 _BackUpFormat 
+00000000  .data      0000001c _FntBitPat 
+00000056  .text      00000056 _SCL_SetConfig 
+0000086c  .text      0000086c ___gtsf2 
+00000000  .text      00000000 _raise 
+00000000  .text      00000000 __calloc_r 
+00000000  .text      00000000 ___udivdi3 
+00000164  .text      00000164 __kill 
+00003ecc  .bss       060255bc _bss_end 
+00000100  .text      00000100 ___udivmoddi4 
+00000030  .text      00000030 _SCL_AllocColRam 
+00000051  COMMON     00000051 _SclAutoPlusFlag 
+0000000e  .text      0000000e ___ashiftrt_r4_26 
+00000000  COMMON     00000000 _per_set_sys_flg 
+00000014  .data      00001424 _SclRealColOffset 
+00000e20  COMMON     00000e20 _Scl_d_reg 
+00000e68  COMMON     00000e68 _SclRotateDisp 
+0000021c  .text      0000021c __hi0bits 
+00000710  COMMON     00000710 _StTb 
+0000034c  .text      0000034c _ecvtbuf 
+00000194  .text      00000194 ___sinit 
+000001bc  .text      000001bc __chmod 
+00000058  COMMON     00000058 _SclSpColMix 
+00000140  .text      00000140 _vfiprintf 
+00000000  .text      00000000 _memcpy 
+00000006  COMMON     00000006 _SpDil 
+00000274  .text      00000274 __execv 
+00000010  .text      00000010 ___movstrSI64 
+00000254  .text      00000254 __execve 
+000001d8  .text      000001d8 _SPR_SetEraseData 
+00000d88  .text      00000d88 ___gedf2 
+0000001c  .text      0000001c ___ashiftrt_r4_22 
+00000728  COMMON     00000728 _device 
+00000000  .text      00000000 _memset 
+00000028  .text      00000028 ___ashiftrt_r4_16 
+00000060  COMMON     00000060 _SclAutoMax 
+00000010  .data      00001420 _SclRealBgColMix 
+00000000  .text      00000000 __fstat_r 
+000000ac  .text      000000ac _SCL_DisplayFrame 
+00000174  .text      00000174 __cleanup 
+00000034  .text      00000034 ___ashiftrt_r4_12 
+00000e70  COMMON     00000e70 _SclRotateMoveZ 
+00000000  .text      00000000 _SPR_Initial 
+00000038  .text      00000038 __close_r 
+00000090  .text      00000090 _CheckVblankEnd 
+00000064  COMMON     00000064 _SclLineColRamOffset 
+00000e78  COMMON     00000e78 _SclRotXySw 
+00000192  .text      00000192 __raise 
+00000004  COMMON     00000004 _per_get_time_adr 
+000006f6  .text      000006f6 ___mdiff 
+00000508  .text      00000508 _pow5mult 
+00000024  .text      00000024 ___movstrSI44 
+00000008  COMMON     00000008 _max_si 
+00000000  .text      00000000 ___ashrsi3 
+00000ad8  .text      00000ad8 _SCL_IncColOffset 
+00000068  COMMON     00000068 _SclColRamAlloc2048 
+00000000  .text      00000000 _fflush 
+0000078c  .text      0000078c _SCL_ScrollShow 
+00000008  .text      00000008 ___ashiftrt_r4_29 
+0000008a  .text      0000008a _fsin 
+00000050  .entry     06010050 _eentry 
+00000050  .text      00000050 ___swrite 
+00000026  .text      00000026 ___ashiftrt_r4_17 
+00000070  COMMON     00000070 _SclBgPriNum 
+00000068  .text      00000068 ___main 
+00000006  .text      00000006 ___ashiftrt_r4_30 
+00000000  .text      00000000 _SCL_SetColRamOffset 
+00000042  .text      00000042 ___ashiftrt_r4_5 
+00000000  .text      00000000 __sbrk_r 
+0000003c  .text      0000003c ___ashiftrt_r4_8 
+00000028  .text      00000028 ___movstrSI40 
+0000000c  .data      00001694 _DummyData2 
+00000264  .text      00000264 _SCL_Close 
+00000000  .tors      060208f0 ___dtors 
+0000002c  .text      0000002c ___movstrSI36 
+00000988  .text      00000988 ___lesf2 
+00000000  .text      00000000 ___ashiftrt_r4_32 
+00000000  .text      00000000 ___lshrsi3 
+00000076  COMMON     00000076 _SclAutoEndBlue 
+00000000  .text      00000000 _SCL_SetFrameInterval 
+00000010  .text      00000010 ___ashiftrt_r4_25 
+000007b4  .text      000007b4 ___eqsf2 
+00000000  .text      00000000 ___sdivsi3 
+00000644  .text      00000644 ___divsf3 
+00000078  COMMON     00000078 _SclAutoEndGreen2 
+00000d24  .text      00000d24 ___gtdf2 
+00000000  .text      00000000 _SCL_InitConfigTb 
+00000000  COMMON     00000000 _frameChgFlag 
+00000000  .text      00000000 __Balloc 
+00000000  .text      00000000 ___do_global_dtors 
+0000000c  .data      00000990 _SclProcess 
+00000008  .data      0000098c _SclCurSclNum 
+0000000c  .data      0000141c _SclRealSpColMix 
+00000e80  COMMON     00000e80 _Scl_r_reg 
+0000000c  COMMON     0000000c _max_hi 
+00000c24  .text      00000c24 ___mprec_tinytens 
+00000e90  COMMON     00000e90 _SclRPMD 
+00000338  .text      00000338 _mult 
+00000048  .text      00000048 ___ashiftrt_r4_2 
+000008cc  .text      000008cc ___gesf2 
+00000000  .text      00000000 _PER_Init 
+0000011c  .text      0000011c ___sclose 
+00000008  COMMON     00000008 _SpDie 
+0000007a  COMMON     0000007a _SclAutoVeFlag 
+00000000  .data      0000007c _PadData1 
+00000094  .text      00000094 _SCL_SetColMixRate 
+00000000  .entry     00000000 _entry 
+00000012  .text      00000012 ___ashiftrt_r4_24 
+00000080  COMMON     00000080 _SclBgColMix 
+00000c5c  .text      00000c5c __mprec_log10 
+0000002e  .text      0000002e ___ashiftrt_r4_15 
+00000014  .text      00000014 _MTH_Div 
+00000000  .text      00000000 _FNT_SetBuffSize 
+00000000  .text      00000000 ___trap3 
+00000010  COMMON     00000010 _per_get_sys_data 
+00000000  .text      00000000 _SCL_SetBack 
+00000e98  COMMON     00000e98 _SclRbgKtbOffset 
+000000e0  .text      000000e0 _SCL_VblInit 
+00000290  .text      00000290 __pipe 
+00000000  .text      00000000 _memchr 
+00000088  COMMON     00000088 _SclAutoIndex 
+00000430  .text      00000430 __gcvt 
+0000008c  COMMON     0000008c _SclAutoEndRate 
+00000060  .text      00000060 ___movstr 
+00000000  .data      000002cc _SpFrameChgMode 
+000000dc  .text      000000dc _SPR_SetTvMode 
+00000038  .text      00000038 __llicvt 
+000001dc  .text      000001dc __chown 
+00000018  .text      00000018 ___movstrSI56 
+00000fd8  .text      00000fd8 ___negdf2 
+00000558  .text      00000558 _SCL_Scale 
+0000014c  .text      0000014c __free_r 
+0000008e  COMMON     0000008e _SclAutoBlue 
+00000c64  .text      00000c64 ___eqdf2 
+0000000a  COMMON     0000000a _SpTvMode 
+00000038  .text      00000038 ___ashiftrt_r4_10 
+00000020  .text      00000020 __lseek 
+00000000  .tors      060208f0 ___ctors_end 
+00000014  .data      000002e0 _ReqDisplayFlag2 
+0000000c  COMMON     0000000c _SpScreenX 
+00000ae8  .text      00000ae8 ___negsf2 
+00000ea0  COMMON     00000ea0 _SclRa 
+00000ea8  COMMON     00000ea8 _SclRotateZ 
+00000240  .text      00000240 _fcvtbuf 
+0000004a  .text      0000004a ___ashiftrt_r4_1 
+0000006c  .text      0000006c __lseek_r 
+00000000  .text      00000000 _strcpy 
+00000008  .data      00001418 _SclRealBgPriNum 
+00000084  .text      00000084 __reclaim_reent 
+00000eb0  COMMON     00000eb0 _SclAddrLsTbl 
+0000146c  .text      0000146c _BackUpWrite 
+00000000  .text      00000000 _SCL_Vdp2Init 
+00000040  .text      00000040 _MTH_Cos 
+00000158  .text      00000158 __cleanup_r 
+00000bfc  .text      00000bfc ___mprec_bigtens 
+00000730  COMMON     00000730 _BackUpRamWork 
+0000000a  .text      0000000a ___ashiftrt_r4_28 
+00000000  .text      00000000 __fwalk 
+00000000  .tors      060208f0 ___ctors 
+00000034  .text      00000034 ___do_global_ctors 
+00000c1a  .text      00000c1a ___cmpdf2 
+00000000  .text      00000000 ___sread 
+00000eb8  COMMON     00000eb8 _SclK_TableNum 
+00000090  COMMON     00000090 _SclAutoRed 
+00000000  .text      00000000 _abort 
+00000020  .text      00000020 ___ashiftrt_r4_20 
+00000034  .text      00000034 ___movstrSI28 
+0000027c  .text      0000027c __icvt 
+0000003e  .text      0000003e ___ashiftrt_r4_7 
+00000228  .text      00000228 __dtoa_r 
+00000b1c  .text      00000b1c ___make_fp 
+00000a84  .text      00000a84 _ClrVram 
+00000abc  .text      00000abc ___divdf3 
+00000094  COMMON     00000094 _SclAutoInterval 
+000000cc  .text      000000cc __malloc_r 
+000003cc  .text      000003cc _SCL_Move 
+00000000  .data      00000984 _SclLengthLsTbl 
+00000000  COMMON     00000000 _perFlag 
+00000004  .data      00000080 _PadData2 
+000015b8  .text      000015b8 _BackUpDelete 
+00000030  .text      00000030 ___movstrSI32 
+00000000  .text      00000000 __trap3 
+00000814  .text      00000814 __ulp 
+000000a0  COMMON     000000a0 _SclOtherPri 
+00002730  COMMON     00002730 _CnTb 
+00000000  .data      00000000 _FntAsciiFontData 
+000000c4  .text      000000c4 ___sseek 
+00000000  .data      0000154c _per_time_out_flg 
+00000000  .text      00000000 ___lshrdi3 
+00001010  .text      00001010 ___make_dp 
+00000d66  .text      00000d66 _MainMenu 
+0000000c  .data      000002d8 _VBIntervalCounter 
+0000092c  .text      0000092c ___ltsf2 
+00000ec0  COMMON     00000ec0 _SclRotateTableAddress 
+00000314  .data      0000045c __impure_ptr 
+00000044  .text      00000044 ___movstrSI12 
+00000002  .data      0000007e _PadData1E 
+0000008c  .text      0000008c __Bfree 
+00000000  .text      00000000 _MTH_Sin 
+00000014  .text      00000014 _UsrVblankEnd 
+00000048  .text      00000048 ___movstrSI8 
+00000032  .text      00000032 ___ashiftrt_r4_13 
+0000006c  .text      0000006c __close 
+00000036  .text      00000036 ___ashiftrt_r4_11 
+00000000  .data      00001410 _SclRealOtherPri 
+00000df4  .data      060216e4 _edata 
+00003ecc  .bss       060255bc _end 
+00000694  .text      00000694 _SCL_CopyReg 
+00000044  .text      00000044 ___ashiftrt_r4_4 
+00000418  .text      00000418 __sicvt 
+00000000  .text      00000000 _SCL_SetPriority 
+00000000  .text      00000000 ___swbuf 
+000000b0  COMMON     000000b0 _SclAutoRGB 
+00000128  .text      00000128 _SCL_VblankStart 
+00000074  .text      00000074 _SCL_GetColRamMode 
+00000000  .text      00000000 ___udivsi3 
+00000002  COMMON     00000002 _FntXsize 
+00000248  .text      00000248 _SCL_Open 
+0000018a  .text      0000018a __vfiprintf_r 
+0000001a  .text      0000001a ___ashiftrt_r4_23 
+0000000e  .data      00000992 _SclDisplayX 
+00000000  .text      00000000 _UsrVblankStart 
+00000264  .text      00000264 __mstats_r 
+00000000  .text      00000000 ___sfvwrite 
+00000000  .text      00000000 _strlen 
+00000038  .text      00000038 ___movstrSI24 
+00000000  COMMON     00000000 _errno 
+00000214  .text      00000214 _SCL_VblankEnd 
+000013d0  .text      000013d0 _DispDate 
+00000000  .data      00000000 _FntKanaFontData 
+0000133c  .text      0000133c _BackUpInit 
+00000000  .text      00000000 _memmove 
+00000024  .text      00000024 ___ashiftrt_r4_18 
+00000100  .text      00000100 __fstat 
+00000ec4  COMMON     00000ec4 _SclK_TableFlag 
+00000078  .text      00000078 _SCL_ParametersInit 
+00000b34  .text      00000b34 ___mprec_tens 
+000009e8  .text      000009e8 ___floatsisf 
+0000003c  .text      0000003c ___movstrSI20 
+00000002  .data      00000986 _SclLengthCsTbl 
+0000027c  .text      0000027c _SCL_MoveTo 
+00000000  .text      00000000 ___smakebuf 
+000006b0  COMMON     000006b0 _SclAutoEndRed2 
+00000000  .text      00000000 __kill_r 
+00000008  COMMON     00000008 _SclCsy 
+000006b8  COMMON     000006b8 _SclSpPriNum 
+00002000  .stack     060275c0 _stack 
+0000001e  .text      0000001e ___ashiftrt_r4_21 
+00000dec  .text      00000dec ___ltdf2 
+00002740  COMMON     00002740 _DateTb 
+00000220  .text      00000220 __fork 
+00000ed0  COMMON     00000ed0 _Scl_w_reg 
+00000000  .text      00000000 __sprintf_r 
+000000a6  .text      000000a6 __sbrk 
+00000018  .data      000002e4 _VBIntrDisableDepth 
+00000046  .text      00000046 ___ashiftrt_r4_3 
+00000048  .text      00000048 ___sfmoreglue 
+0000021c  .text      0000021c _MTH_Atan 
+0000004c  .text      0000004c ___movstrSI4 
+000002b8  .text      000002b8 _PER_GetPer 
+00000160  .text      00000160 _SCL_InitRotateTable 
+00000498  .text      00000498 ___adddf3 
+00000000  .tors      060208f0 ___dtors_end 
+00000000  .text      00000000 ___mulsi3 
+0000016c  .text      0000016c _SPR_GetStatus 
+000001f0  .text      000001f0 _main 
+00000140  .text      00000140 _vfprintf 
+00000004  .data      000002d0 _SpFrameEraseMode 
+00000004  COMMON     00000004 _FntContry 
+00000ef0  COMMON     00000ef0 _Scl_n_reg 
+000005c8  .text      000005c8 _lshift 
+000000b4  .text      000000b4 __multadd 
+00000834  .text      00000834 _SCL_SetColRamMode 
+**MEMORY CONFIGURATION**
+
+name		origin   length   r_size   c_size    is    attributes
+*default*       00000000 ffffffff 00000000 060275c0 ()
+
+
+**LINK EDITOR MEMORY MAP**
+
+output   input     virtual
+section  section   address    tsize
+
+
+*ABS*             00000000     0     0 2**0 
+
+.entry            06010000    50     0 2**2 load alloc reloc contents 
+ from *(.entry)
+         .entry   06010000    50    50 2**2  coff-sh ../entry/entry.o(overhead 5344 bytes)
+                  06010000              _entry
+                  06010050 00000050 _eentry =.
+
+.text             06010060 10888     0 2**2 load alloc reloc contents 
+ from *(.text)
+         .text    06010060  1688  1688 2**2  coff-sh smpbup1.o(overhead 13904 bytes)
+                  060112b0              _err_disp
+                  06011202              _PadInputWait
+                  06010b00              _DispInit
+                  06011680              _BackUpFormat
+                  060114cc              _BackUpWrite
+                  06010ae4              _ClrVram
+                  06011618              _BackUpDelete
+                  06010dc6              _MainMenu
+                  06011430              _DispDate
+                  0601139c              _BackUpInit
+                  06010250              _main
+         .text    060116e8    7c    7c 2**2  coff-sh ../v_blank/v_blank.o(overhead 5384 bytes)
+                  060116fc              _UsrVblankEnd
+                  060116e8              _UsrVblankStart
+         .text    06011764    a0    a0 2**2  coff-sh ../v_blank/set_vb.o(overhead 5126 bytes)
+                  06011764              _SetVblank
+                  060117f4              _CheckVblankEnd
+         .text    06011804  154c  154c 2**2  coff-sh [../../segalib/lib/libper.a]PER_PRT.o(overhead 15138 bytes)
+                  06011bd4              _PER_IntFunc
+                  06011804              _PER_Init
+                  06011abc              _PER_GetPer
+         .text    06012d50   984   984 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_Func.o(overhead 14226 bytes)
+                  060135e0              _SCL_PriIntProc
+                  0601356c              _SCL_Memcpyw
+                  060134dc              _SCL_ScrollShow
+                  06012fb4              _SCL_Close
+                  060132a8              _SCL_Scale
+                  06012d50              _SCL_Vdp2Init
+                  0601311c              _SCL_Move
+                  060133e4              _SCL_CopyReg
+                  06012f98              _SCL_Open
+                  06012dc8              _SCL_ParametersInit
+                  06012fcc              _SCL_MoveTo
+                  06013584              _SCL_SetColRamMode
+         .text    060136d4   20c   20c 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_Fu01.o(overhead 4374 bytes)
+                  060136d4              _SCL_SetDisplayMode
+         .text    060138e0    7c    7c 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_Back.o(overhead 4090 bytes)
+                  060138e0              _SCL_SetBack
+         .text    0601395c   2cc   2cc 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_VblV.o(overhead 7320 bytes)
+                  06013a08              _SCL_DisplayFrame
+                  0601395c              _SCL_SetFrameInterval
+                  06013a3c              _SCL_VblInit
+                  06013a84              _SCL_VblankStart
+                  06013b70              _SCL_VblankEnd
+         .text    06013c28   13c   13c 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_PR03.o(overhead 4432 bytes)
+                  06013c28              _SCL_FreeColRam
+                  06013c58              _SCL_AllocColRam
+         .text    06013d64    a4    a4 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_PR02.o(overhead 3984 bytes)
+                  06013d64              _SCL_SetColRam
+         .text    06013e08   224   224 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_PR07.o(overhead 4348 bytes)
+                  06013e08              _SCL_SetPriority
+         .text    0601402c   998   998 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_Fu03.o(overhead 5082 bytes)
+                  06014082              _SCL_SetConfig
+                  0601402c              _SCL_InitConfigTb
+         .text    060149c4  1410  1410 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_Pri.o(overhead 12504 bytes)
+                  06014a4c              _SCL_AbortAutoVe
+                  06015c48              _SCL_SetShadowBit
+                  06014ed4              _SCL_AutoExec
+                  060149c4              _SCL_PriorityInit
+                  0601549c              _SCL_IncColOffset
+                  06014a58              _SCL_SetColMixRate
+                  06014a38              _SCL_GetColRamMode
+         .text    06015dd4  13ac  13ac 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_Ro00.o(overhead 13224 bytes)
+                  06017010              _SCL_RotateZD
+                  06016274              _SCL_Rotate
+                  06015f34              _SCL_InitRotateTable
+         .text    06017180   1d0   1d0 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_PR06.o(overhead 4374 bytes)
+                  06017180              _SCL_SetColRamOffset
+         .text    06017350    9c    9c 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_PR05.o(overhead 3894 bytes)
+                  06017350              _SCL_GetColRamOffset
+         .text    060173ec    78    78 2**2  coff-sh [../../segalib/lib/libmth.a]mth_fixd.o(overhead 3934 bytes)
+                  0601741c              _MTH_FixedToInt
+                  06017414              _MTH_IntToFixed
+                  060173ec              _MTH_Mul
+                  06017424              _MTH_Product
+                  06017400              _MTH_Div
+         .text    06017464   5d4   5d4 2**2  coff-sh [../../segalib/lib/libmth.a]mth_tri.o(overhead 7808 bytes)
+                  060174e8              _fcos
+                  060174ee              _fsin
+                  060174a4              _MTH_Cos
+                  06017464              _MTH_Sin
+                  06017680              _MTH_Atan
+         .text    06017a38   2c4   2c4 2**2  coff-sh [../../segalib/lib/libspr.a]spr_1c.o(overhead 8038 bytes)
+                  06017cd0              _SPR_WaitDrawEnd
+                  06017ce4              _SPR_SetEosMode
+                  06017c10              _SPR_SetEraseData
+                  06017a38              _SPR_Initial
+                  06017b14              _SPR_SetTvMode
+                  06017ba4              _SPR_GetStatus
+         .text    06017cfc   23c   23c 2**2  coff-sh [font/smp_font.a]FNT_COD1.o(overhead 4848 bytes)
+                  06017e20              _FNT_Print256
+         .text    06017f38    1c    1c 2**2  coff-sh [font/smp_font.a]FNT_COD0.o(overhead 4706 bytes)
+                  06017f38              _FNT_SetBuffSize
+         .text    06017f54    b0    b0 2**2  coff-sh [c:/gnu/lib/libc.a]sprintf.o(overhead 3984 bytes)
+                  06017fa8              _sprintf
+                  06017f54              __sprintf_r
+         .text    06018004    1e    1e 2**2  coff-sh [c:/gnu/lib/libc.a]strlen.o(overhead 3574 bytes)
+                  06018004              _strlen
+         *fill*   06018022     2 0000
+         .text    06018024   c48   c48 2**2  coff-sh [c:/gnu/lib/libc.a]vfprintf.o(overhead 5970 bytes)
+                  060181b8              __vfprintf_r
+                  06018164              _vfprintf
+         .text    06018c6c   148   148 2**2  coff-sh [c:/gnu/lib/libc.a]reent.o(overhead 4678 bytes)
+                  06018c6c              _cleanup_glue
+                  06018cf0              __reclaim_reent
+         .text    06018db4    3c    3c 2**2  coff-sh [c:/gnu/lib/libc.a]fputs.o(overhead 3754 bytes)
+                  06018db4              _fputs
+         .text    06018df0    58    58 2**2  coff-sh [c:/gnu/lib/libc.a]fputc.o(overhead 3664 bytes)
+                  06018df0              _fputc
+         .text    06018e48   218   218 2**2  coff-sh [c:/gnu/lib/libc.a]findfp.o(overhead 5980 bytes)
+                  06018ef0              ___sfp
+                  06018fdc              ___sinit
+                  06018fbc              __cleanup
+                  06018fa0              __cleanup_r
+                  06018e90              ___sfmoreglue
+         .text    06019060   598   598 2**2  coff-sh [c:/gnu/lib/libc.a]cvt.o(overhead 5436 bytes)
+                  06019098              __llicvt
+                  060192dc              __icvt
+                  06019478              __sicvt
+         .text    060195f8   728   728 2**2  coff-sh [c:/gnu/lib/libc.a]ecvtbuf.o(overhead 6688 bytes)
+                  06019c30              __dcvt
+                  06019944              _ecvtbuf
+                  06019a28              __gcvt
+                  06019838              _fcvtbuf
+         .text    06019d20   300   300 2**2  coff-sh [c:/gnu/lib/libc.a]mallocr.o(overhead 4826 bytes)
+                  06019ea6              __realloc_r
+                  06019e6c              __free_r
+                  06019dec              __malloc_r
+                  06019f84              __mstats_r
+         .text    0601a020   260   260 2**2  coff-sh [c:/gnu/lib/libc.a]fvwrite.o(overhead 4310 bytes)
+                  0601a020              ___sfvwrite
+         .text    0601a280    c4    c4 2**2  coff-sh [c:/gnu/lib/libc.a]wbuf.o(overhead 4090 bytes)
+                  0601a280              ___swbuf
+         .text    0601a344   140   140 2**2  coff-sh [c:/gnu/lib/libc.a]stdio.o(overhead 4344 bytes)
+                  0601a394              ___swrite
+                  0601a460              ___sclose
+                  0601a344              ___sread
+                  0601a408              ___sseek
+         .text    0601a484    5c    5c 2**2  coff-sh [c:/gnu/lib/libc.a]memset.o(overhead 3574 bytes)
+                  0601a484              _memset
+         .text    0601a4e0    b8    b8 2**2  coff-sh [c:/gnu/lib/libc.a]fflush.o(overhead 4000 bytes)
+                  0601a4e0              _fflush
+         .text    0601a598    62    62 2**2  coff-sh [c:/gnu/lib/libc.a]fwalk.o(overhead 3574 bytes)
+                  0601a598              __fwalk
+         *fill*   0601a5fa     2 0000
+         .text    0601a5fc  1564  1564 2**2  coff-sh [c:/gnu/lib/libc.a]dtoa.o(overhead 10814 bytes)
+                  0601a824              __dtoa_r
+         .text    0601bb60    20    20 2**2  coff-sh [c:/gnu/lib/libc.a]strcpy.o(overhead 3574 bytes)
+                  0601bb60              _strcpy
+         .text    0601bb80   cc8   cc8 2**2  coff-sh [c:/gnu/lib/libc.a]mprec.o(overhead 8476 bytes)
+                  0601c508              _d2b
+                  0601bd00              _s2b
+                  0601be92              _i2b
+                  0601c238              ___mcmp
+                  0601c62c              __ratio
+                  0601c414              __b2d
+                  0601be0c              _lo0bits
+                  0601bd9c              __hi0bits
+                  0601c276              ___mdiff
+                  0601c088              _pow5mult
+                  0601bb80              __Balloc
+                  0601c7a4              ___mprec_tinytens
+                  0601beb8              _mult
+                  0601c7dc              __mprec_log10
+                  0601c77c              ___mprec_bigtens
+                  0601c394              __ulp
+                  0601bc0c              __Bfree
+                  0601c6b4              ___mprec_tens
+                  0601c148              _lshift
+                  0601bc34              __multadd
+         .text    0601c848    34    34 2**2  coff-sh [c:/gnu/lib/libc.a]sbrkr.o(overhead 4386 bytes)
+                  0601c848              __sbrk_r
+         .text    0601c87c    22    22 2**2  coff-sh [c:/gnu/lib/libc.a]memcpy.o(overhead 3574 bytes)
+                  0601c87c              _memcpy
+         *fill*   0601c89e     2 0000
+         .text    0601c8a0    24    24 2**2  coff-sh [c:/gnu/lib/libc.a]fiprintf.o(overhead 3664 bytes)
+                  0601c8a0              _fiprintf
+         .text    0601c8c4    d4    d4 2**2  coff-sh [c:/gnu/lib/libc.a]wsetup.o(overhead 4090 bytes)
+                  0601c8c4              ___swsetup
+         .text    0601c998    48    48 2**2  coff-sh [c:/gnu/lib/libc.a]memmove.o(overhead 3574 bytes)
+                  0601c998              _memmove
+         .text    0601c9e0    24    24 2**2  coff-sh [c:/gnu/lib/libc.a]memchr.o(overhead 3574 bytes)
+                  0601c9e0              _memchr
+         .text    0601ca04   114   114 2**2  coff-sh [c:/gnu/lib/libc.a]filer.o(overhead 4934 bytes)
+                  0601caa8              __read_r
+                  0601ca04              __open_r
+                  0601cae0              __write_r
+                  0601ca3c              __close_r
+                  0601ca70              __lseek_r
+         .text    0601cb18    4c    4c 2**2  coff-sh [c:/gnu/lib/libc.a]callocr.o(overhead 3984 bytes)
+                  0601cb18              __calloc_r
+         .text    0601cb64   2ac   2ac 2**2  coff-sh [c:/gnu/lib/libc.a]syscalls.o(overhead 7446 bytes)
+                  0601cca8              __exit
+                  0601ccec              __getpid
+                  0601cd64              __utime
+                  0601cbb0              __write
+                  0601cb64              __read
+                  0601cc94              __unlink
+                  0601cc74              __open
+                  0601cd00              __stat
+                  0601cc9e              _isatty
+                  0601cd9c              __wait
+                  0601ccc8              __kill
+                  0601cd20              __chmod
+                  0601cdd8              __execv
+                  0601cdb8              __execve
+                  0601ccf6              __raise
+                  0601cdf4              __pipe
+                  0601cd40              __chown
+                  0601cb84              __lseek
+                  0601cbd0              __close
+                  0601cc64              __fstat
+                  0601cd84              __fork
+                  0601cc0a              __sbrk
+         .text    0601ce10   aac   aac 2**2  coff-sh [c:/gnu/lib/libc.a]vfiprintf.o(overhead 5574 bytes)
+                  0601cf50              _vfiprintf
+                  0601cf9a              __vfiprintf_r
+         .text    0601d8bc   120   120 2**2  coff-sh [c:/gnu/lib/libc.a]makebuf.o(overhead 4196 bytes)
+                  0601d8bc              ___smakebuf
+         .text    0601d9dc    12    12 2**2  coff-sh [c:/gnu/lib/libc.a]trap.o(overhead 3754 bytes)
+                  0601d9dc              ___trap3
+                  0601d9dc              __trap3
+         *fill*   0601d9ee     2 0000
+         .text    0601d9f0    24    24 2**2  coff-sh [c:/gnu/lib/libc.a]abort.o(overhead 3754 bytes)
+                  0601d9f0              _abort
+         .text    0601da14    38    38 2**2  coff-sh [c:/gnu/lib/libc.a]fstatr.o(overhead 3754 bytes)
+                  0601da14              __fstat_r
+         .text    0601da4c    50    50 2**2  coff-sh [c:/gnu/lib/libc.a]raise.o(overhead 4090 bytes)
+                  0601da6c              __raise_r
+                  0601da4c              _raise
+         .text    0601da9c    50    50 2**2  coff-sh [c:/gnu/lib/libc.a]signalr.o(overhead 4074 bytes)
+                  0601dad4              __getpid_r
+                  0601da9c              __kill_r
+         .text    0601daec    90    90 2**2  coff-sh [c:/gnu/lib/libgcc.a]__main.o(overhead 17208 bytes)
+                  0601db54              ___main
+                  0601daec              ___do_global_dtors
+                  0601db20              ___do_global_ctors
+         .text    0601db7c    52    52 2**2  coff-sh [c:/gnu/lib/libgcc.a]_ashiftrt.o(overhead 8294 bytes)
+                  0601db88              ___ashiftrt_r4_27
+                  0601dbbc              ___ashiftrt_r4_6
+                  0601dbac              ___ashiftrt_r4_14
+                  0601db9e              ___ashiftrt_r4_19
+                  0601dbb6              ___ashiftrt_r4_9
+                  0601dbca              ___ashiftrt_r4_0
+                  0601db7c              ___ashiftrt_r4_31
+                  0601db8a              ___ashiftrt_r4_26
+                  0601db98              ___ashiftrt_r4_22
+                  0601dba4              ___ashiftrt_r4_16
+                  0601dbb0              ___ashiftrt_r4_12
+                  0601db84              ___ashiftrt_r4_29
+                  0601dba2              ___ashiftrt_r4_17
+                  0601db82              ___ashiftrt_r4_30
+                  0601dbbe              ___ashiftrt_r4_5
+                  0601dbb8              ___ashiftrt_r4_8
+                  0601db7c              ___ashiftrt_r4_32
+                  0601db8c              ___ashiftrt_r4_25
+                  0601dbc4              ___ashiftrt_r4_2
+                  0601db8e              ___ashiftrt_r4_24
+                  0601dbaa              ___ashiftrt_r4_15
+                  0601dbb4              ___ashiftrt_r4_10
+                  0601dbc6              ___ashiftrt_r4_1
+                  0601db86              ___ashiftrt_r4_28
+                  0601db9c              ___ashiftrt_r4_20
+                  0601dbba              ___ashiftrt_r4_7
+                  0601dbae              ___ashiftrt_r4_13
+                  0601dbb2              ___ashiftrt_r4_11
+                  0601dbc0              ___ashiftrt_r4_4
+                  0601db96              ___ashiftrt_r4_23
+                  0601dba0              ___ashiftrt_r4_18
+                  0601db9a              ___ashiftrt_r4_21
+                  0601dbc2              ___ashiftrt_r4_3
+         *fill*   0601dbce     2 0000
+         .text    0601dbd0    b4    b4 2**2  coff-sh [c:/gnu/lib/libgcc.a]_ashiftlt.o(overhead 4782 bytes)
+                  0601dbd0              ___ashlsi3
+         .text    0601dc84    8a    8a 2**2  coff-sh [c:/gnu/lib/libgcc.a]_udivsi3.o(overhead 5390 bytes)
+                  0601dc84              ___udivsi3
+         *fill*   0601dd0e     2 0000
+         .text    0601dd10  1098  1098 2**2  coff-sh [c:/gnu/lib/libgcc.a]dp-bit.o(overhead 77132 bytes)
+                  0601e5fc              ___muldf3
+                  0601ed50              ___truncdfsf2
+                  0601eb5c              ___ledf2
+                  0601ec58              ___fixdfsi
+                  0601e208              ___subdf3
+                  0601e9d4              ___nedf2
+                  0601ebc4              ___floatsidf
+                  0601ea98              ___gedf2
+                  0601ea34              ___gtdf2
+                  0601ece8              ___negdf2
+                  0601e974              ___eqdf2
+                  0601e92a              ___cmpdf2
+                  0601e7cc              ___divdf3
+                  0601ed20              ___make_dp
+                  0601eafc              ___ltdf2
+                  0601e1a8              ___adddf3
+         .text    0601eda8    ac    ac 2**2  coff-sh [c:/gnu/lib/libgcc.a]_movstr.o(overhead 6922 bytes)
+                  0601ede8              ___movstrSI16
+                  0601edbc              ___movstrSI60
+                  0601edc8              ___movstrSI48
+                  0601edc4              ___movstrSI52
+                  0601edb8              ___movstrSI64
+                  0601edcc              ___movstrSI44
+                  0601edd0              ___movstrSI40
+                  0601edd4              ___movstrSI36
+                  0601ee08              ___movstr
+                  0601edc0              ___movstrSI56
+                  0601eddc              ___movstrSI28
+                  0601edd8              ___movstrSI32
+                  0601edec              ___movstrSI12
+                  0601edf0              ___movstrSI8
+                  0601ede0              ___movstrSI24
+                  0601ede4              ___movstrSI20
+                  0601edf4              ___movstrSI4
+         .text    0601ee54    22    22 2**2  coff-sh [c:/gnu/lib/libgcc.a]_mulsi3.o(overhead 5108 bytes)
+                  0601ee54              ___mulsi3
+         *fill*   0601ee76     2 0000
+         .text    0601ee78    94    94 2**2  coff-sh [c:/gnu/lib/libgcc.a]_moddi3.o(overhead 17298 bytes)
+                  0601ee78              ___moddi3
+         .text    0601ef0c    9c    9c 2**2  coff-sh [c:/gnu/lib/libgcc.a]_divdi3.o(overhead 17216 bytes)
+                  0601ef0c              ___divdi3
+         .text    0601efa8    24    24 2**2  coff-sh [c:/gnu/lib/libgcc.a]_umoddi3.o(overhead 13342 bytes)
+                  0601efa8              ___umoddi3
+         .text    0601efcc    1c    1c 2**2  coff-sh [c:/gnu/lib/libgcc.a]_udivdi3.o(overhead 13096 bytes)
+                  0601efcc              ___udivdi3
+         .text    0601efe8    9e    9e 2**2  coff-sh [c:/gnu/lib/libgcc.a]_sdivsi3.o(overhead 5108 bytes)
+                  0601efe8              ___sdivsi3
+         *fill*   0601f086     2 0000
+         .text    0601f088    b4    b4 2**2  coff-sh [c:/gnu/lib/libgcc.a]_lshiftrt.o(overhead 4782 bytes)
+                  0601f088              ___lshrsi3
+         .text    0601f13c    a6    a6 2**2  coff-sh [c:/gnu/lib/libgcc.a]_ashiftrt_n.o(overhead 4782 bytes)
+                  0601f13c              ___ashrsi3
+         *fill*   0601f1e2     2 0000
+         .text    0601f1e4    7c    7c 2**2  coff-sh [c:/gnu/lib/libgcc.a]_lshrdi3.o(overhead 14284 bytes)
+                  0601f1e4              ___lshrdi3
+         .text    0601f260    c4    c4 2**2  coff-sh [c:/gnu/lib/libgcc.a]_muldi3.o(overhead 14706 bytes)
+                  0601f260              ___muldi3
+         .text    0601f324   a28   a28 2**2  coff-sh [c:/gnu/lib/libgcc.a]_udivmoddi4.o(overhead 26286 bytes)
+                  0601f424              ___udivmoddi4
+         .text    0601fd4c   b9c   b9c 2**2  coff-sh [c:/gnu/lib/libgcc.a]fp-bit.o(overhead 74904 bytes)
+                  060207ac              ___fixsfsi
+                  060200cc              ___subsf3
+                  060204bc              ___cmpsf2
+                  0602088c              ___extendsfdf2
+                  06020078              ___addsf3
+                  0602055c              ___nesf2
+                  06020274              ___mulsf3
+                  060205b8              ___gtsf2
+                  060206d4              ___lesf2
+                  06020500              ___eqsf2
+                  06020390              ___divsf3
+                  06020618              ___gesf2
+                  06020834              ___negsf2
+                  06020868              ___make_fp
+                  06020678              ___ltsf2
+                  06020734              ___floatsisf
+ from *(.strings)
+                  060208e8 00010888 _etext =.
+
+.tors             060208f0     0     0 2**0 
+                  060208f0 00000000 ___ctors =.
+ from *(.ctors)
+                  060208f0 00000000 ___ctors_end =.
+                  060208f0 00000000 ___dtors =.
+ from *(.dtors)
+                  060208f0 00000000 ___dtors_end =.
+
+.data             060208f0   df4     0 2**2 load alloc reloc contents 
+ from *(.data)
+         .data    060208f0    50    50 2**2  coff-sh smpbup1.o(overhead 13904 bytes)
+                  060208f0              _DummyData
+                  06020907              _Week
+                  060208fc              _DummyData2
+         .data    06020940     8     8 2**2  coff-sh ../v_blank/v_blank.o(overhead 5384 bytes)
+                  06020946              _PadData2E
+                  06020940              _PadData1
+                  06020944              _PadData2
+                  06020942              _PadData1E
+         .data    06020948     c     c 2**2  coff-sh [../../segalib/lib/libper.a]PER_PRT.o(overhead 15138 bytes)
+                  06020949              _per_hot_res
+                  06020948              _per_time_out_flg
+         .data    06020954    14    14 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_Func.o(overhead 14226 bytes)
+                  06020964              _SclDisplayY
+                  06020966              _SclRotateTableMode
+                  06020960              _SclProcess
+                  0602095c              _SclCurSclNum
+                  06020954              _SclLengthLsTbl
+                  06020962              _SclDisplayX
+                  06020956              _SclLengthCsTbl
+         .data    06020968    1c    1c 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_VblV.o(overhead 7320 bytes)
+                  06020970              _VBInterval
+                  06020978              _ReqDisplayFlag
+                  06020968              _SpFrameChgMode
+                  0602097c              _ReqDisplayFlag2
+                  06020974              _VBIntervalCounter
+                  06020980              _VBIntrDisableDepth
+                  0602096c              _SpFrameEraseMode
+         .data    06020984    18    18 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_Pri.o(overhead 12504 bytes)
+                  06020988              _SclRealSpPriNum
+                  06020998              _SclRealColOffset
+                  06020994              _SclRealBgColMix
+                  06020990              _SclRealSpColMix
+                  0602098c              _SclRealBgPriNum
+                  06020984              _SclRealOtherPri
+         .data    0602099c    34    34 2**2  coff-sh [../../segalib/lib/libspr.a]spr_1c.o(overhead 8038 bytes)
+                  0602099c              _SpInitialFlag
+         .data    060209d0     8     8 2**2  coff-sh [font/smp_font.a]FNT_COD0.o(overhead 4706 bytes)
+                  060209d0              _FntBitPat
+         .data    060209d8   600   600 2**2  coff-sh [font/smp_font.a]FNT_DAT0.o(overhead 3574 bytes)
+                  060209d8              _FntAsciiFontData
+         .data    06020fd8   3f0   3f0 2**2  coff-sh [font/smp_font.a]FNT_DAT1.o(overhead 3574 bytes)
+                  06020fd8              _FntKanaFontData
+         .data    060213c8   318   318 2**2  coff-sh [c:/gnu/lib/libc.a]reent.o(overhead 4678 bytes)
+                  060216dc              __impure_ptr
+         .data    060216e0     4     4 2**2  coff-sh [c:/gnu/lib/libgcc.a]__main.o(overhead 17208 bytes)
+                  060216e4 00000df4 _edata =.
+
+.bss              060216f0  3ecc     0 2**4 alloc 
+                  060216f0 00000000 _bss_start =.
+ from *(.bss)
+         .bss     060216f0    7c    7c 2**2  coff-sh [../../segalib/lib/libper.a]PER_PRT.o(overhead 15138 bytes)
+         .bss     0602176c     8     8 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_Func.o(overhead 14226 bytes)
+         .bss     06021774    48    48 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_Ro00.o(overhead 13224 bytes)
+         .bss     060217bc     4     4 2**2  coff-sh [c:/gnu/lib/libc.a]syscalls.o(overhead 7446 bytes)
+         .bss     060217c0    14    14 2**2  coff-sh [c:/gnu/lib/libgcc.a]dp-bit.o(overhead 77132 bytes)
+         .bss     060217d4    10    10 2**2  coff-sh [c:/gnu/lib/libgcc.a]fp-bit.o(overhead 74904 bytes)
+ from *(COMMON)
+         *fill*   060217e4     c 0000
+         COMMON   060217f0  2746  2746 2**4  coff-sh smpbup1.o(overhead 13904 bytes)
+                  060217f0              _DirTb
+                  06021ef8              _clock
+                  06021f00              _StTb
+                  06021f18              _device
+                  06021f20              _BackUpRamWork
+                  06023f20              _CnTb
+                  06023f30              _DateTb
+         *fill*   06023f36     a 0000
+         COMMON   06023f40    1c    1c 2**4  coff-sh ../v_blank/v_blank.o(overhead 5384 bytes)
+                  06023f40              _PadWorkArea
+         COMMON   06023f5c     4     4 2**2  coff-sh ../v_blank/set_vb.o(overhead 5126 bytes)
+                  06023f5c              _perFlag
+         COMMON   06023f60    1c    1c 2**4  coff-sh [../../segalib/lib/libper.a]PER_PRT.o(overhead 15138 bytes)
+                  06023f60              _per_set_sys_flg
+                  06023f64              _per_get_time_adr
+                  06023f70              _per_get_sys_data
+         *fill*   06023f7c     4 0000
+         COMMON   06023f80   f30   f30 2**4  coff-sh [../../segalib/lib/libscl.a]SCL_Func.o(overhead 14226 bytes)
+                  06023f80              _SclRbgKtbAddr
+                  06023f88              _SclRb
+                  06023f90              _SclK_TableBuff
+                  06024c60              _SclRotregBuff
+                  06024d60              _SclAddrCsTbl
+                  06024d70              _Scl_s_reg
+                  06024d98              _SclRotateXy
+                  06024da0              _Scl_d_reg
+                  06024de8              _SclRotateDisp
+                  06024df0              _SclRotateMoveZ
+                  06024df8              _SclRotXySw
+                  06024e00              _Scl_r_reg
+                  06024e10              _SclRPMD
+                  06024e18              _SclRbgKtbOffset
+                  06024e20              _SclRa
+                  06024e28              _SclRotateZ
+                  06024e30              _SclAddrLsTbl
+                  06024e38              _SclK_TableNum
+                  06024e40              _SclRotateTableAddress
+                  06024e44              _SclK_TableFlag
+                  06024e50              _Scl_w_reg
+                  06024e70              _Scl_n_reg
+         COMMON   06024eb0     4     4 2**2  coff-sh [../../segalib/lib/libscl.a]SCL_VblV.o(overhead 7320 bytes)
+                  06024eb0              _frameChgFlag
+         *fill*   06024eb4     c 0000
+         COMMON   06024ec0   6c0   6c0 2**4  coff-sh [../../segalib/lib/libscl.a]SCL_Pri.o(overhead 12504 bytes)
+                  06024ec0              _SclAutoEndBlue2
+                  06024ed0              _SclColOffset
+                  06024ee0              _SclPriBuffDirty
+                  06024ee2              _SclAutoEndRed
+                  06024ee4              _SclAutoSurface
+                  06024ee8              _SclAutoGreen
+                  06024eea              _SclAutoEndGreen
+                  06024eec              _SclAutoCount
+                  06024ef0              _SclColRamAlloc256
+                  06024f10              _SclAutoCurRate
+                  06024f11              _SclAutoPlusFlag
+                  06024f18              _SclSpColMix
+                  06024f20              _SclAutoMax
+                  06024f24              _SclLineColRamOffset
+                  06024f28              _SclColRamAlloc2048
+                  06024f30              _SclBgPriNum
+                  06024f36              _SclAutoEndBlue
+                  06024f38              _SclAutoEndGreen2
+                  06024f3a              _SclAutoVeFlag
+                  06024f40              _SclBgColMix
+                  06024f48              _SclAutoIndex
+                  06024f4c              _SclAutoEndRate
+                  06024f4e              _SclAutoBlue
+                  06024f50              _SclAutoRed
+                  06024f54              _SclAutoInterval
+                  06024f60              _SclOtherPri
+                  06024f70              _SclAutoRGB
+                  06025570              _SclAutoEndRed2
+                  06025578              _SclSpPriNum
+         COMMON   06025580    10    10 2**3  coff-sh [../../segalib/lib/libscl.a]SCL_Ro00.o(overhead 13224 bytes)
+                  06025580              _SclCsx
+                  06025588              _SclCsy
+         COMMON   06025590    10    10 2**2  coff-sh [../../segalib/lib/libspr.a]spr_1c.o(overhead 8038 bytes)
+                  06025590              _SpScreenY
+                  06025594              _SpFbcrMode
+                  06025596              _SpDil
+                  06025598              _SpDie
+                  0602559a              _SpTvMode
+                  0602559c              _SpScreenX
+         COMMON   060255a0     5     5 2**2  coff-sh [font/smp_font.a]FNT_COD0.o(overhead 4706 bytes)
+                  060255a0              _FntYsize
+                  060255a2              _FntXsize
+                  060255a4              _FntContry
+         *fill*   060255a5     3 0000
+         COMMON   060255a8     4     4 2**2  coff-sh [c:/gnu/lib/libc.a]sbrkr.o(overhead 4386 bytes)
+                  060255a8              _errno
+         COMMON   060255ac    10    10 2**2  coff-sh [c:/gnu/lib/libgcc.a]__main.o(overhead 17208 bytes)
+                  060255ac              _max_count_si
+                  060255b0              _max_count_hi
+                  060255b4              _max_si
+                  060255b8              _max_hi
+                  060255bc 00003ecc _bss_end =.
+                  060255bc 00003ecc _end =.
+
+.stack            060255c0  2000     0 2**2 alloc contents 
+ from *(.stack)
+         .stack   060255c0  2000  2000 2**2  coff-sh ../entry/stack.o(overhead 4242 bytes)
+                  060255c0              _PROG_STK
+                  060275c0 00002000 _stack =.
+LOAD ../entry/entry.o
+LOAD ../entry/stack.o
+LOAD smpbup1.o
+LOAD ../v_blank/v_blank.o
+LOAD ../v_blank/set_vb.o
+LOAD ../../segalib/lib/libper.a
+LOAD ../../segalib/lib/libscl.a
+LOAD ../../segalib/lib/libmth.a
+LOAD ../../segalib/lib/libspr.a
+LOAD font/smp_font.a
+LOAD c:/gnu/lib/libc.a
+LOAD c:/gnu/lib/libgcc.a
+LOAD c:/gnu/lib/libm.a
+OUTPUT(smpbup1.sre srec)

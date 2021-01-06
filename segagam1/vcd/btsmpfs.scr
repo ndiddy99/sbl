@@ -1,0 +1,59 @@
+Disc		btsmpfs.dsk
+Session		CDROM
+LeadIn		MODE1
+EndLeadIn
+
+SystemArea	..\ip.bin
+
+Track		MODE1
+	Volume				ISO9660 "btsmpfs.pvd"
+	PrimaryVolume			00:02:16
+	SystemIdentifier		"SEGA SEGASATURN"
+	VolumeIdentifier		"SAMPLE_GAME_TITLE"
+	VolumeSetIdentifier		"SAMPLE_GAME_TITLE"
+	PublisherIdentifier		"SEGA ENTERPRISES,LTD."
+	DataPreparerIdentifier		"SEGA ENTERPRISES,LTD."
+	VolumeCreationDate		11/11/1994 00:00:00:00:36
+	EndPrimaryVolume
+	EndVolume
+
+	File		0KRNL.BIN;1
+	FileSource	"..\smp_krnl.bin"
+	EndFileSource
+	EndFile
+	File		LOGO.BIN;1
+	FileSource	"..\logo.bin"
+	EndFileSource
+	EndFile
+	File		TITL.BIN;1
+	FileSource	"..\titl.bin"
+	EndFileSource
+	EndFile
+	File		WIND.BIN;1
+	FileSource	"..\wind.bin"
+	EndFileSource
+	EndFile
+	File		SCRL.BIN;1
+	FileSource	"..\scrl.bin"
+	EndFileSource
+	EndFile
+	File		SPRT.BIN;1
+	FileSource	"..\sprt.bin"
+	EndFileSource
+	EndFile
+	File		GM2D.BIN;1
+	FileSource	"..\gm2d.bin"
+	EndFileSource
+	EndFile
+	File		D214.BIN;1
+	FileSource	"..\d214.bin"
+	EndFileSource
+	EndFile
+EndTrack
+
+LeadOut		MODE1
+	Empty		500
+EndLeadOut
+EndSession
+EndDisc
+

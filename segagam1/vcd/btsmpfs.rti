@@ -1,0 +1,109 @@
+;PreProcess for VCDEMU <VCDPRE> Ver 3.10 Released at 30-Nov-1994
+;Copyright (c) 1994 Victor Company of Japan, Limited (JVC)
+[TOC]
+CatalogNo 
+DiscType CdRom
+  Tno    1
+    ControlCode 196
+    BeginTime 00:00:00
+    TotalINo 1
+    Index 00:02:00
+    EndTime 00:07:51
+    Mode 1
+  EndTrack
+LeadOut 00:07:52
+[REL]
+CdImageFile		btsmpfs.dsk
+LeadInSize		0
+Tno		1
+	TotalFNo	9
+		LocalFNo	1
+		IsoFile		btsmpfs.pvd
+		TotalCNo	1
+			DosFile	btsmpfs.pvd
+				DosLength	43008	0
+				StLsn	0
+				EndLsn	20
+				LocalCNo 1
+			EndDosFile
+		EndIsoFile
+		LocalFNo	2
+		IsoFile		0KRNL.BIN;1
+		TotalCNo	1
+			DosFile	..\smp_krnl.bin
+				DosLength	81244	0
+				StLsn	21
+				EndLsn	60
+				LocalCNo 1
+			EndDosFile
+		EndIsoFile
+		LocalFNo	3
+		IsoFile		LOGO.BIN;1
+		TotalCNo	1
+			DosFile	..\logo.bin
+				DosLength	2876	0
+				StLsn	61
+				EndLsn	62
+				LocalCNo 1
+			EndDosFile
+		EndIsoFile
+		LocalFNo	4
+		IsoFile		TITL.BIN;1
+		TotalCNo	1
+			DosFile	..\titl.bin
+				DosLength	1484	0
+				StLsn	63
+				EndLsn	63
+				LocalCNo 1
+			EndDosFile
+		EndIsoFile
+		LocalFNo	5
+		IsoFile		WIND.BIN;1
+		TotalCNo	1
+			DosFile	..\wind.bin
+				DosLength	7676	0
+				StLsn	64
+				EndLsn	67
+				LocalCNo 1
+			EndDosFile
+		EndIsoFile
+		LocalFNo	6
+		IsoFile		SCRL.BIN;1
+		TotalCNo	1
+			DosFile	..\scrl.bin
+				DosLength	157296	0
+				StLsn	68
+				EndLsn	144
+				LocalCNo 1
+			EndDosFile
+		EndIsoFile
+		LocalFNo	7
+		IsoFile		SPRT.BIN;1
+		TotalCNo	1
+			DosFile	..\sprt.bin
+				DosLength	56904	0
+				StLsn	145
+				EndLsn	172
+				LocalCNo 1
+			EndDosFile
+		EndIsoFile
+		LocalFNo	8
+		IsoFile		GM2D.BIN;1
+		TotalCNo	1
+			DosFile	..\gm2d.bin
+				DosLength	28568	0
+				StLsn	173
+				EndLsn	186
+				LocalCNo 1
+			EndDosFile
+		EndIsoFile
+		LocalFNo	9
+		IsoFile		D214.BIN;1
+		TotalCNo	1
+			DosFile	..\d214.bin
+				DosLength	491360	0
+				StLsn	187
+				EndLsn	426
+				LocalCNo 1
+			EndDosFile
+		EndIsoFile
