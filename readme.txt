@@ -48,11 +48,9 @@ SEGAGAM1 - Sample game code tested. This is a cd-based test that uses
 --------------
 Helpful Notes
 --------------
-1) lib\libsat.a are all the libraries except per and cdc, in one archive 
-file.
+1) lib\libsat.a are all the libraries in one archive file.
 
-2) the libraries were built with gcc version cygnus-2.6-95q1-SOA-950406
-   this version defaults to structure packing on
+2) the libraries were built with gcc version 8.4
 
 3) Refer to the following documents to learn how to use
    the library routines:

@@ -3,13 +3,13 @@
 #include "sega_cdc.h"
 #include "cd_int.h"
 
-Sint32 cmdRspScd(Uint16 *outputdata, unsigned long *flag, unsigned char type);
+Sint32 cmdRspScd(Uint16 *outputdata, Sint32 *flag, unsigned char type);
 
 //////////////////////////////////////////////////////////////////////////////
 
 Sint32  CDC_TgetScdQch(Uint16 *qcode)
 {
-   unsigned long flag;
+   Sint32 flag;
 
    return cmdRspScd(qcode, &flag, 0);
 }
@@ -23,7 +23,7 @@ Sint32  CDC_TgetScdRwch(Uint16 *rwcode, Sint32 *scdflag)
 
 //////////////////////////////////////////////////////////////////////////////
 
-Sint32 cmdRspScd(Uint16 *outputdata, unsigned long *flag, unsigned char type)
+Sint32 cmdRspScd(Uint16 *outputdata, Sint32 *flag, unsigned char type)
 {
    cdcmd_struct cdcmd;
    cdcmd_struct cdcmdrsp;

@@ -32,8 +32,8 @@ Sint32 CDC_GetFiltRange(Sint32 filtno, Sint32 *fad, Sint32 *fasnum)
 
    ret = CDSUB_UpdStatus(0, &cdcmd, &cdcmdrsp);
 
-   fad[0] = ((cdcmdrsp.CR1 & 0xFF) << 16) || cdcmdrsp.CR2;
-   fasnum[0] =  ((cdcmdrsp.CR3 & 0xFF) << 16) || cdcmdrsp.CR4;
+   fad[0] = ((cdcmdrsp.CR1 & 0xFF) << 16) | cdcmdrsp.CR2;
+   fasnum[0] =  ((cdcmdrsp.CR3 & 0xFF) << 16) | cdcmdrsp.CR4;
 
    return ret;
 }

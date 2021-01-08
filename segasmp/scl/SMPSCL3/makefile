@@ -1,38 +1,40 @@
  #----------------------------------------------------------------------------
- #  SmpScl3 Makefile  
+ #  SBL Sample Makefile 
  #----------------------------------------------------------------------------
 
-CC = gcc
-AS = as
-LD = ld
-AR = ar
-CPP = cpp
+CC = sh-elf-gcc
+AS = sh-elf-as
+LD = sh-elf-ld
+AR = sh-elf-ar
+OBJCOPY = sh-elf-objcopy
 RM = rm
 
 
 ## Grab any EXTRA_FLAGS we might need
 include ../../../segalib/global/global.mk
 
+TARGET = smpscl3
+
 CFLAGS = $(EXTRA_CFLAGS)
 
 INCLUDES = -I../../../segalib/include
 
-ASFLAGS = $(EXTRA_ASFLAGS) 
+ASFLAGS = $(EXTRA_ASFLAGS)
 
-LDFLAGS =
+LDFLAGS = -T lnk_elf.x -e _entry -nostartfiles -Wl,-Map,$(TARGET).map
 
-GNU_LIBS = -Lc:/gnu/lib -lm -lgcc -lc -lgcc
+LDIR = ../../../segalib/lib
 
-LDIR = -L../../../segalib/lib
+LIBS = $(LDIR)/libsat.a
 
-SOJ_LIBS = -lsat -lper -lsat
 
-OBJS =	../../entry/entry.o \
+OBJS = \
+	../../entry/entry.o \
 	../../entry/stack.o \
-	smpscl3.o \
-        scldata.o \
-        ../../v_blank/v_blank.o \
-        ../../v_blank/set_vb.o \
+	../../v_blank/v_blank.o \
+	../../v_blank/set_vb.o \
+	scldata.o \
+	$(TARGET).o
 
 %.o: %.c
 	$(CC) $(CFLAGS) $(INCLUDES) -c -o $@ $<
@@ -47,19 +49,15 @@ OBJS =	../../entry/entry.o \
 	$(AS) $(ASFLAGS) $(INCLUDES) -ahld $< > $*.lst
 
 
-bin: smpscl3.bin
 
-smpscl3.sre: $(OBJS)
-	$(LD) -o $@ -T lnk_sre.x $(OBJS) $(LDIR) $(SOJ_LIBS) $(GNU_LIBS) -Map smpscl3.map
-	
-smpscl3.bin: smpscl3.sre
-	sretobin smpscl3.sre $@
+all: $(TARGET).bin
 
-cof: smpscl3.cof
+$(TARGET).bin: $(TARGET).elf
+	$(OBJCOPY) -O binary $< $@
 
-smpscl3.cof: $(OBJS)
-	$(LD) -o $@ -T lnk_cof.x $(OBJS) $(LDIR) $(SOJ_LIBS) $(GNU_LIBS) -Map smpscl3.map
+$(TARGET).elf: $(OBJS)
+	$(CC) $(LDFLAGS) -o $(TARGET).elf -Xlinker -Map -Xlinker $(TARGET).map $(OBJS) $(LIBS)
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) *.o
 

@@ -12,4 +12,3 @@
 #define	UP_RIGHT		0x09
 #define	DOWN_RIGHT		0x03
 #define	DOWN_LEFT		0x01
-

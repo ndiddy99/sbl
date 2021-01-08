@@ -34,7 +34,7 @@
 	.globl _entry
 _entry:
 
-	mov.l	@(stk_LOC, pc), r15	! load stack
+	mov.l	stk_LOC, r15	! load stack
 	mov	#0xf0,r1
 
 ! Disable interrupts, temporarily
@@ -52,8 +52,8 @@ _entry:
 	ldc	r14, gbr			! Clear out gbr
 	lds	r14, mach			! Clear out mach
 	lds	r14, macl			! Clear out macl
-	mov.l	@(bss_E, pc), r2
-	mov.l	@(bss_S, pc), r1
+	mov.l	bss_E, r2
+	mov.l	bss_S, r1
 	add	#-1, r2
 	cmp/hi	r1, r2				! bss_E > bss_S
 	bf.s	doMain
@@ -70,7 +70,7 @@ doMain:
 	mov	#0,r0
 	ldc	r0,sr
 
-	mov.l	@(main_LOC, pc), r0
+	mov.l	main_LOC, r0
 	sts.l	pr, @-r15
 	jsr	@r0
 	nop

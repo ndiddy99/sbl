@@ -15,8 +15,13 @@
 #include	<sega_xpt.h>
 #include	<sega_def.h> 
 #include	<sega_mth.h> 
-#include	<sega_scl.h> 
+#include	<sega_scl.h>
+#include	"../../v_blank/v_blank.h"
 #include	"botan.h"
+
+extern void FirstData(Uint32 sclnum);
+extern Uint32 SecondData(Uint32 sclnum);
+
 
 void SetAutoLinePara(Uint16 SclNum);
 void ClrLinePara(Uint16 SclNum);
@@ -35,14 +40,12 @@ Uint16	CycleTb[]={
 	0xffff,0xffff   /*        (VRAM B1)   ñ≥å¯Åiï™äÑÇµÇƒÇ¢Ç»Ç¢Åj   */
 };
 
-void main()
+int main()
 {
     SclConfig	scfg;
-    Uint16	*prnum_addr;
-    Uint32	sclnum,Sflag;
+    Uint32	sclnum;
     Uint32	sclnum2;
     Uint32	StartAddr2;
-    Fixed32	size;
     Uint8	Key;
     Uint8	sw;
 
@@ -128,7 +131,6 @@ void main()
 
     Key=1;
     sw=1;
-    Sflag = 0;
     while(1) {
 	switch(Key) {
 	    case UP_LEFT:
@@ -241,4 +243,3 @@ void ClrLinePara(Uint16 SclNum)
     SCL_Close();
     SCL_DisplayFrame();
 }
-

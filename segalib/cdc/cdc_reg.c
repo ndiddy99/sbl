@@ -19,14 +19,14 @@ Uint32 *CDC_GetDataPtr(void)
 
 Sint32 CDC_GetHirqReq(void)
 {
-   return (Sint32)*((unsigned short *)0x25890008);
+   return (Sint32)*((volatile unsigned short *)0x25890008);
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 void CDC_ClrHirqReq(Sint32 bitpat)
 {
-   hirq_flag = *((unsigned short *)0x25890008) | hirq_flag;
+   hirq_flag = *((volatile unsigned short *)0x25890008) | hirq_flag;
 
    CDREG_ClrHirqReq(bitpat | 1);
 }
@@ -35,7 +35,7 @@ void CDC_ClrHirqReq(Sint32 bitpat)
 
 void CDREG_ClrHirqReq (Sint32 bitpat)
 {
-   *((unsigned short *)0x25890008) = (unsigned short)bitpat;
+   *((volatile unsigned short *)0x25890008) = (unsigned short)bitpat;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -59,14 +59,14 @@ void CDREG_SetHirqFlag(Sint32 bitpat)
 
 Sint32 CDC_GetHirqMsk(void)
 {
-   return (Sint32)*((unsigned short *)0x2589000C);
+   return (Sint32)*((volatile unsigned short *)0x2589000C);
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 void CDC_SetHirqMsk(Sint32 bitpat)
 {
-   *((unsigned short *)0x2589000C) = (unsigned short)bitpat;
+   *((volatile unsigned short *)0x2589000C) = (unsigned short)bitpat;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -91,7 +91,7 @@ Sint32 CDREG_TgetData(Sint32 transfersize, unsigned short *infodata)
    {
       while (transfersize > counter)
       {
-         infodata[0] = *((unsigned short *)0x25898000);
+         infodata[0] = *((volatile unsigned short *)0x25898000);
          counter++;
          infodata++;
       }
@@ -128,7 +128,7 @@ Sint32 doCmdRsp(unsigned short mask, cdcmd_struct *cdcmd, cdcmd_struct *cdcmdrsp
    unsigned long hirq_output;
    unsigned short hirq_temp;
 
-   hirq_temp = (*((unsigned short *)0x25890008) | hirq_flag);
+   hirq_temp = (*((volatile unsigned short *)0x25890008) | hirq_flag);
 
    if ((hirq_temp & mask) != mask)
    {
@@ -170,7 +170,7 @@ Sint32 CDREG_WaitHirq(Sint32 bitpat, unsigned long *hirq_output)
 
    for (i=0; i < 0x240000; i++)
    {
-      hirq_temp = *((unsigned short *)0x25890008);
+      hirq_temp = *((volatile unsigned short *)0x25890008);
       if (hirq_temp & bitpat)
       {
          hirq_output[0] = (unsigned long)hirq_temp;
@@ -184,20 +184,20 @@ Sint32 CDREG_WaitHirq(Sint32 bitpat, unsigned long *hirq_output)
 
 void writeCmd(cdcmd_struct *cdcmd)
 {
-   *((unsigned short *)0x25890018) = cdcmd->CR1;
-   *((unsigned short *)0x2589001C) = cdcmd->CR2;
-   *((unsigned short *)0x25890020) = cdcmd->CR3;
-   *((unsigned short *)0x25890024) = cdcmd->CR4;
+   *((volatile unsigned short *)0x25890018) = cdcmd->CR1;
+   *((volatile unsigned short *)0x2589001C) = cdcmd->CR2;
+   *((volatile unsigned short *)0x25890020) = cdcmd->CR3;
+   *((volatile unsigned short *)0x25890024) = cdcmd->CR4;
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 void CDREG_ReadRsp(cdcmd_struct *cdcmdrsp)
 {
-   cdcmdrsp->CR1 = *((unsigned short *)0x25890018);
-   cdcmdrsp->CR2 = *((unsigned short *)0x2589001C);
-   cdcmdrsp->CR3 = *((unsigned short *)0x25890020);
-   cdcmdrsp->CR4 = *((unsigned short *)0x25890024);   
+   cdcmdrsp->CR1 = *((volatile unsigned short *)0x25890018);
+   cdcmdrsp->CR2 = *((volatile unsigned short *)0x2589001C);
+   cdcmdrsp->CR3 = *((volatile unsigned short *)0x25890020);
+   cdcmdrsp->CR4 = *((volatile unsigned short *)0x25890024);   
 }
 
 //////////////////////////////////////////////////////////////////////////////
