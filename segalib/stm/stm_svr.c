@@ -20,13 +20,13 @@
 #include	<string.h>
 
 #include	"sega_stm.h"
-#include	"..\gfs\gfs_def.h"
-#include	"..\gfs\gfs_cdc.h"
-#include	"..\gfs\gfs_cdf.h"
-#include	"..\gfs\gfs_cdb.h"
-#include	"..\gfs\gfs_trn.h"
-#include	"..\gfs\gfs_buf.h"
-#include	"..\gfs\gfs_dir.h"
+#include	"../gfs/gfs_def.h"
+#include	"../gfs/gfs_cdc.h"
+#include	"../gfs/gfs_cdf.h"
+#include	"../gfs/gfs_cdb.h"
+#include	"../gfs/gfs_trn.h"
+#include	"../gfs/gfs_buf.h"
+#include	"../gfs/gfs_dir.h"
 #include	"stm_loc.h"
 #include	"stm_def.h"
 
