@@ -81,6 +81,9 @@ Sint32 getPeriRsp(cdcmd_struct *cdcmdrsp)
 
 //////////////////////////////////////////////////////////////////////////////
 
+// Notes:
+// CDC_GetHwInfo will only return a proper mpver if the mpeg card has been
+// authenticated. If it hasn't, it sets it to 0.
 Sint32  CDC_GetHwInfo(CdcHw *hw)
 {
    cdcmd_struct cdcmd;
@@ -118,9 +121,7 @@ Sint32  CDC_TgetToc(Uint32 *toc)
    cdcmd.CR4 = 0;
 
    if ((ret = CDSUB_UpdStatus(0, &cdcmd, &cdcmdrsp)) == 0)
-   {
       CDREG_TgetData(((cdcmdrsp.CR1 & 0xFF) << 16) | cdcmdrsp.CR2, (unsigned short *)toc);
-   }
 
    return ret;
 }
@@ -160,12 +161,10 @@ Sint32  CDC_CdInit(Sint32 iflag, Sint32 stnby, Sint32 ecc, Sint32 retry)
    if ((iflag & 0x81) == 1)
    {
       CDSUB_SoftTimer(0x2904);
-      CDREG_SetHirqFlag(0x41);
+      CDREG_SetHirqFlag(CDC_HIRQ_ESEL | CDC_HIRQ_CMOK);
 
       if ((ret = CDSUB_UpdCdstat(CDC_HIRQ_ESEL, &cdcmd)) == 0)
-      {
          CDREG_InitHirqReq();
-      }      
    }
    else
    {
@@ -208,7 +207,7 @@ Sint32  CDC_DataReady(Sint32 dtype)
    if (ret != 0)
       CDC_DataEnd(&cdwnum);
 
-   CDREG_ClrHirqReq(-3);
+   CDREG_ClrHirqReq(~CDC_HIRQ_DRDY);
 
    return ret;
 }
@@ -230,7 +229,7 @@ Sint32  CDC_DataEnd(Sint32 *cdwnum)
    ret = CDSUB_UpdStatus(0, &cdcmd, &cdcmdrsp);
    cdwnum[0] = ((cdcmdrsp.CR1 & 0xFF) << 16) | cdcmdrsp.CR2;
 
-   CDREG_ClrHirqReq(-3);
+   CDREG_ClrHirqReq(~CDC_HIRQ_DRDY);
 
    return ret;
 }

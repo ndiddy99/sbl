@@ -17,7 +17,7 @@ OPTIMIZE_FLAGS = -finline-functions -fomit-frame-pointer
 
 DEBUG_FLAGS = -g
 
-EXTRA_CFLAGS = -Wall -m2 -O1 $(GLOBAL_DEFS)
+EXTRA_CFLAGS = -Wall -m2 -Os $(GLOBAL_DEFS)
 
 EXTRA_LDFLAGS =
 

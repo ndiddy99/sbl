@@ -35,7 +35,7 @@ void analyPos(CdcPos *pos, unsigned char *cdcmdbuf)
 
    switch (pos->ptype)
    {
-      case 2:
+      case CDC_PTYPE_TNO:
       {
          // track ptype
          cdcmdbuf[0] = 0; // CR1(low byte)
@@ -43,7 +43,7 @@ void analyPos(CdcPos *pos, unsigned char *cdcmdbuf)
          cdcmdbuf[2] = pos->pbody.trkidx.idx; // CR2(low byte)
          break;
       }
-      case 1:
+      case CDC_PTYPE_FAD:
       {
          // fad ptype
          cdcmdbuf[0] = (pos->pbody.fad >> 16) | 0x80; // CR1(low byte)
@@ -51,14 +51,14 @@ void analyPos(CdcPos *pos, unsigned char *cdcmdbuf)
          cdcmdbuf[2] = pos->pbody.fad; // CR2(low byte)
          break;
       }
-      case 3:
+      case CDC_PTYPE_NOCHG:
       {
          cdcmdbuf[0] = 0xFF; // CR1(low byte)
          cdcmdbuf[1] = 0xFF; // CR2(high byte)
          cdcmdbuf[2] = 0xFF; // CR2(low byte)
          break;   
       }
-      case 0:
+      case CDC_PTYPE_DFL:
       {
          cdcmdbuf[0] = 0; // CR1(low byte)
          cdcmdbuf[1] = 0; // CR2(high byte)

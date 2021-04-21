@@ -92,7 +92,7 @@ Sint32  CDC_AbortFile(void)
 {
    cdcmd_struct cdcmd;
 
-   cdcmd.CR1 = 0x7200;
+   cdcmd.CR1 = 0x7500;
    cdcmd.CR2 = 0;
    cdcmd.CR3 = 0;
    cdcmd.CR4 = 0;

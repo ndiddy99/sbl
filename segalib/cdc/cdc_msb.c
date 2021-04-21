@@ -48,10 +48,8 @@ Sint32 CDMSB_RenewMpstat(unsigned short mask, cdcmd_struct *mpcmd)
    cdcmd_struct mpcmdrsp;
    Sint32 ret;
 
-   if ((ret = CDREG_CmdRsp(mask, mpcmd, &mpcmdrsp)) != 0)
-      return ret;
-
-   updateMpstat(&mpcmdrsp, 1); // R5 = movt?
+   if ((ret = CDREG_CmdRsp(mask, mpcmd, &mpcmdrsp)) == 0)
+      updateMpstat(&mpcmdrsp, 1);
 
    return ret;
 }
@@ -66,13 +64,9 @@ void updateMpstat(cdcmd_struct *mpcmdrsp, Sint32 type)
    set_imask(0xF);
 
    if (type != 0)
-   {
       CDMSB_RspToMpstat(mpcmdrsp, &mp_stat);
-   }
    else
-   {
       mp_stat.status = mpcmdrsp->CR1 >> 8;
-   }
 
    set_imask(old_imask);
 }

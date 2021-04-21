@@ -21,6 +21,8 @@
 * Files used for conversion and testing are from
   the SOJ Saturn Software Program Libraries ver 1.1. Disk version 94/11/11
 
+* CDC replacement is by Cyber Warrior X
+
 * Libraries and sample code tested on Production systems w/VCD
 * and Saturn CartDev Rev. A and B
 
@@ -50,7 +52,7 @@ Helpful Notes
 --------------
 1) lib\libsat.a are all the libraries in one archive file.
 
-2) the libraries were built with gcc version 8.4
+2) the libraries were built with gcc version 10.2
 
 3) Refer to the following documents to learn how to use
    the library routines:
@@ -64,7 +66,12 @@ Caveats
 --------
 1) This is a beta release. 
    While most of the code samples have been thoroughly tested, please report 
-any and all bugs to SOA DTS.
+any and all bugs
 
 
-
+--------
+To-Dos
+--------
+1) Fix compiler warnings
+2) Fix peripheral library bugs
+3) Translate comments to English

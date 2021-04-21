@@ -1,14 +1,6 @@
 #ifndef CD_INT_H
 #define CD_INT_H
 
-typedef struct
-{
-   unsigned short CR1;
-   unsigned short CR2;
-   unsigned short CR3;
-   unsigned short CR4;
-} cdcmd_struct;
-
 // cdc_reg.c
 Uint32 *CDC_GetDataPtr(void);
 Sint32 CDC_GetHirqReq(void);

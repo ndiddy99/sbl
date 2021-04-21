@@ -28,7 +28,7 @@ void CDC_ClrHirqReq(Sint32 bitpat)
 {
    hirq_flag = *((volatile unsigned short *)0x25890008) | hirq_flag;
 
-   CDREG_ClrHirqReq(bitpat | 1);
+   CDREG_ClrHirqReq(bitpat | CDC_HIRQ_CMOK);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -41,9 +41,13 @@ void CDREG_ClrHirqReq (Sint32 bitpat)
 //////////////////////////////////////////////////////////////////////////////
 
 void CDREG_InitHirqReq()
-{
-   CDREG_ClrHirqReq(0xBE1);
-   hirq_flag = 0xBE1;
+{     
+   CDREG_ClrHirqReq(CDC_HIRQ_MPED | CDC_HIRQ_EFLS | CDC_HIRQ_ECPY |
+                    CDC_HIRQ_EHST | CDC_HIRQ_ESEL | CDC_HIRQ_DCHG |
+                    CDC_HIRQ_CMOK);
+   hirq_flag = CDC_HIRQ_MPED | CDC_HIRQ_EFLS | CDC_HIRQ_ECPY |
+               CDC_HIRQ_EHST | CDC_HIRQ_ESEL | CDC_HIRQ_DCHG |
+               CDC_HIRQ_CMOK;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -138,22 +142,22 @@ Sint32 doCmdRsp(unsigned short mask, cdcmd_struct *cdcmd, cdcmd_struct *cdcmdrsp
    // this either goes here, or within the previous if statement
    hirq_flag = hirq_temp;
 
-   if (!(hirq_temp & 1))
+   if (!(hirq_temp & CDC_HIRQ_CMOK))
       return -2;
 
-   CDREG_ClrHirqReq(~(mask | 1));
+   CDREG_ClrHirqReq(~(mask | CDC_HIRQ_CMOK));
    hirq_flag &= 0xFFFE;
 
    writeCmd(cdcmd);
 
-   if (CDREG_WaitHirq(1, &hirq_output) != 0)
+   if (CDREG_WaitHirq(CDC_HIRQ_CMOK, &hirq_output) != 0)
       return -3;
 
    CDREG_ReadRsp(cdcmdrsp);
 
-   if ((cdcmd->CR1 & 0xFF00) == 0xFF)
+   if ((cdcmd->CR1 >> 8) == CDC_ST_REJECT)
       return -5;
-   else if ((cdcmd->CR1 & 0x8000))
+   else if (((cdcmd->CR1 >> 8) & CDC_ST_WAIT))
       return -6;
 
    hirq_flag = ~mask & hirq_flag;

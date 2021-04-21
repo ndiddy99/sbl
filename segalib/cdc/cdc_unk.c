@@ -5,7 +5,12 @@
 
 //////////////////////////////////////////////////////////////////////////////
 
-Sint32 CDC_E0(unsigned char R4, unsigned char R5)
+// Authenticates disc/mpeg card
+// All command registers are set to 0xFFFF except the status portion
+// of CR1 which has the periodic response and busy flags set, once command
+// is finished, it sets the status back to paused and the command registers
+// to default stats
+Sint32 CDC_AuthDev(unsigned char R4, unsigned char R5)
 {
    cdcmd_struct cdcmd;
 
@@ -22,7 +27,8 @@ Sint32 CDC_E0(unsigned char R4, unsigned char R5)
 
 //////////////////////////////////////////////////////////////////////////////
 
-Sint32 CDC_E1(unsigned char R4, unsigned short *R5, unsigned short *R6)
+// Returns Authentication status
+Sint32 CDC_GetDevAuthStat(unsigned char R4, unsigned short *R5, unsigned short *R6)
 {
    cdcmd_struct cdcmd;
    cdcmd_struct cdcmdrsp;
@@ -36,21 +42,22 @@ Sint32 CDC_E1(unsigned char R4, unsigned short *R5, unsigned short *R6)
    ret = CDSUB_UpdStatus(0, &cdcmd, &cdcmdrsp);
 
    R5[0] = cdcmdrsp.CR2;
-   R5[0] = cdcmdrsp.CR4;
+   R6[0] = cdcmdrsp.CR4;
 
    return ret;   
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
-Sint32 CDC_E2(unsigned char R4, unsigned long R5, unsigned short R6)
+// copies parts of the mpeg card's rom to cd buffer
+Sint32 CDC_MpGetRom(unsigned char R4, unsigned long offset, unsigned short size)
 {
    cdcmd_struct cdcmd;
 
-   cdcmd.CR1 = 0xE200 | ((R5 >> 16) & 0xFF);
-   cdcmd.CR2 = (R5 & 0xFFFF);
+   cdcmd.CR1 = 0xE200 | ((offset >> 16) & 0xFF);
+   cdcmd.CR2 = (offset & 0xFFFF);
    cdcmd.CR3 = R4 << 8;
-   cdcmd.CR4 = R6;
+   cdcmd.CR4 = size;
 
    return CDSUB_UpdCdstat(CDC_HIRQ_MPED, &cdcmd);
 }
