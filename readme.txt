@@ -7,15 +7,6 @@
 * and the author(s) accept no responsibility                *
 * for any problems which may arise from using               *
 * this code.                                                *
-*                                                           *
-* These file may be used and/or modified                    *
-* provided the disclaimer mentioned above is                *
-* maintained, and the appropriate Non Disclosure            *
-* Agreement with Sega of America, Inc. and the              *
-* party or parties using/modifying the code exist.          *
-* This file may not be distributed to any party/parties     *
-* which do not have the appropriate Non Disclosure          *
-* Agreement with Sega of America, Inc.                      *
 *************************************************************
 
 * Files used for conversion and testing are from
